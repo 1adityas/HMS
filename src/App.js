@@ -21,7 +21,7 @@ function App() {
           <br></br>
           <br></br>
           <button type="submit" class="btn">Login</button>
-          <h5>Not Registered Yet?Contact Admin</h5>
+          <h5>Not Registered Yet?Contact Admin </h5>
         </form>
       </div>
     </div>
@@ -32,3 +32,4 @@ export default App;
 // git remote add origin2 https://github.com/1adityas/HMS.git
 // git branch -M main
 // git push -u origin2 main
+//hello
