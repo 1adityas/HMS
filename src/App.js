@@ -16,8 +16,8 @@ function App() {
           <label for="psw"><b></b></label>
           <br></br>
           <input type="password" placeholder="Enter Password Here" name="psw" required></input>
-          <br></br>
-          <input type="checkbox" value="lsRememberMe" id="rememberMe" text-align="left"/> <label for="rememberMe">Remember me</label>
+          <br></br><div id="remme">
+          <input type="checkbox" value="lsRememberMe" id="rememberMe" text-align="left"/>  <label for="rememberMe" >Remember me</label></div>
           <br></br>
           <br></br>
           <button type="submit" class="btn">Login</button>

@@ -2,12 +2,14 @@
   background-image: url("./background.svg");
   background-repeat: no-repeat;
   position: absolute;
-  min-width: 1551.68px;
-  min-height: 1022px;  
+  width: 1552px;
+  height: 1022px;
+  
 }
 .head1
 {
   color: #253143;
+  /* text-align: center; */
 }
 .logo
 {
@@ -58,6 +60,7 @@ input[type=text], input[type=password] {
 border: 2px solid #253143;
 border-radius: 15px;
 opacity: 0.5;
+
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -82,4 +85,16 @@ input[type=text]:focus, input[type=password]:focus {
 .btn:hover {
   opacity: 1;
 }
+
+#remme{
+
+  /* background-color: #253143; */
+    text-align: left;
+    padding-left: 130px;
+}
+/* label[for=rememberMe]
+{
+    background-color: #253143;
+    text-align: left;
+} */
 
