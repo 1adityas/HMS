@@ -5,21 +5,24 @@ function App() {
   return (
     <div  className="back">
       <div className='logo'></div>
-      
       <div className='nurse'></div>
       <div className='box'>
         <form>
-        <h1 className='head1'>Hospital Login</h1>
+        <h1 id='head1'>Hospital Login</h1>
+        <br></br>
+        <div id="space">
         <input className="input1" type="text" required placeholder="Enter Username Here"></input>
           <br/>
-          <input className="input" type="password" required placeholder="Enter Password Here" ></input>
+          <input className="input2" type="password" required placeholder="Enter Password Here" ></input>
           <br/>
           <label class="container">
           <input type="radio"/>Remember Me <span class="checkmark"></span> </label>
+          </div>
           <br/>
           <br/>
           <br/>
-          <button className="log" onsubmit="required()">Log In</button>     
+          <div id="logspace">
+          <button className="log" onsubmit="required()">Log In</button>   </div>  
           <br/>
           <br/>
           <h4 id="register">Not Registered Yet? Contact Admin</h4> 
