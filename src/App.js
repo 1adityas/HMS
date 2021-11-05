@@ -45,4 +45,8 @@ function App() {
     </div>
   );
 }
+function Ward(){
+  return (<div></div>);
+}
+
 export default App;
