@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Header from './Components/Header/Header';
+
 
 function App() {
   return (
@@ -46,7 +48,13 @@ function App() {
   );
 }
 function Ward(){
-  return (<div></div>);
+  return (
+    <div className="App">
+      <div>
+        <Header/>
+      </div>
+      <h1>Ward Details</h1>    
+  </div>);
 }
-
+// export default Ward;
 export default App;

@@ -8,8 +8,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* <Ward /> */}
+    {/* <App /> */}
+    <Ward />
   </React.StrictMode>,
   document.getElementById('root')
 );
