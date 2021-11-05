@@ -57,7 +57,7 @@ input[type=text], input[type=password] {
   border: 2px solid var(--unnamed-color-253143);
 border: 2px solid #253143;
 border-radius: 15px;
-opacity: 0.5;
+opacity: 0.7;
 }
 
 input[type=text]:focus, input[type=password]:focus {
