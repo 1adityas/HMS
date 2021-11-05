@@ -5,9 +5,11 @@
   min-width: 1551.68px;
   min-height: 1022px;  
 }
-.head1
+#head1
 {
   color: #253143;
+  padding-left: 360px;
+  padding-top: 50px;
 }
 .logo
 {
@@ -33,52 +35,33 @@
   min-height: 100%;
   opacity: 1;
 }
-.box
-{
-  /*background-color:#EEEEEE;*/
-  background-color: white;
-  width: 800px;
-  height: 600px;
-  padding: 50px;
-  text-align: center;
-  margin-left: 326px;
-  margin-top: 242px;
-  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  opacity: 1;
-
-}
 
 input[type=text], input[type=password] {
-  
   padding: 15px;
   width: 500px;
   margin: 5px 0 22px 0;
   border: 2px solid var(--unnamed-color-253143);
-border: 2px solid #253143;
-border-radius: 15px;
-opacity: 0.7;
+  border: 2px solid #253143;
+  border-radius: 15px;
+  opacity: 0.5;
 }
 
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
-  
 }
 
 input#user {
   background-image: url("./Icon\ awesome-user-alt.svg");
   background-repeat: no-repeat;
-  text-indent: 20px;
+  text-indent: 70px;
 }
 
 input#pass {
   background-image: url("./Icon\ metro-lock.svg");
   background-repeat: no-repeat;
-  text-indent: 20px;
+  text-indent: 70px;
 }
 
-
-/* Set a style for the submit button */
 .btn {
   background-color: #253143;
   color: white;
@@ -91,34 +74,27 @@ input#pass {
 
   opacity: 0.9;
 }
-
 .btn:hover {
   opacity: 1;
 }
-
-
-.input
-{
-  background-image: url("./Icon\ metro-lock.svg");
-  background-size: 30px;
-  padding-left: 10px;
-  color: #253143;
-  background-repeat: no-repeat;
-  background-position: 4px;
-  padding: 10px 20px;
-  border-radius: 12px;
-  height: 30px;
-  margin: 8px 0;
-  width: 300px;
-  text-indent: 25px;
-  
+.box {
+  background-color: white;
+  width: 900px;
+  height: 679px;
+  /* padding: 50px; */
+  /* text-align: center; */
+  margin-left: 326px;
+  margin-top: 242px;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  opacity: 1;
 }
 .input1
 {
   background-image: url("./Icon\ awesome-user-alt.svg");
-  background-size: 30px;
+  background-size: 25px;
   color: #253143;
-  background-position: 4px;
+  background-position: 10px;
   background-repeat: no-repeat;
   padding: 10px 20px;
   height: 30px;
@@ -126,35 +102,47 @@ input#pass {
   margin: 8px 0;
   border-radius: 12px;
   width: 300px;
- 
 }
-.card {
-  text-align: center;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
-  width: 700px;
-  margin: auto;
-  background-color: white;
-  text-decoration-color: black;
-  float: right;
-  padding: 45px;
-  padding-right: 250px;
-  /*float:  right;
-  padding: 45px;
-  padding-right: 300px;*/
+.input2
+{
+  background-image: url("./Icon\ metro-lock.svg");
+  background-size: 25px;
+  padding-left: 10px;
+  color: #253143;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  height: 30px;
+  margin: 8px 0;
+  width: 300px;
+  text-indent: 25px;
+  
 }
+
 .log
 {
   background-color: #253143;
   color: white;
-  padding: 10px 20px;
-  margin: 8px 0;
+  /* margin: 8px 0;
   width: 150px;
-  height: 50px;
+  height: 50px; */
   border-radius: 12px;
+  top: 697px;
+  left: 875px;
+  width: 170px;
+  height: 70px;
 }
 #register
 {
   color:#506F90;
-  
+  padding-left: 300px;
 }
-
+#space
+{
+  margin-left: 180px;
+}
+#logspace
+{
+  margin-left: 365px;
+}
