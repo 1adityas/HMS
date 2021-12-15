@@ -24,9 +24,7 @@ const App = ()=> {
   
   
 
-
   return (
-    
     <div id="bg"> 
     <div className="back"></div>
       

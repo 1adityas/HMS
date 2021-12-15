@@ -4,15 +4,16 @@
 
   background-color: #EEEEEE;
 }
+
 .back{
   background-image: url("./background.svg");
   background-repeat: no-repeat;
   position: absolute;
   top: 29px;
-left: 184px;
-width: 1552px;
-height: 1022px;
-opacity: .6;  
+  left: 184px;
+  width: 1552px;
+  height: 1022px;
+  opacity: .6;  
 }
 
 #head1
