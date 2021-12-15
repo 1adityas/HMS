@@ -6,7 +6,7 @@ function Login() {
     return (
         <div className="grid-container">
             <div className="grid-item1" >
-                
+            <img src="images/logo.jpg" alt=""/>
        </div>
        </div>
     )
