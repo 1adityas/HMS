@@ -18,14 +18,15 @@
     opacity: .9;
 }  */
 .grid-container {
-    
-    position: absolute;
     display: grid;
-    grid-template-columns: auto auto auto;
-    
-    padding: 10px;
+    grid-template-columns: auto;
+
+
 }
 
 .grid-item1 {
-    grid-column: 1 /span 4;
+
+    background-image: url("../background.svg");
+    min-width: 100px;
+    min-height: 100px;
 }
