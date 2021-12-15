@@ -1,0 +1,31 @@
+/* #bg {
+    position: absolute;
+    height: 1080px;
+    width: 1920px;
+
+    background-color: #EEEEEE;
+}
+*/
+/* .back {
+    
+   
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 29px;
+    left: 184px;
+    width: 1552px;
+    height: 1022px;
+    opacity: .9;
+}  */
+.grid-container {
+    
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    padding: 10px;
+}
+
+.grid-item1 {
+    grid-column: 1 /span 4;
+}
