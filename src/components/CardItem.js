@@ -6,9 +6,12 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './Login.css'
+import { Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
+
 
 const useStyles = makeStyles({
   root: {
+    boxShadow:"10px 10px 20px #00000029;",
     minWidth: 275,
     display:"flex",
     position:"absolute",
@@ -39,24 +42,36 @@ export default function CardItem() {
     <div className="flex-item3">
     <Card className={classes.root} >
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
+        
+        <Typography variant="h4" component="h1" align='center' style={{color: "#253143",fontWeight:'bold', paddingBottom:"35px",
+        paddingTop:"10px"
+        //,fontFamily:'Poppins Bold'
+        }}>
+          Hospital Login
         </Typography>
-        <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
+        
+        
+        <div className='fieldAlign'>
+        <input type="text" style={{'width':"400px", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
+        <input type="text" style={{'width':"400px", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
+        
+        <FormGroup>
+          <FormControlLabel style={{"color":'#6F88A2'}} control={<Checkbox defaultChecked />} label="Remember Me" />
+        </FormGroup>
+
+        <Button variant="contained" style={{'backgroundColor':'#506F90', width:"173px"}}>Login</Button>
+        </div>
+
+        <Typography align='center' style={{'color':'#6F88A2', paddingTop:"20px"}}>Not Registered Yet?</Typography>
+        <Typography align='center' style={{'color':'#6F88A2'}}>Contact Admin</Typography>
+
+
       </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
+
+      
+      {/* <CardActions>
+        <Button size="small" style={{'backgroundColor':'#506F90'}}>Login</Button>
+      </CardActions> */}
     </Card>
     </div>
   );

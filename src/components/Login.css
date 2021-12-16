@@ -31,12 +31,12 @@
 }
 
 .flex-item3 {
+    /* for card */
     display: flex;
     flex: 100%;
-  
 
-
-
-
-
+}
+.fieldAlign
+{
+    text-align: center;
 }
