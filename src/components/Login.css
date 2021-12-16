@@ -40,17 +40,29 @@
 
 .logoImg
 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 1800px;;
     /* flex:100%; */
     display: block;
     /* align-items: center; */
     position: absolute;
-    flex-direction: column;
+    /* flex-direction: column; */
     top: 91px;
     /* left: 893px; */
+    align-items: center;
+    left: 0%;
+    height: 20%;
+    border: 2px solid green;
+
 }
 .logoItem
 {
-    flex: 100%;
-    border: 2px solid;
-    justify-content: center;
+    position: absolute;
+    /* left: 30%;
+    right: 50%; */
+top: 5%;
+left: 45%;
+    /* flex: 100%; */
+    /* justify-content: center; */
 }

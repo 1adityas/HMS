@@ -15,12 +15,10 @@ function Login() {
             </div>
             </div>
 
-            <div className='logoImg'>
                 <div className='logoItem'>
-            <img src={logo} height={"100px"} width={"auto"} style={{'vertical-align':"middle"}}></img>
+            <img src={logo} height={""} width={"auto"} ></img>
             {/* <img src={logo} height={"100px"} width={"auto"}></img> */}
             
-            </div>
 
             </div>
 
