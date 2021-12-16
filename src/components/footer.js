@@ -22,7 +22,7 @@ export default function Footer() {
       <div className= "bottom-nav">
     <BottomNavigation
     style={{ 'position':'relative',
-    'bottom':'0', 'height':'105px'}}
+    'bottom':'0', 'height':'80px'}}
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
@@ -34,7 +34,7 @@ export default function Footer() {
       {/* <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} /> */}
       <div style={{
-                    'padding':'40px',
+                    'padding':'15px',
                     'color': "#EEEEEE",
                     'text-align': "center",
                     'font': "normal normal normal 18px/27px Poppins",
