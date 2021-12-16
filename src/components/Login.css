@@ -1,11 +1,4 @@
-/* #bg {
-    position: absolute;
-    height: 1080px;
-    width: 1920px;
 
-    background-color: #EEEEEE;
-}
-*/
 /* .back {
     
    
@@ -30,6 +23,7 @@
 
 .grid-item1 {
 
+<<<<<<< HEAD
     grid-column: 2/11;
     /* grid-row: 1/ span 1; */
 
@@ -44,5 +38,26 @@
     border: 1px;
 
     border-style: solid;
+=======
+    
+    /* background-image: url("../background.svg"); */
+    /* height: 100rem; */
+    /* width:100%; */
+    /* padding: 30px; */
+    
+    /* background-size: cover;
+    min-height: 100vh;
+    min-width: auto;  
+    */
+    /* background-size: cover; */
+    grid-column: 2/11;
+    border: 1px;
+    border-style: solid; 
+    padding: 20px;
+    background-position: center;
+>>>>>>> 29de044092221cc6d9506a8d10961aecc8a0fc79
 
+}
+#img{
+    
 }
