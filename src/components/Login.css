@@ -1,7 +1,5 @@
 
 /* .back {
-    
-   
     background-repeat: no-repeat;
     position: absolute;
     top: 29px;
@@ -14,16 +12,10 @@
     display: grid;
     grid-template-columns: repeat(11,1fr);
     grid-template-rows: repeat(1,1fr);
-    
-
-    
-
 
 }
 
 .grid-item1 {
-
-    
     /* background-image: url("../background.svg"); */
     /* height: 100rem; */
     /* width:100%; */
@@ -35,12 +27,9 @@
     */
     /* background-size: cover; */
     grid-column: 2/11;
-    border: 1px;
-    border-style: solid; 
-    padding: 20px;
+    /* border: 1px; */
+    /* border-style: solid;  */
+    /* padding: 20px; */
     background-position: center;
 
-}
-#img{
-    
 }

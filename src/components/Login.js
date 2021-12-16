@@ -7,7 +7,6 @@ function Login() {
     return (
         <   div className="grid-container" >
             <div className="grid-item1" >
-                
             <img src ={bg}  height={"700rem"} width={"auto"} ></img>
        </div>
        </div>
