@@ -28,22 +28,26 @@ export default function Footer() {
         setValue(newValue);
       }}
       showLabels
-      className={classes.root}
-      >
-    // 
-      {/* <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} /> */}
+      className={classes.root} >
+    
+     
       <div style={{
                     'padding':'15px',
                     'color': "#EEEEEE",
                     'text-align': "center",
-                    'font': "normal normal normal 18px/27px Poppins",
+                    'height':"30%",
+                   
                     'letter-spacing': "0px",
                     'text-transform': "capitalize",
-                    'opacity': 1,
-                   }}>
-    © 2021 Powered By Kenko Tech</div>
-    </BottomNavigation>
-    </div>
+                    'opacity': "1",
+                    'height':"15px",
+
+                    'font-family':"Poppins, sans-serif",
+                    'font-weight':"100",
+                    'font-style':"normal"
+                 }}>
+                        © 2021 Powered By Kenko Tech</div>
+      </BottomNavigation>
+      </div>
   );
 }
