@@ -4,24 +4,14 @@
 }
 
 .flex-item2 {
-<<<<<<< HEAD
-
-
-=======
 /* for bg pic */
 position: relative;
->>>>>>> 07bbc4cc371098d69cd81a259f8ef43056df5941
     flex: 100%;
     display: flex;
     margin-top: 30px;
     margin-bottom: 123px;
-<<<<<<< HEAD
-}
-
-=======
 
 }
->>>>>>> 07bbc4cc371098d69cd81a259f8ef43056df5941
 .flex-item1 {
     /* for logo icon  */
     flex: 100%;
