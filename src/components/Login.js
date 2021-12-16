@@ -13,10 +13,10 @@ function Login() {
             
             
             <div className='flex-item1'>
-            <img src={logo} height={"100px"} width={"auto"} ></img>
+            <img src={logo} height={"50rem"} width={"100%"} ></img>
             </div>
             <div className="flex-item2" >
-            <img src ={bg}  height={"700rem"} width={"100%"} ></img>
+            <img src ={bg}  height={"70%"} width={"100%"} ></img>
             </div>
            
             </div>
