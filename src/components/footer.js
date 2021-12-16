@@ -21,8 +21,9 @@ export default function Footer() {
   return (
       <div className= "bottom-nav">
     <BottomNavigation
-    style={{ 'position':'relative',
-    'bottom':'0', 'height':'80px'}}
+    style={{ 
+      'justifyContent':"end",
+     'height':"80px",}}
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
