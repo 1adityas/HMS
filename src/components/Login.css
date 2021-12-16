@@ -6,6 +6,7 @@
     /* grid-template-columns: repeat(2,1fr); */
     /* grid-template-rows: repeat(1,1fr); */
     /* padding-right: 10rem; */
+    
 }
 
 .flex-item2 {
@@ -14,18 +15,16 @@ position: relative;
     flex: 100%;
     display: flex;
     margin-top: 30px;
-    margin-bottom: 123px;
+    /* margin-bottom: 123px; */
 
 }
 .flex-item1 {
     /* for logo icon  */
+
     flex: 100%;
     display: flex;
-    /* justify-content: center; */
-    margin-top: 20px;
     position: absolute;
-    /* left: 30%;
-    right: 50%; */
-top: 5%;
+
+top: 7%;
 left: 45%;
 }

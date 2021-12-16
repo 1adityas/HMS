@@ -22,7 +22,8 @@ export default function Footer() {
       <div className= "bottom-nav">
     <BottomNavigation
     style={{ 
-      'justifyContent':"end",
+      'top':'',
+      'position':'absolute',
      'height':"80px",}}
       value={value}
       onChange={(event, newValue) => {
@@ -32,6 +33,7 @@ export default function Footer() {
       className={classes.root} >
     
      
+
       <div style={{
                     'padding':'15px',
                     'color': "#EEEEEE",
