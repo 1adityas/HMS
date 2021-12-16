@@ -22,9 +22,10 @@ export default function Footer() {
       <div className= "bottom-nav">
     <BottomNavigation
     style={{ 
-      'top':'',
+      
       'position':'absolute',
-     'height':"80px",}}
+      'margin-top':"15px",
+     'height':"60px",}}
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
