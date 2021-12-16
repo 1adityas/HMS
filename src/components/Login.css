@@ -11,6 +11,7 @@
 .grid-container {
     display: flex;
     flex-wrap: wrap;
+    
     /* grid-template-columns: repeat(2,1fr); */
     /* grid-template-rows: repeat(1,1fr); */
     /* padding-right: 10rem; */
@@ -34,4 +35,21 @@
     margin-right: 184px; */
     /* padding: 20px; */
     /* background-position: center; */
+}
+
+.logoImg
+{
+    /* flex:100%; */
+    display: block;
+    /* align-items: center; */
+    position: absolute;
+    flex-direction: column;
+    top: 91px;
+    /* left: 893px; */
+}
+.logoItem
+{
+    flex: 100%;
+    border: 2px solid;
+    justify-content: center;
 }
