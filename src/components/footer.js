@@ -21,6 +21,8 @@ export default function Footer() {
   return (
       <div className= "bottom-nav">
     <BottomNavigation
+    style={{ 'position':'relative',
+    'bottom':'0', 'height':'105px'}}
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
@@ -32,13 +34,14 @@ export default function Footer() {
       {/* <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
       <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} /> */}
       <div style={{
+                    'padding':'40px',
                     'color': "#EEEEEE",
-                    'text-align': "left",
+                    'text-align': "center",
                     'font': "normal normal normal 18px/27px Poppins",
                     'letter-spacing': "0px",
-                    'color': "#EEEEEE",
                     'text-transform': "capitalize",
-                    'opacity': 1,}}>
+                    'opacity': 1,
+                   }}>
     © 2021 Powered By Kenko Tech</div>
     </BottomNavigation>
     </div>
