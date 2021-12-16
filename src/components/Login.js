@@ -9,21 +9,18 @@ function Login() {
         <div>
 
         
-        <div className="grid-container" >
-            <div className="grid-item1" >
+        <div className="flex-container" >
+            
+            
+            <div className='flex-item1'>
+            <img src={logo} height={"100px"} width={"auto"} ></img>
+            </div>
+            <div className="flex-item2" >
             <img src ={bg}  height={"700rem"} width={"100%"} ></img>
             </div>
+           
             </div>
-
-                <div className='logoItem'>
-            <img src={logo} height={""} width={"auto"} ></img>
-            {/* <img src={logo} height={"100px"} width={"auto"}></img> */}
-            
-
-            </div>
-
-
-            </div>
+</div>
        
     )
 
