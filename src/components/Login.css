@@ -1,5 +1,6 @@
 .lgin{
     background-color: #EEEEEE;
+    padding-bottom: 2%;
 }
 
 .flex-container {
@@ -29,11 +30,6 @@
     position: absolute;
     top: 7%;
     left: 45%;
-}
-.nurseImg
-{
-    position: absolute;
-    flex: 100%;
 }
 
 .grid-container {
