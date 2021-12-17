@@ -7,8 +7,12 @@ import logo from '../logo main.png';
 
 function Login() {
     return (
-    <div>
-        <div className="flex-container" >            
+        <div className='lgin'>
+
+        
+        <div className="flex-container" >
+            
+            
             <div className='flex-item1'>
             <img src={logo} height={"80px"} width={"100%"} ></img>
             </div>
@@ -20,7 +24,7 @@ function Login() {
             <div className='nurseImg'>
             <img src={nurse}></img>
             </div>
-            
+
         </div>
    </div>
     )

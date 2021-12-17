@@ -13,8 +13,8 @@ import user from '../Icon awesome-user-alt.svg';
 const useStyles = makeStyles({
   root: {
     boxShadow:"10px 10px 20px #00000029;",
-    minWidth: 275,
-    display:"flex",
+    // minWidth: 275,
+    // display:"flex",
     position:"absolute",
     top:"25%",
     left:"30%",
@@ -40,7 +40,8 @@ export default function CardItem() {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div className="flex-item3">
+    <div className="grid-container">
+      <div className="flex-item3">
     <Card className={classes.root} >
       <CardContent>
         
@@ -53,15 +54,14 @@ export default function CardItem() {
         
         
         <div className='fieldAlign'>
-        <input type="text" img src ={user} style={{'width':"400px", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'>
-        </input>
-        <input type="text" style={{'width':"400px", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
+        <input type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
+        <input type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
         
         <FormGroup>
           <FormControlLabel style={{"color":'#6F88A2'}} control={<Checkbox defaultChecked />} label="Remember Me" />
         </FormGroup>
 
-        <Button variant="contained" style={{'backgroundColor':'#506F90', width:"173px"}}>Login</Button>
+        <Button variant="contained" style={{'backgroundColor':'#506F90', width:"20%"}}>Login</Button>
         </div>
 
         <Typography align='center' style={{'color':'#6F88A2', paddingTop:"20px"}}>Not Registered Yet?</Typography>
@@ -75,6 +75,7 @@ export default function CardItem() {
         <Button size="small" style={{'backgroundColor':'#506F90'}}>Login</Button>
       </CardActions> */}
     </Card>
+    </div>
     </div>
   );
 }
