@@ -25,11 +25,9 @@ export default function Footer() {
       
       'position':'absolute',
       'margin-top':"15px",
-     'height':"60px",}}
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
+      // 'bottom':'0px',
+     'height':"100px",}}
+      
       showLabels
       className={classes.root} >
     
