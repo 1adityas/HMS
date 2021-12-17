@@ -6,7 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './Login.css'
-import { Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
+import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
+import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
+import { Radio,Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
 import user from '../Icon awesome-user-alt.svg';
 
 
@@ -62,18 +64,20 @@ const [password, setPassword] = useState('');
         <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
         
         <FormGroup>
-          <FormControlLabel className="checkbox-round" style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} control={<Checkbox defaultChecked />} label="Remember Me" />
+          <FormControlLabel 
+          style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} 
+          control={<Checkbox color='#6F88A2' icon={<CircleUnchecked />} 
+          checkedIcon={<CircleCheckedFilled />} />} 
+          label="Remember Me" />
+          {/* <FormControlLabel className="checkbox-round"  control={<Radio />} label="Remember Me" /> */}
         </FormGroup>
 
-        <Button variant="contained" style={{'backgroundColor':'#506F90', 'width':"20%",'margin-top':"10%", 'margin-bottom':"6%",'border-radius':"15px", 'color': "white"}}>Login</Button>
+        <Button variant="contained" style={{'backgroundColor':'#506F90', 'width':"20%",'margin-top':"10%", 'margin-bottom':"3%",'border-radius':"15px", 'color': "white"}}>Login</Button>
         <br/>
         <Button  style={{'color':'#6F88A2','margin-top':"7%",}}>Not Registered Yet?</Button>
-        
         <Button  style={{'color':'#6F88A2' ,'margin-top':"7%",}}>Contact Admin</Button>
         </div>
-         {/* <div className="Button-align">
         
-         </div> */}
 
       </CardContent>
 

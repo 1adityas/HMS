@@ -58,7 +58,7 @@
     left: 22%;
     height: 80%;
     /* border: 2px solid; */
-    bottom: 100px;
+    /* bottom: 100px; */
     /* bottom-; */
 
 }
@@ -78,7 +78,7 @@
     text-align: center;
 }
 
-
+/* 
 .checkbox-round {
     width: 1.3em;
     height: 1.3em;
@@ -94,9 +94,4 @@
 
 .checkbox-round:checked {
     background-color: gray;
-}
-
-.button-align {
-    text-align: center;
-    justify-content: center;
-}
+} */
