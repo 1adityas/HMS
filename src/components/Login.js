@@ -19,7 +19,7 @@ function Login() {
             </div>
 
             <div className="flex-item2" >
-                <img src ={bg}  height={"700vh"} width={"100%"} ></img>
+                <img src ={bg}  height={"750vh"} width={"100%"} ></img>
             </div>
 
             
@@ -27,13 +27,12 @@ function Login() {
         </div>
         {/* flex terminate */}
 
-        <div className='nurseGrid'>
-        <div className='nurseImgItem'></div>
-        <div className='nurseImgItem'>
+
+
+        <div className='yo'><img src={nurse} height={'85%'} width={'100%'} bottom={'0px'}></img></div>
         
-            <img src={nurse} height={'72%'} width={'100%'}></img>
-            </div></div>
-   </div>
+        </div>
+            
     )
 }
 export default Login;

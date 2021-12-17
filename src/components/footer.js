@@ -23,7 +23,7 @@ export default function Footer() {
     <BottomNavigation
     style={{ 
       
-      'position':'absolute',
+      // 'position':'absolute',
       'margin-top':"15px",
       // 'bottom':'0px',
      'height':"100px",}}
