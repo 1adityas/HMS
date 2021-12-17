@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './Login.css'
 import { Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
+import user from '../Icon awesome-user-alt.svg';
 
 
 const useStyles = makeStyles({
@@ -52,7 +53,8 @@ export default function CardItem() {
         
         
         <div className='fieldAlign'>
-        <input type="text" style={{'width':"400px", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
+        <input type="text" img src ={user} style={{'width':"400px", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'>
+        </input>
         <input type="text" style={{'width':"400px", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
         
         <FormGroup>

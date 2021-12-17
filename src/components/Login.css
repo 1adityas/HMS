@@ -16,25 +16,26 @@
     display: flex;
     margin-top: 30px;
     /* margin-bottom: 123px; */
-
 }
 
 .flex-item1 {
     /* for logo icon  */
-
     flex: 100%;
     display: flex;
     position: absolute;
-
     top: 7%;
     left: 45%;
+}
+.nurseImg
+{
+    position: absolute;
+    flex: 100%;
 }
 
 .flex-item3 {
     /* for card */
     display: flex;
     flex: 100%;
-
 }
 .fieldAlign
 {
