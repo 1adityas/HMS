@@ -6,7 +6,7 @@ import logo from '../logo main.png';
 function Login() {
 
     return (
-        <div>
+        <div className='lgin'>
 
         
         <div className="flex-container" >
