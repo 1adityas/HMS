@@ -29,7 +29,7 @@ function Login() {
 
 
 
-        <div className='yo'><img src={nurse} height={'85%'} width={'100%'} bottom={'0px'}></img></div>
+        <div className='yo'><img src={nurse} height={'100%'} width={'100%'} bottom={'0px'}></img></div>
         
         </div>
             
