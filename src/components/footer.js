@@ -23,10 +23,10 @@ export default function Footer() {
     <BottomNavigation
     style={{ 
       
-      // 'position':'absolute',
-      'margin-top':"15px",
+      'position':'absolute',
+      // 'margin-top':"15px",
       // 'bottom':'0px',
-     'height':"100px",}}
+     'height':"70px"}}
       
       showLabels
       className={classes.root} >
