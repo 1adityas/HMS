@@ -1,4 +1,4 @@
-.lgin{
+.bgColor{
     background-color: #EEEEEE;
     padding-bottom: 2%;
 }
@@ -47,17 +47,16 @@
     grid-template-columns: repeat(11, 1fr);
     /* grid-template-rows: repeat(2, 1fr); */
     width: 100%;
-    border: 2px solid ;
+    /* border: 2px solid ; */
 
 }
-.yo{
+.Nurse{
 
     position: absolute;
     top:28%;
     left: 22%;
     /* height: 50%; */
-
-    border: 2px solid;
+    /* border: 2px solid; */
     bottom: 100px;
     /* bottom-; */
 
