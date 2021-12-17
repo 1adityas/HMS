@@ -20,7 +20,8 @@ const useStyles = makeStyles({
     left:"30%",
     right:"30%",
     width:"auto",
-    height:"60%"
+    height:"60%",
+    backgroundColor:"#EEEEEE"
   },
   bullet: {
     display: 'inline-block',

@@ -1,4 +1,4 @@
-.lgin{
+.bg-color {
     background-color: #EEEEEE;
 }
 
@@ -30,8 +30,8 @@
     top: 7%;
     left: 45%;
 }
-.nurseImg
-{
+
+.nurseImg {
     position: absolute;
     flex: 100%;
 }
@@ -51,4 +51,10 @@
 
 .fieldAlign {
     text-align: center;
+}
+
+.nurseImg {
+    position: absolute;
+
+
 }
