@@ -34,13 +34,19 @@
     left: 45%;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-area: 3 / 2 / span 3/ span 3;
+}
+
 .flex-item3 {
     /* for card */
-    display: flex;
-    flex: 100%;
+
+
 
 }
-.fieldAlign
-{
+
+.fieldAlign {
     text-align: center;
 }
