@@ -12,6 +12,7 @@ import { Radio,Checkbox, TextField,FormGroup,FormControlLabel } from '@material-
 import user from '../Icon awesome-user-alt.svg';
 
 
+
 const useStyles = makeStyles({
   root: {
     boxShadow:"10px 10px 20px #00000029;",
@@ -60,9 +61,16 @@ const [password, setPassword] = useState('');
         
         
         <div className='fieldAlign'>
-        <input onChange={event => setUsername(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
+          <div>
+            <i className='userImg'>
+          <input onChange={event => setUsername(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
+          </i>
+          </div>
+          <div>
+            <i className='passImg'>
         <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
-        
+        </i>
+        </div>
         <FormGroup>
           <FormControlLabel 
           style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} 

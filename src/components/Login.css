@@ -78,6 +78,24 @@
     text-align: center;
 }
 
+.userImg
+{
+    background-image: url("../Icon awesome-user-alt.svg");
+    background-repeat: no-repeat;
+    background-position:start;
+    height: 0.5px;
+    width: 0.5px;
+    /* width: 100%; */
+}
+.passImg
+{
+    background-image: url("../Icon\ metro-lock.svg");
+    background-repeat: no-repeat;
+    height: 0.5px;
+    width: 0.5px;
+    /* background-position:start; */
+}
+
 /* 
 .checkbox-round {
     width: 1.3em;
