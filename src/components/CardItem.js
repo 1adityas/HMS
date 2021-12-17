@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState}from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -37,6 +37,8 @@ const useStyles = makeStyles({
 });
 
 export default function CardItem() {
+  const [username, setUsername] = useState('');
+const [password, setPassword] = useState('');
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -55,11 +57,11 @@ export default function CardItem() {
         
         
         <div className='fieldAlign'>
-        <input type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
-        <input type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
+        <input onChange={event => setUsername(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
+        <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
         
         <FormGroup>
-          <FormControlLabel style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} control={<Checkbox defaultChecked />} label="Remember Me" />
+          <FormControlLabel className="checkbox-round" style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} control={<Checkbox defaultChecked />} label="Remember Me" />
         </FormGroup>
 
         <Button variant="contained" style={{'backgroundColor':'#506F90', width:"20%"}}>Login</Button>
