@@ -31,7 +31,7 @@ function Login() {
         <div className='nurseImgItem'></div>
         <div className='nurseImgItem'>
         
-            <img src={nurse}></img>
+            <img src={nurse} height={'72%'} width={'100%'}></img>
             </div></div>
    </div>
     )

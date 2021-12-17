@@ -59,7 +59,7 @@ export default function CardItem() {
         <input type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
         
         <FormGroup>
-          <FormControlLabel style={{"color":'#6F88A2'}} control={<Checkbox defaultChecked />} label="Remember Me" />
+          <FormControlLabel style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} control={<Checkbox defaultChecked />} label="Remember Me" />
         </FormGroup>
 
         <Button variant="contained" style={{'backgroundColor':'#506F90', width:"20%"}}>Login</Button>
