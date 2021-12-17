@@ -1,4 +1,4 @@
-import React ,{useState}from 'react';
+import React ,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -6,7 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './Login.css'
-import { Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
+import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
+import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
+import { Radio,Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
 import user from '../Icon awesome-user-alt.svg';
 
 
@@ -20,7 +22,7 @@ const useStyles = makeStyles({
     left:"30%",
     right:"30%",
     width:"auto",
-    height:"60%",
+    height:"70%",
     backgroundColor:"#EEEEEE"
   },
   bullet: {
@@ -41,7 +43,7 @@ export default function CardItem() {
 const [password, setPassword] = useState('');
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
-
+  console.log(username)
   return (
     // console.log(username)
     <div className="grid-container">
@@ -62,15 +64,20 @@ const [password, setPassword] = useState('');
         <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
         
         <FormGroup>
-          <FormControlLabel className="checkbox-round" style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} control={<Checkbox defaultChecked />} label="Remember Me" />
+          <FormControlLabel 
+          style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} 
+          control={<Checkbox color='#6F88A2' icon={<CircleUnchecked />} 
+          checkedIcon={<CircleCheckedFilled />} />} 
+          label="Remember Me" />
+          {/* <FormControlLabel className="checkbox-round"  control={<Radio />} label="Remember Me" /> */}
         </FormGroup>
 
-        <Button variant="contained" style={{'backgroundColor':'#506F90', width:"20%"}}>Login</Button>
+        <Button variant="contained" style={{'backgroundColor':'#506F90', 'width':"20%",'margin-top':"10%", 'margin-bottom':"3%",'border-radius':"15px", 'color': "white"}}>Login</Button>
+        <br/>
+        <Button  style={{'color':'#6F88A2','margin-top':"7%",}}>Not Registered Yet?</Button>
+        <Button  style={{'color':'#6F88A2' ,'margin-top':"7%",}}>Contact Admin</Button>
         </div>
-
-        <Button align='center' style={{'color':'#6F88A2'}}>Not Registered Yet?</Button>
-        <Button align='center' style={{'color':'#6F88A2'}}>Contact Admin</Button>
-
+        
 
       </CardContent>
 
@@ -80,6 +87,7 @@ const [password, setPassword] = useState('');
       </CardActions> */}
     </Card>
     </div>
+  
     </div>
   );
 }
