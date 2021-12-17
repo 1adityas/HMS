@@ -9,8 +9,8 @@ import CardItem from './components/CardItem'
 function App() {
   return (
     <div>
-    <Login />
     <CardItem />
+    <Login />
     <Footer />
     </div>
 

@@ -3,6 +3,7 @@ import bg from '../background.svg';
 import nurse from '../Nurse.svg';
 import './Login.css'
 import logo from '../logo main.png';
+import CardItem from './CardItem';
 // import {ReactComponent as Back} from '../background.svg';
 
 function Login() {
@@ -21,11 +22,17 @@ function Login() {
                 <img src ={bg}  height={"700vh"} width={"100%"} ></img>
             </div>
 
-            <div className='nurseImg'>
-            <img src={nurse}></img>
-            </div>
-
+            
+        <CardItem />
         </div>
+        {/* flex terminate */}
+
+        <div className='nurseGrid'>
+        <div className='nurseImgItem'></div>
+        <div className='nurseImgItem'>
+        
+            <img src={nurse}></img>
+            </div></div>
    </div>
     )
 }
