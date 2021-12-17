@@ -1,6 +1,6 @@
 .lgin {
     background-color: #EEEEEE;
-
+    padding-bottom: 2%;
 }
 
 .flex-container {
@@ -30,11 +30,6 @@
     position: absolute;
     top: 7%;
     left: 45%;
-}
-
-.nurseImg {
-    position: absolute;
-    flex: 100%;
 }
 
 .grid-container {
@@ -68,10 +63,6 @@
 
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 0a0fb5e11dee2fe03f05de7e5d04375d113f8dc2
 .nurseImgItem {
     /* display: grid; */
     /* grid-area: item1; */
