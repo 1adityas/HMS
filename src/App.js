@@ -5,6 +5,7 @@ import './App.css';
 import Login from './components/Login'
 import Footer from './components/Footer'
 import CardItem from './components/CardItem'
+import msDashboard from './components/msDashboard'
 
 function App() {
   return (
