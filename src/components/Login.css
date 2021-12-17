@@ -1,5 +1,6 @@
 .lgin {
     background-color: #EEEEEE;
+
 }
 
 .flex-container {
@@ -51,9 +52,26 @@
     grid-template-columns: repeat(11, 1fr);
     /* grid-template-rows: repeat(2, 1fr); */
     width: 100%;
+    border: 2px solid ;
+
+}
+.yo{
+
+    position: absolute;
+    top:28%;
+    left: 22%;
+    /* height: 50%; */
+
+    border: 2px solid;
+    bottom: 100px;
+    /* bottom-; */
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0a0fb5e11dee2fe03f05de7e5d04375d113f8dc2
 .nurseImgItem {
     /* display: grid; */
     /* grid-area: item1; */

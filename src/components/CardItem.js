@@ -67,8 +67,8 @@ const [password, setPassword] = useState('');
         <Button variant="contained" style={{'backgroundColor':'#506F90', width:"20%"}}>Login</Button>
         </div>
 
-        <Typography align='center' style={{'color':'#6F88A2', paddingTop:"20px"}}>Not Registered Yet?</Typography>
-        <Typography align='center' style={{'color':'#6F88A2'}}>Contact Admin</Typography>
+        <Button align='center' style={{'color':'#6F88A2'}}>Not Registered Yet?</Button>
+        <Button align='center' style={{'color':'#6F88A2'}}>Contact Admin</Button>
 
 
       </CardContent>
