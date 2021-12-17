@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './Login.css'
 import { Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
+import user from '../Icon awesome-user-alt.svg';
 
 
 const useStyles = makeStyles({
