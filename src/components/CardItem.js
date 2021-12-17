@@ -43,6 +43,7 @@ const [password, setPassword] = useState('');
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
+    console.log(username)
     <div className="grid-container">
       <div className="flex-item3">
     <Card className={classes.root} >
