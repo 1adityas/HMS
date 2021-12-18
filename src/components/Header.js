@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import logo from '../logo main.png';
 
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Dashboard', 'Ward Details', 'Patient Details', 'Discharged Patients', 'Laboratory & Imaging'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -37,8 +37,8 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{'boxShadow':"none"}}>
-      <Container maxWidth="xl">
+    <AppBar position="static" style={{'boxShadow':"none",'backgroundColor':'#EEEEEE'}}>
+      <Container maxWidth="xll">
         <Toolbar disableGutters >
           <Typography
           //this is for logo
@@ -47,7 +47,8 @@ const ResponsiveAppBar = () => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            <img src={logo} ></img>
+            
+            <img src={logo} style={{height:'6vh', padding:'20px', paddingRight:'16vw'}}></img>
             
           </Typography>
 
@@ -94,7 +95,7 @@ const ResponsiveAppBar = () => {
                 key={page}
                 onClick={handleCloseNavMenu}
                 style={{'color':'#506F90'}}
-                sx={{ my: 2, color: '#506F90', display: 'block' }}
+                sx={{ my: 2, color: '#506F90', display: 'block', paddingLeft:'2vw'}}
               >
                 {page}
               </Button>

@@ -9,9 +9,11 @@ import Header from './Header.js'
 
 function MsDashboard() {
     return (
-        <div className='bgColor'>
+        //using body tag to get bg color
+        <body>
              <Header/> 
-        </div>
+             
+        </body>
         )
 }
 export default MsDashboard;
