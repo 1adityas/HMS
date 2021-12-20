@@ -2,12 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 // import './Footer.css'
 import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-
-
+import Button from '@mui/material/Button';
 
 const useStyles = makeStyles({
   root: {
@@ -28,10 +23,12 @@ export default function Footer() {
       'position':'absolute',
       // 'margin-top':"15px",
       'bottom':'0px',
-     'height':"50px"}}
+     'height':"130px"}}
       
       showLabels
       className={classes.root} >
+    
+     
 
       <div style={{
                     'padding':'15px',
@@ -48,7 +45,15 @@ export default function Footer() {
                     'font-weight':"100",
                     'font-style':"normal"
                  }}>
+                     <Button style={{color:'white'}}>Dashboard</Button>
+                     <Button style={{color:'white'}}>Ward Details</Button>
+                     <Button style={{color:'white'}}>Patient Details</Button>
+                     <Button style={{color:'white'}}>Discharged Patients</Button>
+                     <Button style={{color:'white'}}>Laboratory & Imaging</Button>
+                     <br/>
+                     <br/>
                         © 2021 Powered By Kenko Tech</div>
+                        <br/>
       </BottomNavigation>
       </div>
   );
