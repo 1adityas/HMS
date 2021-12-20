@@ -48,10 +48,11 @@ const ResponsiveAppBar = () => {
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
             
-            <img src={logo} style={{height:'6vh', padding:'20px', paddingRight:'16vw'}}></img>
             
+            <img src={logo} style={{height:'3vw', paddingTop:'20px', paddingRight:'14.5vw'}}></img>
+            {/* here i used padding 20px , it may cause unresponsive */}
           </Typography>
-
+''
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
