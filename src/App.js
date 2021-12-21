@@ -7,15 +7,17 @@ import MsDashboard from './components/MsDashboard'
 import Login from './components/Login'
 import Footer from './components/Footer'
 import CardItem from './components/CardItem'
+import NewAdmission from './components/NewAdmission';
 
 function App() {
   return (
     <div>
-      <MsDashboard />
+      {/* <MsDashboard /> */}
       
     {/* <CardItem />
     <Login />
     <Footer /> */}
+    <NewAdmission />
     </div>
 
   )

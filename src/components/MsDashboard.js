@@ -23,7 +23,8 @@ function MsDashboard() {
                  color:`${b1Color}`,backgroundColor:`${b2Color}`,boxShadow:'#00000029'}} 
                  sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={()=>{if(b1Color==='#EEEEEE'){setb2Color('#EEEEEE');setb1Color('#506F90')}}} >New Admission</Button>
 
-             <Button variant="contained" style={{color:`${b2Color}`,backgroundColor:`${b1Color}`,borderRadius: '12px',}} sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={()=>{if(b2Color==='#EEEEEE'){setb1Color('#EEEEEE');setb2Color('#506F90')}}}>Ward Details</Button>
+             <Button variant="contained" style={{color:`${b2Color}`,backgroundColor:`${b1Color}`,borderRadius: '12px',}} sx={{ boxShadow: '5px 5px 15px #00000029;' }} 
+             onClick={()=>{if(b2Color==='#EEEEEE'){setb1Color('#EEEEEE');setb2Color('#506F90')}}}>Ward Details</Button>
 {/* hooks to be used for buttons */}
         </body>
         )
