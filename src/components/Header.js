@@ -30,6 +30,11 @@ const ResponsiveAppBar = () => {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+    
+  };
+
+  function func(pagee){
+    console.log("123",pagee)
   };
 
   const handleCloseUserMenu = () => {
@@ -53,7 +58,7 @@ const ResponsiveAppBar = () => {
             {/* here i used padding 20px , it may cause unresponsive */}
           </Typography>
 ''
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -88,22 +93,24 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
           
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
+
+              <a href={"/"+page+""} style={{textDecoration:'none'}}><Button
                 key={page}
+                //talk to senior for futher 
                 onClick={handleCloseNavMenu}
                 style={{'color':'#506F90'}}
                 sx={{ my: 2, color: '#506F90', display: 'block', paddingLeft:'2vw'}}
               >
-                {page}
-              </Button>
+                {page} 
+              </Button></a>
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -131,7 +138,7 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
