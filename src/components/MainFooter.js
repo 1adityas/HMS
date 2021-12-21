@@ -44,7 +44,8 @@ export default function Footer() {
 
           'font-family': "Poppins, sans-serif",
           'font-weight': "100",
-          'font-style': "normal"
+          'font-style': "normal",
+          'opacity': "1"
         }}>
           <Button style={{ color: 'white' }}>Dashboard</Button>
           <Button style={{ color: 'white' }}>Ward Details</Button>

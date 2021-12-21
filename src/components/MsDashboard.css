@@ -52,3 +52,18 @@ body {
     background-color: #EEEEEE;
 
 }
+
+.cardAlignment {}
+
+.cardAlignment>p {
+    text-align: center;
+    margin: 0px;
+}
+
+.cardAlignment>img {
+    width: 4vw;
+    padding-top: 20%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid;
+}

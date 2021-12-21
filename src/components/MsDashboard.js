@@ -28,9 +28,9 @@ function MsDashboard() {
                 <Header />
             </nav>
 
-            <div className ="content-wrap">
+            <div className="content-wrap">
                 <div>
-                    <p style={{textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143' }}>Welcome To Malad Jumbo COVID Hospital</p>
+                    <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143' }}>Welcome To Malad Jumbo COVID Hospital</p>
 
                     <Button variant="contained" style={{
                         marginRight: '60px', marginLeft: '38vw', borderRadius: '12px',
@@ -43,19 +43,17 @@ function MsDashboard() {
                 </div>
 
                 <div className="cards">
-                    <div className="card" style={{'margin-left':'25%', 'marginTop':'25%'}}></div>
-                    <div className="card" style={{'margin-left':'25%', 'marginTop':'25%'}}></div>
-                    <div className="card" style={{'margin-left':'25%', 'marginTop':'25%'}}></div>
-                    <div className="card" style={{'margin-left':'88%', 'marginBottom':'25%'}}></div>
-                    <div className="card" style={{'margin-left':'90%', 'marginBottom':'25%'}}></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card1} style={{ 'width': "5vw" }} /> <p>Hello</p><p style={{ 'margin': "0px", 'border':"1px solid" }}>Hello</p> </div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card2} style={{ 'width': "5vw" }} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card3} style={{ 'width': "3vw", 'padding-top': "15%" }} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '88%', 'marginBottom': '25%' }}><img src={card4} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '90%', 'marginBottom': '25%' }}><img src={card5} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
                 </div>
-            </div>
-
-            <div className= "footer">
+            <div className="footer">
                 <MainFooter />
             </div>
 
-
+</div>
         </body>
     )
 }
