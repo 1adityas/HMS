@@ -2,6 +2,11 @@
 import './MsDashboard.css'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
+import card1 from '../card1.svg'
+import card2 from '../card2.svg'
+import card3 from '../card3.svg'
+import card4 from '../card4.png'
+import card5 from '../card5.png'
 
 import React, { useState } from 'react';
 import Stack from '@mui/material/Stack';
@@ -25,7 +30,7 @@ function MsDashboard() {
 
             <div className ="content-wrap">
                 <div>
-                    <p style={{ border: '2px dashed', textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143' }}>Welcome To Malad Jumbo COVID Hospital</p>
+                    <p style={{textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143' }}>Welcome To Malad Jumbo COVID Hospital</p>
 
                     <Button variant="contained" style={{
                         marginRight: '60px', marginLeft: '38vw', borderRadius: '12px',
@@ -38,16 +43,13 @@ function MsDashboard() {
                 </div>
 
                 <div className="cards">
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
-                    <div className="card"></div>
+                    <div className="card" style={{'margin-left':'25%', 'marginTop':'25%'}}></div>
+                    <div className="card" style={{'margin-left':'25%', 'marginTop':'25%'}}></div>
+                    <div className="card" style={{'margin-left':'25%', 'marginTop':'25%'}}></div>
+                    <div className="card" style={{'margin-left':'88%', 'marginBottom':'25%'}}></div>
+                    <div className="card" style={{'margin-left':'90%', 'marginBottom':'25%'}}></div>
                 </div>
             </div>
-
-
-
 
             <div className= "footer">
                 <MainFooter />

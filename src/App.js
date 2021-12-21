@@ -12,12 +12,12 @@ import NewAdmission from './components/NewAdmission';
 function App() {
   return (
     <div>
-      {/* <MsDashboard /> */}
+      <MsDashboard />
       
     {/* <CardItem />
     <Login />
     <Footer /> */}
-    <NewAdmission />
+    {/* <NewAdmission /> */}
     </div>
 
   )

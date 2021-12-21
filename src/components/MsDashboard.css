@@ -21,48 +21,34 @@ body {
 }
 
 .cards {
-    margin-top: 5%;
     display: grid;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 23%;
+    margin-right: 23%;
+    border-radius: 15px;
     /* width: 50%; */
-    align-items: center;
-
+    /* align-items: center; */
     /* justify-content: center; */
-
-
-
     grid-template-columns: repeat(3, 200px);
-    
-
+    width: 53%;
     background-color: #506F9026;
-    max-height: 100vh;
-
-
-
-    grid-gap: 1rem;
-
-
-
-
-
-
+    /* max-height: 100vh; */
+    grid-gap: 3rem;
 }
 
 
 
 .card {
-
-    border: 2px solid gray;
-
-    border-radius: 4px;
+    box-shadow: 5px 5px 15px #0000001A;
+    border-radius: 15px;
+    /* margin-top: 20%;
+    margin-bottom: 10%; */
     /* width: 150px;
-    height: 150px;
- */
+    height: 150px;*/
     height: 200px;
     width: 200px;
-
+    opacity: 1;
     background-color: #EEEEEE;
-
-    padding: .5rem;
 
 }
