@@ -43,11 +43,11 @@ function MsDashboard() {
                 </div>
 
                 <div className="cards">
-                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card1} style={{ 'width': "5vw" }} /> <p>Hello</p><p style={{ 'margin': "0px", 'border':"1px solid" }}>Hello</p> </div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card2} style={{ 'width': "5vw" }} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card3} style={{ 'width': "3vw", 'padding-top': "15%" }} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '88%', 'marginBottom': '25%' }}><img src={card4} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '90%', 'marginBottom': '25%' }}><img src={card5} /> <p>Hello</p><p style={{ 'margin': "0px" }}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card1} style={{ 'width': "5vw" }} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px",'fontWeight':'500','color':'#253143' }}>Hello</p> </div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card2} style={{ 'width': "5vw" }} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px",'fontWeight':'500','color':'#253143' }}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card3} style={{ 'width': "3vw", 'padding-top': "15%" }} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px",'fontWeight':'500','color':'#253143' }}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '88%', 'marginBottom': '25%' }}><img src={card4} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px" ,'fontWeight':'500','color':'#253143'}}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '90%', 'marginBottom': '25%' }}><img src={card5} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px" ,'fontWeight':'500','color':'#253143'}}>Hello</p></div>
                 </div>
             <div className="footer">
                 <MainFooter />

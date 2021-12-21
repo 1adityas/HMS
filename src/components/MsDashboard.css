@@ -58,6 +58,7 @@ body {
 .cardAlignment>p {
     text-align: center;
     margin: 0px;
+    padding:6px ;
 }
 
 .cardAlignment>img {
@@ -65,5 +66,5 @@ body {
     padding-top: 20%;
     display: block;
     margin: 0 auto;
-    border: 2px solid;
+    /* border: 2px solid; */
 }
