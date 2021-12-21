@@ -2,16 +2,49 @@ body {
     background: #EEEEEE;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
+    /* Footer height */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+}
+
 .cards {
-
+    margin-top: 5%;
     display: grid;
+    margin-bottom: 5%;
+    /* width: 50%; */
+    align-items: center;
 
-    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: center; */
 
-    grid-auto-rows: auto;
+
+
+    grid-template-columns: repeat(3, 200px);
+    
+
+    background-color: #506F9026;
+    max-height: 100vh;
+
+
 
     grid-gap: 1rem;
-    color: #506F9026;
+
+
+
+
+
 
 }
 
@@ -19,12 +52,16 @@ body {
 
 .card {
 
-    border: 2px solid #e7e7e7;
+    border: 2px solid gray;
 
     border-radius: 4px;
-    height: 50px;
-    width: 50px;
-    color: #EEEEEE;
+    /* width: 150px;
+    height: 150px;
+ */
+    height: 200px;
+    width: 200px;
+
+    background-color: #EEEEEE;
 
     padding: .5rem;
 
