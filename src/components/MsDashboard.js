@@ -25,7 +25,7 @@ function MsDashboard() {
             
             <div>
                 <div>
-            <p style={{border:'2px dashed', textAlign:'center',fontWeight:'bold', fontSize:'28px', color:'#253143'}}>Welcome To Malad Jumbo COVID Hospital</p>
+            <p style={{textAlign:'center',fontWeight:'bold', fontSize:'28px', color:'#253143'}}>Welcome To Malad Jumbo COVID Hospital</p>
 
 <Button variant="contained" style={{marginRight:'60px',marginLeft:'38vw',borderRadius: '12px',
     color:`${b1Color}`,backgroundColor:`${b2Color}`,boxShadow:'#00000029'}} 
