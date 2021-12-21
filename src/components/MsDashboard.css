@@ -2,30 +2,68 @@ body {
     background: #EEEEEE;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
+    /* Footer height */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    /* Footer height */
+}
+
 .cards {
-
     display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    grid-auto-rows: auto;
-
-    grid-gap: 1rem;
-    color: #506F9026;
-
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 23%;
+    margin-right: 23%;
+    border-radius: 15px;
+    /* width: 50%; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    grid-template-columns: repeat(3, 200px);
+    width: 53%;
+    background-color: #506F9026;
+    /* max-height: 100vh; */
+    grid-gap: 3rem;
 }
 
 
 
 .card {
+    box-shadow: 5px 5px 15px #0000001A;
+    border-radius: 15px;
+    /* margin-top: 20%;
+    margin-bottom: 10%; */
+    /* width: 150px;
+    height: 150px;*/
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    background-color: #EEEEEE;
 
-    border: 2px solid #e7e7e7;
+}
 
-    border-radius: 4px;
-    height: 50px;
-    width: 50px;
-    color: #EEEEEE;
+.cardAlignment {}
 
-    padding: .5rem;
+.cardAlignment>p {
+    text-align: center;
+    margin: 0px;
+}
 
+.cardAlignment>img {
+    width: 4vw;
+    padding-top: 20%;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid;
 }
