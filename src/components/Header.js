@@ -28,8 +28,9 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+  const handleCloseNavMenu = (event) => {
+    // setAnchorElNav(null);
+    console.log(event.target.name)
     
   };
 
@@ -99,15 +100,18 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
 
-              <a href={"/"+page+""} style={{textDecoration:'none'}}><Button
+              <Button
                 key={page}
                 //talk to senior for futher 
+                name={page}
                 onClick={handleCloseNavMenu}
                 style={{'color':'#506F90'}}
+                
                 sx={{ my: 2, color: '#506F90', display: 'block', paddingLeft:'2vw'}}
               >
-                {page} 
-              </Button></a>
+
+                {page}
+              </Button>
             ))}
           </Box>
 
