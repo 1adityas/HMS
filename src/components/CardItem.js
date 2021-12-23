@@ -79,10 +79,9 @@ const [password, setPassword] = useState('');
         <FormGroup>
           <FormControlLabel 
           style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} 
-          control={<Checkbox color='#6F88A2' icon={<CircleUnchecked />} 
-          checkedIcon={<CircleCheckedFilled />} />} 
+          control={<Checkbox color='#6F88A2' icon={< RoundedSquare/>} 
+          checkedIcon={<CheckedFilled />} />} 
           label="Remember Me" />
-          {/* <FormControlLabel className="checkbox-round"  control={<Radio />} label="Remember Me" /> */}
         </FormGroup>
 
         <Button variant="contained" style={{'backgroundColor':'#506F90', 'width':"20%",'margin-top':"10%", 'margin-bottom':"3%",'border-radius':"15px", 'color': "white",'textTransform': 'none'}}>Login</Button>
