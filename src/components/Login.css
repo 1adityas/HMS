@@ -77,6 +77,9 @@
 .fieldAlign {
     text-align: center;
 }
+input{
+    text-indent:30px;
+}
 
 .userImg
 {
@@ -84,10 +87,13 @@
     position: relative;
     height: 100px;
     width: 0.5px;
+    color: red;
     
     /* width: 100%; */
 }
-.userImg img { position: absolute; top: 2px; left: 15px; }
+.userImg img { position: absolute; top: 2px; left: 15px; 
+    color: red;
+    }
 
 ::placeholder{
     padding-left: 30px;
