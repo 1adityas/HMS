@@ -79,7 +79,7 @@
 }
 input{
     text-indent:30px;
-    color: #6F88A2;
+    color: #506F90;
 }
 
 .userImg
@@ -95,10 +95,10 @@ input{
     
     }
 
-::placeholder{
+/* ::placeholder{
     padding-left: 30px;
 }   
-
+ */
 
 
 .passImg

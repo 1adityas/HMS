@@ -85,10 +85,10 @@ const [password, setPassword] = useState('');
           {/* <FormControlLabel className="checkbox-round"  control={<Radio />} label="Remember Me" /> */}
         </FormGroup>
 
-        <Button variant="contained" style={{'backgroundColor':'#506F90', 'width':"20%",'margin-top':"10%", 'margin-bottom':"3%",'border-radius':"15px", 'color': "white"}}>Login</Button>
+        <Button variant="contained" style={{'backgroundColor':'#506F90', 'width':"20%",'margin-top':"10%", 'margin-bottom':"3%",'border-radius':"15px", 'color': "white",'textTransform': 'none'}}>Login</Button>
         <br/>
-        <Button  style={{'color':'#6F88A2','margin-top':"7%",}}>Not Registered Yet?</Button>
-        <Button  style={{'color':'#6F88A2' ,'margin-top':"7%",}}>Contact Admin</Button>
+        <Button  style={{'color':'#6F88A2','margin-top':"7%",'textTransform': 'none'}}>Not Registered Yet?</Button>
+        <Button  style={{'color':'#6F88A2' ,'margin-top':"7%",'textTransform': 'none'}}>Contact Admin</Button>
         </div>
         
 
