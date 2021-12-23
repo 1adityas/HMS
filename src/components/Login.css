@@ -79,6 +79,7 @@
 }
 input{
     text-indent:30px;
+    color: #6F88A2;
 }
 
 .userImg
@@ -87,12 +88,11 @@ input{
     position: relative;
     height: 100px;
     width: 0.5px;
-    color: red;
     
     /* width: 100%; */
 }
 .userImg img { position: absolute; top: 2px; left: 15px; 
-    color: red;
+    
     }
 
 ::placeholder{
