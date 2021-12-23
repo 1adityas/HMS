@@ -65,14 +65,14 @@ const [password, setPassword] = useState('');
           <div>
             <i className='userImg'>
             <img src={uImg}  width='25' />
-          <input onChange={event => setUsername(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2" }} placeholder='Enter Username Here'></input>
+          <input onChange={event => setUsername(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2",'backgroundColor':'#EEEEEE' }} placeholder='Enter Username Here'></input>
           </i>
           </div>
           <div>
             <i className='passImg'>
             <img src={pImg}  width='25' />
 
-        <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here' ></input>
+        <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2",'backgroundColor':'#EEEEEE'}} placeholder='Enter Password Here' ></input>
         </i>
         </div>
         <FormGroup>
