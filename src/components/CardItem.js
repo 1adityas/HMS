@@ -9,7 +9,8 @@ import './Login.css'
 import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
 import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import { Radio,Checkbox, TextField,FormGroup,FormControlLabel } from '@material-ui/core';
-import user from '../Icon awesome-user-alt.svg';
+import uImg from '../Icon awesome-user-alt.svg';
+import pImg from '../Icon\ metro-lock.svg';
 
 
 
@@ -63,12 +64,15 @@ const [password, setPassword] = useState('');
         <div className='fieldAlign'>
           <div>
             <i className='userImg'>
-          <input onChange={event => setUsername(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Username Here'></input>
+            <img src={uImg}  width='25' />
+          <input onChange={event => setUsername(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2" }} placeholder='Enter Username Here'></input>
           </i>
           </div>
           <div>
             <i className='passImg'>
-        <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here'></input>
+            <img src={pImg}  width='25' />
+
+        <input onChange={event => setPassword(event.target.value)} type="text" style={{'width':"60%", "borderColor":"#6F88A2"}} placeholder='Enter Password Here' ></input>
         </i>
         </div>
         <FormGroup>
