@@ -8,7 +8,9 @@ import CardItem from './CardItem';
 
 function Login() {
     return (
-       
+    )
+}
+    export default Login;
 
 {/* <div className='bgColor  page-container'>
 <div className="flex-container" >            
@@ -27,4 +29,4 @@ function Login() {
 </div>
 </div>
     
-) */}
+    ) */}
