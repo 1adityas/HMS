@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import reactDom from 'react-dom';
+
 import './App.css';
-// import MsDashboard from './components/MsDashboard'
+import MsDashboard from './components/MsDashboard'
+import NavBar from './components/NavBar'
 
 // import Header from './components/Header'
 // import Login from './components/Login'
@@ -12,13 +13,11 @@ import './App.css';
 function App() {
   return (
     <div>
-       {/* <MsDashboard /> */}
-      
-    {/* <CardItem /> */ }
-    {/* <Login />
-    <Footer /> */}
-    {/* <NewAdmission /> */}
-    <p className='link'>hello </p>
+       <NavBar />
+      <MsDashboard />
+     
+     
+
     </div>
 
   )
