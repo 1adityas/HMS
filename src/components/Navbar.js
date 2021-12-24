@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../logo main.png';
-import './NavBar.css'
+import './NavBar.css';
 
 
 
@@ -56,7 +56,6 @@ const NavBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
 
