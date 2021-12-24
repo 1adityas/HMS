@@ -15,6 +15,7 @@ import logo from '../logo main.png';
 import './NavBar.css'
 
 
+
 const pages = ['Dashboard', 'Ward Details', 'Patient Details', 'Discharged Patients', 'Laboratory & Imaging'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -33,11 +34,11 @@ const NavBar = () => {
   const handleCloseNavMenu = async (event) => {
 
     await setAnchorElNav(event.target.name);
-    
+
     console.log(anchorElNav)
 
 
-    
+
   };
 
 
@@ -47,23 +48,23 @@ const NavBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{'boxShadow':"none",'backgroundColor':'#EEEEEE'}}>
+    <AppBar position="static" style={{ 'boxShadow': "none", 'backgroundColor': '#EEEEEE' }}>
       <Container maxWidth="xll">
         <Toolbar disableGutters >
           <Typography
-          //this is for logo
+            //this is for logo
             variant="h6"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            
-            
-            <img src={logo} style={{height:'3vw', paddingTop:'20px', paddingRight:'14.5vw'}}></img>
+
+
+            <img src={logo} style={{ height: '3vw', paddingTop: '20px', paddingRight: '14.5vw' }}></img>
             {/* here i used padding 20px , it may cause unresponsive */}
           </Typography>
-''
+          ''
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -100,18 +101,18 @@ const NavBar = () => {
               ))}
             </Menu>
           </Box>
-          
+
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-//
+              //
               <Button
                 key={page}
                 //talk to senior for futher 
                 name={page}
                 onClick={handleCloseNavMenu}
-                style={{'color':'#506F90'}}
-                
-                sx={{ my: 2, color: '#506F90', display: 'block', paddingLeft:'2vw'}}
+                style={{ 'color': '#506F90' }}
+
+                sx={{ my: 2, color: '#506F90', display: 'block', paddingLeft: '2vw' }}
               >
 
                 {page}
@@ -153,4 +154,7 @@ const NavBar = () => {
     </AppBar>
   );
 };
+
+
+
 export default NavBar;

@@ -25,7 +25,7 @@ function MsDashboard() {
         
         <div className= "flex-container">
         <div className= "nav-bar">
-               <NavBar/>
+               {/* <NavBar/> */}
         </div>
         <div className="heading">
         Welcome To Malad Jumbo COVID Hospital 
