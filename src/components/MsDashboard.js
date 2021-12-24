@@ -1,6 +1,6 @@
 // import React from 'react'
 import './MsDashboard.css'
-import Header from './Header.js'
+import Header from './Navbar.js'
 import MainFooter from './MainFooter.js'
 import card1 from '../card1.svg'
 import card2 from '../card2.svg'

@@ -15,7 +15,7 @@
    height: 1022px;
    opacity: .6;
 
-   
+
  }
 
  #head1 {
@@ -192,4 +192,9 @@
 
  #logspace {
    margin-left: 365px;
+ }
+
+ .link {
+   font-family: 'Poppins', sans-serif;
+   font-weight: ;
  }

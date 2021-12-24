@@ -15,9 +15,10 @@ function App() {
        {/* <MsDashboard /> */}
       
     {/* <CardItem /> */ }
-    <Login />
-    <Footer />
+    {/* <Login />
+    <Footer /> */}
     {/* <NewAdmission /> */}
+    <p className='link'>hello </p>
     </div>
 
   )
