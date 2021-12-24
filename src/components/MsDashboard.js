@@ -1,6 +1,7 @@
 // import React from 'react'
 import './MsDashboard.css'
-import Header from './Navbar.js'
+import './NavBar.js'
+import Header from './NavBar.js'
 import MainFooter from './MainFooter.js'
 import card1 from '../card1.svg'
 import card2 from '../card2.svg'
@@ -24,7 +25,7 @@ function MsDashboard() {
         
         <div className= "flex-container">
         <div className= "nav-bar">
-          {/* <Navbar /> */}
+               <NavBar/>
         </div>
         <div className="heading">
         Welcome To Malad Jumbo COVID Hospital 
@@ -47,6 +48,7 @@ function MsDashboard() {
        </div>
 
     </div>
+    
 )  
    
 }

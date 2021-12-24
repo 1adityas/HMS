@@ -7,10 +7,11 @@ import CardItem from './CardItem';
 // import {ReactComponent as Back} from '../background.svg';
 
 function Login() {
-    return (<></>
+    return (
+        <div>hello</div>
     )
 }
-    export default Login;
+export default Login;
 
 {/* <div className='bgColor  page-container'>
 <div className="flex-container" >            
