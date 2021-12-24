@@ -7,7 +7,7 @@ import CardItem from './CardItem';
 // import {ReactComponent as Back} from '../background.svg';
 
 function Login() {
-    return (
+    return (<></>
     )
 }
     export default Login;
