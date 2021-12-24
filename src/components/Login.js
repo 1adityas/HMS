@@ -8,35 +8,7 @@ import CardItem from './CardItem';
 
 function Login() {
     return (
-        <div className= "flex-container">
-            <div className= "nav-bar">
-              {/* <Navbar /> */}
-            </div>
-            <div className="heading">
-            Welcome To Malad Jumbo COVID Hospital 
-                   
-            </div>
-            <div className="buttons">
-                <button>New Admission</button>
-                <button>Ward Details</button>
-            </div>
-
-            <div className="cards">
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-            </div>
-           <div className='footer'>
-               {/* <Footer /> */}
-           </div>
-
-        </div>
-    )  
        
-}
-export default Login;
 
 {/* <div className='bgColor  page-container'>
 <div className="flex-container" >            
