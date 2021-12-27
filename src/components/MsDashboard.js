@@ -13,6 +13,8 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import  "./NewAdmission"
 
+import {BrowserRoute as Router , Switch, Route,Link} from "react-router-dom";
+
 // import {ReactComponent as Back} from '../background.svg';
 
 //main-scren Dashboard
@@ -37,7 +39,8 @@ function MsDashboard() {
                         marginRight: '60px', marginLeft: '38vw', borderRadius: '12px',
                         color: `${b1Color}`, backgroundColor: `${b2Color}`, boxShadow: '#00000029'
                     }}
-                        sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b1Color === '#EEEEEE') { setb2Color('#EEEEEE'); setb1Color('#506F90') };window.location.href='./NewAdmission.js';  }} >New Admission</Button>
+                        sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b1Color === '#EEEEEE') { setb2Color('#EEEEEE'); setb1Color('#506F90') };window.location.href='./NewAdmission.js';  }} >New Admission
+                        </Button>
 
                     <Button variant="contained" style={{ color: `${b2Color}`, backgroundColor: `${b1Color}`, borderRadius: '12px', }} sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b2Color === '#EEEEEE') { setb1Color('#EEEEEE'); setb2Color('#506F90') } }}>Ward Details</Button>
                     {/* hooks to be used for buttons */}

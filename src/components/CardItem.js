@@ -79,8 +79,10 @@ const [password, setPassword] = useState('');
         <FormGroup>
           <FormControlLabel 
           style={{"color":'#6F88A2',"margin-left":'15%' ,'padding-top':'0px',}} 
-          control={<Checkbox color='#6F88A2' icon={< RoundedSquare/>} 
-          checkedIcon={<CheckedFilled />} />} 
+          control={<Checkbox color='#6F88A2' 
+          // icon={< RoundedSquare/>} 
+          // checkedIcon={<CheckedFilled />}
+           />} 
           label="Remember Me" />
         </FormGroup>
 

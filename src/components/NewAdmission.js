@@ -12,15 +12,14 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import SearchIcon from "@material-ui/icons/Search";
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import {BrowserRoute as Router , Switch, Route,Link} from "react-router-dom";
+
 
 // import {ReactComponent as Back} from '../background.svg';
 
 //main-scren Dashboard
 
 function NewAdmission() {
-
-    var [b1Color, setb1Color] = useState('#EEEEEE');
-    var [b2Color, setb2Color] = useState('#506F90');
     return (
     //using body tag to get bg color
         <body>
