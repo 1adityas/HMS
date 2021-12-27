@@ -16,29 +16,35 @@ function MsDashboard() {
     return (
         //using body tag to get bg color
         <body >
-            
-            <div>
-                <Header/> 
-            </div>
-            
-        <div className='flexcontainer'>                
 
             <div className='flex1'>
-                <p style={{ fontWeight: 'bold', fontSize: '28px', color: '#253143',marginTop:'40px' }}>Admitted Patient Details</p>
+                <Header />
             </div>
+
+
 
             <div className='flex2'>
-                
-                    <Button style={{'marginTop':'40px','borderRadius':'15px 0px 0px 15px','height':'60px','width':'213px','backgroundColor':'#506F90','color':'white','opacity':'1'}}>Admitted</Button>
-                    <Button style={{'borderRadius':'0px 15px 15px 0px','height':'60px','width':'235px','border': '2px solid #506F90','color':'black','opacity':'1'}}>Discharged</Button>
+                <p style={{ fontWeight: 'bold', fontSize: '28px', color: '#253143', marginTop: '40px' }}>Admitted Patient Details</p>
             </div>
 
-        </div>
+            <div className='flex3'>
+
+                <Button style={{ 'marginTop': '40px', 'borderRadius': '15px 0px 0px 15px', 'height': '60px', 'width': '213px', 'backgroundColor': '#506F90', 'color': 'white', 'opacity': '1' }}>Admitted</Button>
+                <Button style={{ 'marginTop': '40px', 'borderRadius': '0px 15px 15px 0px', 'height': '60px', 'width': '235px', 'border': '2px solid #506F90', 'color': 'black', 'opacity': '1' }}>Discharged</Button>
+            </div>
+            <div className='searchBar'>
+
+                <button style={{ 'margin-top': "40px" }}  >Filter</button>
+                <input style={{ 'margin-top': "40px", 'width': "490px" }} type="text" />
+                <p style={{ 'margin-top': "40px" }}>Admission count:21</p>
+            </div>
+
 
             <div>
                 <MainFooter />
             </div>
+
         </body>
-        )
+    )
 }
 export default MsDashboard;

@@ -1,14 +1,24 @@
-.flexcontainer
+/* .flex-container
 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 .flex1
 {
+    
     text-align: center;
 }
 .flex2
-{
+{  
     text-align: center;
+}
+
+.flex3
+{  
+    text-align: center;
+}
+.searchBar{
+ 
+    justify-content: center;
 }
