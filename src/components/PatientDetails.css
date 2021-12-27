@@ -1,0 +1,14 @@
+.flexcontainer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex1
+{
+    text-align: center;
+}
+.flex2
+{
+    text-align: center;
+}

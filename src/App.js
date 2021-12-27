@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './App.css';
 import MsDashboard from './components/MsDashboard'
+import PatientDetails from './components/PatientDetails'
 import NavBar from './components/Header'
 
 // import Header from './components/Header'
@@ -14,8 +15,8 @@ function App() {
   return (
     <div>
        {/* <NavBar /> */}
-      <MsDashboard />
-     
+      {/* <MsDashboard /> */}
+     <PatientDetails />
      
 
     </div>
