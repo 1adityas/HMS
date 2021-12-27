@@ -2,7 +2,7 @@
 import './NewAdmission.css'
 import './MsDashboard.css'
 // maybe make a new footer css file.
-import Header from './Navbar.js'
+// import Header from './Navbar.js'
 import MainFooter from './MainFooter.js'
 
 import React, { useState } from 'react';
@@ -25,9 +25,9 @@ function NewAdmission() {
     //using body tag to get bg color
         <body>
             
-            <nav>
+            {/* <nav>
             <Header/> 
-            </nav>
+            </nav> */}
             
             <div>
                 <div>
