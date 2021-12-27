@@ -24,9 +24,9 @@ export default function Footer() {
     style={{ 
       
       'position':'absolute',
-      // 'margin-top':"15px",
+      'margin-top':"30px",
       // 'bottom':'0px',
-     'height':"70px"}}
+     'height':"100px"}}
       
       showLabels
       className={classes.root} >
