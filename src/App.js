@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import './App.css';
 import MsDashboard from './components/MsDashboard'
-import NavBar from './components/NavBar'
+import NavBar from './components/Header'
 
 // import Header from './components/Header'
 // import Login from './components/Login'
@@ -13,7 +13,7 @@ import NavBar from './components/NavBar'
 function App() {
   return (
     <div>
-       <NavBar />
+       {/* <NavBar /> */}
       <MsDashboard />
      
      
