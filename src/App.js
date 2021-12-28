@@ -16,7 +16,8 @@ function App() {
        {/* <NavBar /> */}
       {/* <MsDashboard /> */}
       {/* < NewAdmission/> */}
-      <Login/>
+      {/* <Login/> */}
+      <NewAdmission/>
      
      
 
