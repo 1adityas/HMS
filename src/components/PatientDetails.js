@@ -5,6 +5,7 @@ import MainFooter from './MainFooter.js'
 import { Button } from '@mui/material'
 import './PatientDetails.css'
 import magnifying from '../Magnifying_glass.png';
+import PatientCard from './PatientCard'
 
 // import Button from '@mui/material/Button';
 
@@ -13,7 +14,7 @@ import magnifying from '../Magnifying_glass.png';
 
 //main-scren Dashboard
 
-function MsDashboard() {
+function PatientDetails() {
     return (
         //using body tag to get bg color
         <body >
@@ -58,4 +59,4 @@ function MsDashboard() {
         </body>
     )
 }
-export default MsDashboard;
+export default PatientDetails;
