@@ -1,6 +1,5 @@
 // import React from 'react'
 import './NewAdmission.css'
-import './MsDashboard.css'
 // maybe make a new footer css file.
  import Header from './Header.js'
 import MainFooter from './MainFooter.js'
@@ -14,7 +13,8 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { BrowserRoute as Router, Switch, Route, Link } from "react-router-dom";
 import { display, padding } from '@mui/system';
-import magnifying from '../Magnifying_glass.png';
+import magnify from '../feather-search.svg';
+
 
 
 // import {ReactComponent as Back} from '../background.svg';
@@ -76,21 +76,23 @@ function NewAdmission() {
             <Header/> 
             </nav> 
 
-      <div>
+      <div style={{paddingBottom:'200px'}}>
         <p style={{ border: '2px dashed', textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143', marginBottom: '40px' }}>New Admission</p>
 
         <div className='top-flex'>
 
-          <p style={{ marginRight: '10px', fontSize: '22px' }}>Already a registered patient?</p>
+          <p style={{ marginRight: '10px', fontSize: '22px','align-items': 'center' }}>Already a registered patient?</p>
 
-          <div >
+          <div style={{display:'flex','align-items': 'center'} } >
             <input className='top_tField' placeholder='Search using mobile no. or name'></input>
-            <button type='submit' className='top-btn'><img src={magnifying} style={{ backgroundColor: '#6F88A2', height: '20px' }}></img>
+            <button type='submit' className='top-btn'><img src={magnify} style={{ 'align-items': 'center',backgroundColor: '#6F88A2', height: '27px' }}></img>
             </button>
           </div>
         </div>
         <hr></hr>
+
         {/* created new tag par ..  */}
+
         <form onSubmit={handleSubmit}>
           <div class="wrapper">
 
@@ -103,7 +105,7 @@ function NewAdmission() {
 
             <div class="sub">
               <par >
-                Middle Name
+                Middle
               </par>
               <input onChange={handleChange} name="middleName" value={inputData.middleName} className='top_tField' id='plain-field' ></input>
             </div>
@@ -273,14 +275,26 @@ function NewAdmission() {
 
 
             <div class="sub">Six</div>
-
-
+          </div>
+          <div className='flex2'>
+          <Button variant="contained" style={{borderRadius: '12px',
+                        color:'#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+                    ,marginRight:'60px'
+                      }}
+                    sx={{ boxShadow: '5px 5px 15px #00000029;','text-transform': 'none',width:'192px',height:'60px',fontSize:'20px',fontWeight:'500' }} >Submit
+                    </Button>
+          <Button variant="contained" style={{borderRadius: '12px',
+              color:'#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+          }}
+          sx={{ boxShadow: '5px 5px 15px #00000029;','text-transform': 'none',width:'192px',height:'60px',fontSize:'20px',fontWeight:'500' }} >Cancel
+          </Button>
           </div>
         </form>
-
+        
       </div>
-      <div>
-        <MainFooter />
+
+      <div style={{position:'relative'}}>
+      <MainFooter />  
       </div>
 
 

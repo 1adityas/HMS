@@ -53,18 +53,5 @@ body{
  
     justify-content: center;
 }
-.top_tField{
-    height: 60px;
-    padding: 0px;
-    margin: 0px;
-    border: 2px solid #6F88A2;
-    background-color: #EEEEEE;
-    border-radius: 0%;
-    padding-top: 2px;
-    width: 420px;
-    border-radius: 15px 0px 0px 15px;
-    
-    /* border-radius: 50px; */
-    
-    }
+
 

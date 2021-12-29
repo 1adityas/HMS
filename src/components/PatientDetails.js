@@ -4,7 +4,7 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 import { Button } from '@mui/material'
 import './PatientDetails.css'
-import magnifying from '../Magnifying_glass.png';
+import magnifying from '../feather-search.svg';
 import PatientCard from './PatientCard'
 
 // import Button from '@mui/material/Button';

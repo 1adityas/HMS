@@ -1,3 +1,6 @@
+*{
+  text-transform: none;
+}
 par
 {
   color: #506F90;
@@ -21,33 +24,36 @@ color:'#253143';
 margin-top:'40px';
 justify-content: center;
 }
-.top_tField{
-height: 60px;
-padding: 0px;
-margin: 0px;
-/* border: 2px solid #6F88A2; */
-background-color: #EEEEEE;
-border-radius: 0%;
-padding-top: 2px;
-width: 420px;
-border-radius: 15px 0px 0px 15px;
 
-/* border-radius: 50px; */
-
-
-}
 
 .top-btn {
+  top:0px;
   background-color:#6F88A2;
-  height: 66px;
-  padding-bottom: 7px;
-  border: 4px solid #6F88A2;/*this is to remove the button shadow*/
+  margin: 0px;
+  height: 60px;
+  /* padding-bottom: 7px; */
+  border: 2px solid #6F88A2;/*this is to remove the button shadow*/
   width: 60px;
   border-radius: 0px 15px 15px 0px;
-
-  
-  /* margin-bottom: 5px; */
 }
+  /* margin-bottom: 5px; */
+  .top_tField{
+  top:0px;
+
+    height: 56px;
+    /* did this to match icon and textF */
+    padding: 0px;
+    margin: 0px;
+    border: 2px solid #6F88A2;
+    background-color: #EEEEEE;
+    border-radius: 0%;
+    width: 420px;
+    border-radius: 15px 0px 0px 15px;
+    
+    /* border-radius: 50px; */
+    
+    }
+
 hr{
 margin-left: 40px;
 margin-right: 40px;
@@ -64,15 +70,18 @@ opacity: .2;
     margin-right: 165px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    /* grid-auto-rows: minmax(100px, auto); */
+    /* grid-auto-rows: minmax(300px, auto); */
     color:black;
     grid-column-gap: 60px;
     grid-row-gap: 20px;
-
   }
   .sub {
     /* grid-column: 1 / 1; */
     /* border: 1px solid; */
   }
-  
+  .flex2{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
