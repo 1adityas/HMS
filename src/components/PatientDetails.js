@@ -5,6 +5,7 @@ import MainFooter from './MainFooter.js'
 import { Button } from '@mui/material'
 import './PatientDetails.css'
 import magnifying from '../Magnifying_glass.png';
+import PatientCard from './PatientCard'
 
 // import Button from '@mui/material/Button';
 
@@ -13,7 +14,7 @@ import magnifying from '../Magnifying_glass.png';
 
 //main-scren Dashboard
 
-function MsDashboard() {
+function PatientDetails() {
     return (
         //using body tag to get bg color
         <body >
@@ -44,6 +45,11 @@ function MsDashboard() {
                 <button style={{'margin-top':'40px'}} type='submit' className='top-btn'><img src={magnifying} style={{backgroundColor:'#6F88A2',height:'20px'}}></img>
                 </button>
                 </div>
+
+            </div>
+
+            <div>
+                <PatientCard/>
             </div>
 
 
@@ -54,4 +60,4 @@ function MsDashboard() {
         </body>
     )
 }
-export default MsDashboard;
+export default PatientDetails;
