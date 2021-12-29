@@ -18,9 +18,9 @@ function App() {
       {/* <MsDashboard /> */}
       {/* < NewAdmission/> */}
       {/* <Login/> */}
-      {/* <NewAdmission/> */}
+      <NewAdmission/>
      
-     <PatientDetails />
+     {/* <PatientDetails /> */}
      
 
     </div>
