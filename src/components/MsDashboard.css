@@ -1,5 +1,6 @@
 body {
     background: #EEEEEE;
+    text-transform: none;
 }
 
 .page-container {
@@ -67,4 +68,10 @@ body {
     display: block;
     margin: 0 auto;
     /* border: 2px solid; */
+}
+.flex2{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
 }
