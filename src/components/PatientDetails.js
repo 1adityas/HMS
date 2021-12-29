@@ -51,6 +51,10 @@ function PatientDetails() {
                 
             </div>
 
+            <div>
+                <PatientCard/>
+            </div>
+
 
             <div>
                 <MainFooter />
