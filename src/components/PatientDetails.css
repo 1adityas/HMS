@@ -29,9 +29,15 @@ body{
 }
 
 .flex4{
+    margin-top: 40px;
+    /* border: 2px solid; */
     display: flex;
     margin-left: 90px;
+    margin-right: 90px;
+    flex-direction: row;
 }
+
+
 .searchBar{
  
     justify-content: center;
