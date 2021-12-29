@@ -6,8 +6,8 @@
 } */
 .flex1
 {
-    
     text-align: center;
+    justify-content: center;
 }
 .flex2
 {  

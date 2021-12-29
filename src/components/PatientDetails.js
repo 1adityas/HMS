@@ -32,11 +32,11 @@ function MsDashboard() {
                 <Button style={{ 'marginTop': '40px', 'borderRadius': '15px 0px 0px 15px', 'height': '60px', 'width': '213px', 'backgroundColor': '#506F90', 'color': 'white', 'opacity': '1' }}>Admitted</Button>
                 <Button style={{ 'marginTop': '40px', 'borderRadius': '0px 15px 15px 0px', 'height': '60px', 'width': '235px', 'border': '2px solid #506F90', 'color': 'black', 'opacity': '1' }}>Discharged</Button>
             </div>
-            <div className='searchBar'>
+            <div className='flex1'>
+                <p style={{ 'textAlign':"centre",'margin-top': "40px", 'float': "left", }}>Admission count:21</p>
+                <button style={{ 'textAlign':"centre",'margin-top': "40px", 'float': "left",}}  >Filter</button>
+                <input style={{ 'textAlign':"centre",'margin-top': "40px",  'width':"490px",'height':"60px", 'border':"2px solid #6f88a2"}} type="text" />
 
-                <button style={{ 'margin-top': "40px" }}  >Filter</button>
-                <input style={{ 'margin-top': "40px", 'width': "490px" }} type="text" />
-                <p style={{ 'margin-top': "40px" }}>Admission count:21</p>
             </div>
 
 
