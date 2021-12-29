@@ -2,7 +2,7 @@ import { Button } from '@mui/material';
 import React, { useState } from 'react'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
-import magnifying from '../Magnifying_glass.png';
+
 import './HGT.css'
 
 
@@ -31,7 +31,7 @@ function HGT() {
       </div>
       <div style={{ textAlign: 'center', }}>
         <button onClick={handleChange} style={{
-          textAlign: 'center', fontWeight: '400', fontSize: '20px', color: '#DEE1E5', marginBottom: '40px', width: "288px",
+          borderRadius:"15px,15px,15px,15px",textAlign: 'center', fontWeight: '400', fontSize: '20px', color: '#DEE1E5', marginBottom: '40px', width: "288px",
           height: "28px"
         }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90' }}>{patientName}</span></button>
       </div>
