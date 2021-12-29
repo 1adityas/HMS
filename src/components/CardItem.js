@@ -65,7 +65,7 @@ export default function CardItem() {
               <div>
                 <i className='userImg'>
                   <img src={uImg} width='25' />
-                  <input onChange={event => setUsername(event.target.value)} type="text" style={{ 'fontFamily': 'poppins', 'fontWeight': '400', 'width': "60%", "borderColor": "#6F88A2", 'backgroundColor': '#EEEEEE' }} placeholder='Enter Username Here'></input>
+                  <input onChange={event => setUsername(event.target.value)} type="text" style={{ 'fontSize':'20px','fontFamily': 'poppins', 'fontWeight': '400', 'width': "60%", "borderColor": "#6F88A2", 'backgroundColor': '#EEEEEE' }} placeholder='Enter Username Here'></input>
 
                 </i>
               </div>
@@ -73,12 +73,12 @@ export default function CardItem() {
                 <i className='passImg'>
                   <img src={pImg} width='25' />
 
-                  <input onChange={event => setPassword(event.target.value)} type="text" style={{ 'fontFamily': 'poppins', 'fontWeight': '400', 'width': "60%", "borderColor": "#6F88A2", 'backgroundColor': '#EEEEEE' }} placeholder='Enter Password Here' ></input>
+                  <input onChange={event => setPassword(event.target.value)} type="text" style={{ 'fontSize':'20px','fontFamily': 'poppins', 'fontWeight': '400', 'width': "60%", "borderColor": "#6F88A2", 'backgroundColor': '#EEEEEE' }} placeholder='Enter Password Here' ></input>
                 </i>
               </div>
               <FormGroup>
                 <FormControlLabel
-                  style={{ "color": '#6F88A2', "margin-left": '15%', 'padding-top': '0px', }}
+                  style={{ 'fontSize':'18px',"color": '#6F88A2', "margin-left": '15%', 'padding-top': '0px', }}
                   control={<Checkbox color='#6F88A2'
                   // icon={< RoundedSquare/>} 
                   // checkedIcon={<CheckedFilled />}
@@ -86,10 +86,10 @@ export default function CardItem() {
                   label="Remember Me" />
               </FormGroup>
 
-              <Button variant="contained" style={{ 'fontFamily': 'poppins', 'fontWeight': '500', 'backgroundColor': '#506F90', 'width': "20%", 'margin-top': "10%", 'margin-bottom': "3%", 'border-radius': "15px", 'color': "white", 'textTransform': 'none' }}>Login</Button>
+              <Button variant="contained" style={{'fontSize':'20px', 'fontFamily': 'poppins', 'fontWeight': '500', 'backgroundColor': '#506F90', 'width': "20%", 'margin-top': "10%", 'margin-bottom': "3%", 'border-radius': "15px", 'color': "white", 'textTransform': 'none' }}>Login</Button>
               <br />
-              <Button style={{ 'fontFamily': 'poppins', 'fontWeight': '400', 'color': '#6F88A2', 'margin-top': "7%", 'textTransform': 'none' }}>Not Registered Yet?</Button>
-              <Button style={{ 'fontFamily': 'poppins', 'fontWeight': '400', 'color': '#6F88A2', 'margin-top': "7%", 'textTransform': 'none' }}>Contact Admin</Button>
+              <Button style={{ 'fontSize':'20px','fontFamily': 'poppins', 'fontWeight': '400', 'color': '#6F88A2', 'margin-top': "7%", 'textTransform': 'none' }}>Not Registered Yet?</Button>
+              <Button style={{ 'fontSize':'20px','fontFamily': 'poppins', 'fontWeight': '400', 'color': '#6F88A2', 'margin-top': "7%", 'textTransform': 'none' }}>Contact Admin</Button>
             </div>
 
 
