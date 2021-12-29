@@ -4,6 +4,7 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 import { Button } from '@mui/material'
 import './PatientDetails.css'
+import magnifying from '../Magnifying_glass.png';
 
 // import Button from '@mui/material/Button';
 
@@ -33,10 +34,16 @@ function MsDashboard() {
                 <Button style={{ 'marginTop': '40px', 'borderRadius': '0px 15px 15px 0px', 'height': '60px', 'width': '235px', 'border': '2px solid #506F90', 'color': 'black', 'opacity': '1' }}>Discharged</Button>
             </div>
             <div className='flex1'>
-                <p style={{ 'textAlign':"centre",'margin-top': "40px", 'float': "left", }}>Admission count:21</p>
-                <button style={{ 'textAlign':"centre",'margin-top': "40px", 'float': "left",}}  >Filter</button>
-                <input style={{ 'textAlign':"centre",'margin-top': "40px",  'width':"490px",'height':"60px", 'border':"2px solid #6f88a2"}} type="text" />
+                <p style={{'fontWeight':'500','fontSize':'22px','margin-top': "40px", 'float': "left", }}>Admission count :<span style={{'fontWeight':'700'}}> 21</span></p>
+                <button style={{'fontWeight':'500','color': '#506F90','fontSize':'20px','marginLeft':'65px','margin-top': "40px", 'float': "left"}}>Filter</button>
 
+                {/* <input style={{ 'margin-top': "40px",  'width':"490px",'height':"60px", 'border':"2px solid #6f88a2"}} type="text" /> */}
+                
+                <div >
+                <input className='top_tField' placeholder='Search using mobile no. or name'></input>
+                <button style={{'margin-top':'40px'}} type='submit' className='top-btn'><img src={magnifying} style={{backgroundColor:'#6F88A2',height:'20px'}}></img>
+                </button>
+                </div>
             </div>
 
 
