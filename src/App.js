@@ -16,6 +16,10 @@ function App() {
     <div>
        {/* <NavBar /> */}
       {/* <MsDashboard /> */}
+      {/* < NewAdmission/> */}
+      {/* <Login/> */}
+      <NewAdmission/>
+     
      <PatientDetails />
      
 
