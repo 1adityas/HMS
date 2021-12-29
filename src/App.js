@@ -16,15 +16,11 @@ function App() {
   return (
     <div>
        {/* <NavBar /> */}
-      {/* <MsDashboard /> */}
-      {/* < NewAdmission/> */}
+      <MsDashboard />
       {/* <Login/> */}
-      {/* <NewAdmission/> */}
-     
+      <NewAdmission/>
      {/* <PatientDetails /> */}
-     <HGT/>
-     
-
+     <HGT/>     
     </div>
 
   )

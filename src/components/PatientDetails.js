@@ -42,8 +42,11 @@ function PatientDetails() {
 
             <div className='flex4'>
                 <p style={{alignItems:'center','fontWeight':'500','fontSize':'22px'}}>Admission count :<span style={{'fontWeight':'700'}}> 21</span></p>
+                
                 <button id='filterBtn' style={{alignSelf:'center',alignItem:'center','fontWeight':'500','color': '#506F90','fontSize':'20px',height:'28px','marginLeft':'65px',}}>Filter</button>
-                <div style={{width:'5.5vw'}}></div>
+                
+                <div style={{width:'5.5vw'}}></div>{/*to get gapin filter and textf*/}
+
                 <div style={{alignSelf:'center',alignItems:'center'}}>
                     <input className='top_tField' placeholder='Search using mobile no. or name'></input>
                     <button style={{}} type='submit' className='top-btn'><img src={magnifying} style={{backgroundColor:'#6F88A2',height:'20px'}}></img>
@@ -55,6 +58,30 @@ function PatientDetails() {
                 <PatientCard/>
             </div>
 
+            <div class="wrapper">
+            <div class="sub">
+                <par >
+                  1
+                </par>
+              </div>
+              
+              <div class="sub">
+                <par >
+                    2
+                  </par>
+              </div>
+
+              <div class="sub">
+                <par >
+                    3
+                  </par>
+              </div>
+              <div class="sub">
+                <par >
+                    4
+                  </par>
+              </div>
+            </div>
 
             <div>
                 <MainFooter />
