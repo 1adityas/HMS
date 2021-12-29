@@ -10,6 +10,7 @@ import Login from './components/Login'
 // import Footer from './components/Footer'
 // import CardItem from './components/CardItem'
 import NewAdmission from './components/NewAdmission';
+import HGT from './components/HGT';
 
 function App() {
   return (
@@ -18,13 +19,9 @@ function App() {
       {/* <MsDashboard /> */}
       {/* < NewAdmission/> */}
       {/* <Login/> */}
-      <NewAdmission/>
-     
-
-
+      {/* <NewAdmission/> */}
      {/* <PatientDetails /> */}
-     
-
+     <HGT/>     
     </div>
 
   )

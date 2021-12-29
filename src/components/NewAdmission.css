@@ -9,6 +9,9 @@ par
   display: block;
   margin-bottom: 10px;
 }
+body{
+  font-family: 'poppins';
+}
 
 #plain-field{
 border-radius: 15px;
@@ -74,7 +77,7 @@ opacity: .2;
   }
   .sub {
     /* grid-column: 1 / 1; */
-    border: 1px solid;
+    /* border: 1px solid; */
   }
   .flex2{
     margin-top: 80px;

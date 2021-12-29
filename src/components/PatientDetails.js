@@ -54,6 +54,10 @@ function PatientDetails() {
                 
             </div>
 
+            <div>
+                <PatientCard/>
+            </div>
+
             <div class="wrapper">
             <div class="sub">
                 <par >
