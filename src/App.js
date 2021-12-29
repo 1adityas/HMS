@@ -16,9 +16,9 @@ function App() {
   return (
     <div>
        {/* <NavBar /> */}
-      <MsDashboard />
+      {/* <MsDashboard /> */}
       {/* <Login/> */}
-      <NewAdmission/>
+      {/* <NewAdmission/> */}
      {/* <PatientDetails /> */}
      <HGT/>     
     </div>
