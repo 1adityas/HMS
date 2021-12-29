@@ -18,7 +18,7 @@ function App() {
       <MsDashboard />
       {/* < NewAdmission/> */}
       {/* <Login/> */}
-      {/* <NewAdmission/> */}
+      <NewAdmission/>
      
 
 
