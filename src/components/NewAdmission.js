@@ -268,7 +268,7 @@ function NewAdmission() {
               <par >
                 Admission Date & Time
               </par>
-              <input onChange={handleChange} name="admissionDataTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field' ></input>
+              <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field' ></input>
             </div>
 
 

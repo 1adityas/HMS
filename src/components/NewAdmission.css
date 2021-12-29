@@ -6,6 +6,9 @@ par
   display: block;
   margin-bottom: 10px;
 }
+body{
+  font-family: 'poppins';
+}
 
 #plain-field{
 border-radius: 15px;
