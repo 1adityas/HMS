@@ -4,6 +4,9 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
 import './ChangeBed.css'
+import dropDown from '../awesome-caret-down.png';
+import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
+import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
 
 
@@ -49,32 +52,38 @@ function ChangeBed() {
 
 
             <div class="container">
-                <div class="sub">
-                    <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-                        HGT
-                    </par>
-                    <input className='top_tField' id='plain-field' ></input>
-                </div>
+            <div class="sub1">
+              <par >
+              Select Ward
+              </par>
+              <input onChange={handleChange} name="bed" className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
 
-                <div class="sub">
-                    <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-                        Ketone
-                    </par>
-                    <input className='top_tField' id='plain-field' ></input>
-                </div>
+            </div>
+            <div class="sub1">
+              <par >
+              Select Bed
+              </par>
+              <input onChange={handleChange} name="bed" className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
 
-                <div class="sub">
-                    <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-                        Insulin Requirement
-                    </par>
-                    <input className='top_tField' id='plain-field' ></input>
-                </div>
-                <div class="sub">
-                    <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-                        Time
-                    </par>
-                    <input className='top_tField' id='plain-field' ></input>
-                </div>
+            </div>
+
+            <div class="sub1">
+              <par >
+                Date & Time
+              </par>
+              <div style={{display:'flex'}}>
+              <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2'  ></input>
+              <button type='submit' className='btnUi' style={{'border-top-right-radius':'0px','border-bottom-right-radius':'0px'}}><DateRangeIcon sx={{color:'#EEEEEE',width:'auto',height:'30px'}}/></button>
+
+              </div>
+              <div style={{display:'flex'}}>
+              <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2' style={{'border-top-left-radius':'0px','border-bottom-left-radius':'0px'}} ></input>
+              <button type='submit' className='btnUi'><QueryBuilderIcon sx={{color:'#EEEEEE',width:'auto',height:'30px'}}/></button>
+
+              </div>
+            </div>
             </div>
 
 

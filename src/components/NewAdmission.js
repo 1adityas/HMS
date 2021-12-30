@@ -296,8 +296,7 @@ function NewAdmission() {
 
             </div>
             <div class="sub"></div>
-            <div class="sub1" 
-            >
+            <div class="sub1">
               <par >
                 Admission Date & Time
               </par>
