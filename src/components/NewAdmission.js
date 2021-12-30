@@ -1,7 +1,7 @@
 // import React from 'react'
 import './NewAdmission.css'
 // maybe make a new footer css file.
-// import Header from './Navbar.js'
+ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
 import React, { useState } from 'react';
@@ -77,9 +77,9 @@ function NewAdmission() {
     //using body tag to get bg color
     <body>
 
-      {/* <nav>
+       <nav>
             <Header/> 
-            </nav> */}
+            </nav> 
 
       <div style={{paddingBottom:'200px'}}>
         <p style={{ border: '2px dashed', textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143', marginBottom: '40px' }}>New Admission</p>

@@ -27,9 +27,9 @@ function MsDashboard() {
         //using body tag to get bg color
         <body className="page-container">
 
-            {/* <nav>
+             <nav>
                 <Header />
-            </nav> */}
+            </nav> 
 
             <div className="content-wrap">
                 <div>
