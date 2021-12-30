@@ -26,7 +26,7 @@ export default function Footer() {
       'position':'absolute',
       'margin-top':"30px",
       // 'bottom':'0px',
-     'height':"100px"}}
+     'height':"105px"}}
       
       showLabels
       className={classes.root} >
@@ -37,16 +37,17 @@ export default function Footer() {
                     'padding':'15px',
                     'color': "#EEEEEE",
                     'text-align': "center",
-                    'height':"30%",
+                    // 'height':"30%",
                    
                     'letter-spacing': "0px",
                     'text-transform': "capitalize",
                     'opacity': "1",
-                    'height':"15px",
+                    // 'height':"105px",
 
                     'font-family':"Poppins, sans-serif",
                     'font-weight':"100",
-                    'font-style':"normal"
+                    'font-style':"normal",
+                    'marginTop':'28px',
                  }}>
                         © 2021 Powered By Kenko Tech</div>
       </BottomNavigation>
