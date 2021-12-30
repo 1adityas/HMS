@@ -11,6 +11,7 @@ import Login from './components/Login'
 // import CardItem from './components/CardItem'
 import NewAdmission from './components/NewAdmission';
 import HGT from './components/HGT';
+import ChangeBed from './components/ChangeBed';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
       {/* <Login/> */}
       {/* <NewAdmission/> */}
      {/* <PatientDetails /> */}
-     <HGT/>     
+     {/* <HGT/>      */}
+     <ChangeBed />
     </div>
 
   )
