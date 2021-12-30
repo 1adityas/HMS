@@ -82,7 +82,7 @@ function NewAdmission() {
             </nav> 
 
       <div style={{paddingBottom:'200px'}}>
-        <p style={{ border: '2px dashed', textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143', marginBottom: '40px' }}>New Admission</p>
+        <p style={{textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143', marginBottom: '40px' }}>New Admission</p>
 
         <div className='top-flex'>
 

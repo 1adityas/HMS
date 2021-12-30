@@ -4,6 +4,7 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
 import './HGT.css'
+import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
 
 
@@ -13,12 +14,25 @@ import './HGT.css'
 
 function HGT() {
 
-  const [patientName, setPatientName] = useState(null)
+  const [patientName, setPatientName] = useState({
+    HGT: "",
+    Ketone: "",
+    InsulinRequirement:"",
+    Time:"",
+  });
 
   function handleChange(event) {
-    setPatientName({ [event.target.name]: event.target.value })
+    const { name, value } = event.target
+    setPatientName(prevInputData => ({ ...prevInputData, [name]: value }))
 
   }
+
+  const [var1, setvar1] = useState(null);
+    function handleEvent(event){
+        setvar1({[event.target.name]:event.target.value})
+
+    }
+    console.log(patientName)
   return (
     <body style={{ 'fontFamily': 'poppins' }}>
 
@@ -30,11 +44,10 @@ function HGT() {
         <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>HGT Sheet</p>
       </div>
       <div style={{ textAlign: 'center', }}>
-        <button onClick={handleChange} style={{
-          borderRadius:"15px,15px,15px,15px",textAlign: 'center', fontWeight: '400', fontSize: '20px', color: '#DEE1E5', marginBottom: '40px', width: "288px",
-          height: "28px"
-        }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90' }}>{patientName}</span></button>
-      </div>
+                <button onClick={handleEvent} value={var1} style={{'border-radius': '15px','height':'60px',
+                    'borderRadius': "15px,15px,15px,15px", 'textAlign':'center', 'fontWeight': '400', 'fontSize':'20px', 'background-color': '#DEE1E5', 'marginBottom': '40px', 'width': "542px",'height':'60px',
+                }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90','textDecorationLine':'underline','marginLeft':'10px'}}>Mr. Shubham Kumar{var1}</span></button>
+            </div>
       {/* 
             <div className='top'>
 
@@ -53,28 +66,33 @@ function HGT() {
           <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
             HGT
           </par>
-          <input className='top_tField' id='plain-field' ></input>
+          <input onChange={handleChange} name='HGT' value={patientName.HGT} className='top_tField' id='plain-field' ></input>
         </div>
 
         <div class="sub">
           <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
             Ketone
           </par>
-          <input className='top_tField' id='plain-field' ></input>
+          <input onChange={handleChange} name='Ketone' value={patientName.Ketone} className='top_tField' id='plain-field' ></input>
         </div>
 
         <div class="sub">
           <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
             Insulin Requirement
           </par>
-          <input className='top_tField' id='plain-field' ></input>
+          <input onChange={handleChange} name='InsulinRequirement' value={patientName.InsulinRequirement} className='top_tField' id='plain-field' ></input>
         </div>
         <div class="sub">
-          <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-            Time
-          </par>
-          <input className='top_tField' id='plain-field' ></input>
-        </div>
+              <par >
+                Time
+              </par>
+              
+              <div style={{display:'flex'}}>
+              <input onChange={handleChange} name="Time" value={patientName.Time} className='top_tField' id='plain-field2' style={{width:'245px'}}></input>
+              <button type='submit' className='btnUi'><QueryBuilderIcon sx={{color:'#EEEEEE',width:'auto',height:'30px'}}/></button>
+
+              </div>
+      </div>
       </div>
 
 
@@ -100,7 +118,7 @@ function HGT() {
         </Button>
         <Button variant="contained" style={{
           borderRadius: '12px',
-          color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+          color: '#506F90', backgroundColor: '#EEEEEE', boxShadow: '#00000029'
         }}
           sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
         </Button>
