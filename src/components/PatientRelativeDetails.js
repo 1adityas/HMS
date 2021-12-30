@@ -2,36 +2,30 @@ import { Button } from '@mui/material';
 import React, { useState } from 'react'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
-
-
-
-import './ChangeBed.css'
 import dropDown from '../awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
+import './PatientRelativeDetails.css'
 
 
-
-//importing the files whose classes are used.
-// import './PatientDetails.css'
-// import './NewAdmission.css'
-
-function ChangeBed() {
+function PatientRelativeDetails() {
 
     const [patientName, setPatientName] = useState({
-        selectWard: "",
-        selectBed: "",
-        Date: "",
-        Time: "",
-        Nam: "",
+        firstNameOfRelative: "",
+        lastNameOfRelative: "",
+        relationWithPatient: "",
+        mobileNo: "",
+        patientType:"",
+        referredFrom: "",
+        consultant:"",
+        Date:"",
+        Time:"",
+
     });
 
     function handleChange(event) {
         const { name, value } = event.target
     setPatientName(prevInputData => ({ ...prevInputData, [name]: value }))
-
-
-        // setPatientName({ [event.target.name]: event.target.value })
 
     }
 
@@ -49,7 +43,7 @@ function ChangeBed() {
             </div>
 
             <div >
-                <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Change Bed</p>
+                <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Patient Relative Details</p>
             </div>
             <div style={{ textAlign: 'center', }}>
                 <button onClick={handleEvent} value={var1} style={{'border-radius': '15px','height':'60px',
@@ -58,40 +52,71 @@ function ChangeBed() {
             </div>
 
 
-            {/* 
-            <div className='top'>
-
-          <p style={{ marginRight: '10px', fontSize: '22px' }}>Already a registered patient?</p>
-
-          <div >
-            <input className='field' placeholder='Search using mobile no. or name'></input>
-            <button type='submit' className='btn'><img src={magnifying} style={{ backgroundColor: '#6F88A2', height: '20px' }}></img>
-            </button>
-          </div>
-        </div> */}
-
-
             <div class="container">
-            <div class="sub1">
-              <par >
-              Select Ward
-              </par>
-              <input onChange={handleChange} name="selectWard" value={patientName.selectWard} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
 
+            <div class="sub">
+              <par >
+              First Name Of The Relative
+              </par>
+              <input onChange={handleChange} name="firstNameOfRelative" value={patientName.firstNameOfRelative} className='top_tField' id='plain-field' ></input>
             </div>
-            <div class="sub1">
+            <div class="sub">
               <par >
-              Select Bed
+              Last Name Of The Relative
               </par>
-              <input onChange={handleChange} name="selectBed" value={patientName.selectBed} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
-
+              <input onChange={handleChange} name="lastNameOfRelative" value={patientName.lastNameOfRelative} className='top_tField' id='plain-field' ></input>
             </div>
 
             <div class="sub1">
               <par >
-                Date & Time
+              Relation With The Patient
+              </par>
+              <input onChange={handleChange} name="relationWithPatient" value={patientName.relationWithPatient} className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
+
+            </div>
+
+            <div class="sub">
+              <par >
+              Mobile No.
+              </par>
+              <input onChange={handleChange} name="mobileNo" value={patientName.mobileNo} className='top_tField' id='plain-field' ></input>
+            </div>
+
+            <div class="sub3box">
+              <par >
+              Patient Type
+              </par>
+
+              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px' }}><Button onClick={handleChange} name="patientType" value="General" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>General</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;' }}><Button onClick={handleChange} name="patientType" value="VIP" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>VIP</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'border': '2px solid #506F90', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px' }}><Button onClick={handleChange} name="patientType" value="Other" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Other</Button></div>
+
+              {/* <input onChange={handleChange} name="sex" value={inputData.sex}className='top_tField' id='plain-field' ></input> */}
+            </div>
+
+
+            <div class="sub1">
+              <par >
+              Referred From
+              </par>
+              <input onChange={handleChange} name="referredFrom" value={patientName.referredFrom} className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
+
+            </div>
+
+            <div class="sub1">
+              <par >
+              Consultant
+              </par>
+              <input onChange={handleChange} name="consultant" value={patientName.consultant} className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
+
+            </div>
+
+            <div class="sub1">
+              <par >
+              Admission Date & Time
               </par>
               <div style={{display:'flex'}}>
               <input onChange={handleChange} name="Date" value={patientName.Date} className='top_tField' id='plain-field2'  ></input>
@@ -106,19 +131,6 @@ function ChangeBed() {
             </div>
             </div>
 
-
-
-            {/* <div style={{ 'marginTop': '80px' }}>
-        <Button style={{
-          'font-size': '20px', 'fontWeight': '500px', 'textTransform': 'none', 'height': '60px', 'width': '192px', 'color': '#EEEEEE', 'marginLeft': '738px',
-          'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029',
-          'backgroundColor': '#506F90'
-        }}>Submit</Button>
-        <Button style={{
-          'font-size': '20px', 'fontWeight': '500px', 'textTransform': 'none', 'height': '60px', 'width': '192px', 'color': '#506f90', 'marginLeft': '60px',
-          'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029', 'backgroundColor': '#EEEEEE'
-        }}>Cancel</Button>
-      </div> */}
             <div className='align'>
                 <Button variant="contained" style={{
                     borderRadius: '12px',
@@ -135,12 +147,6 @@ function ChangeBed() {
                 </Button>
             </div>
 
-            <div style={{ borderTop: "2px solid #999B9D ", marginLeft: 20, marginRight: 20 ,marginTop: 50}}></div>
-
-            <div>
-                <p style={{color:'#999B9D', marginTop:'40px', marginLeft: "872px"}}>No Results Found</p>
-            </div>
-
             <div>
                 <MainFooter />
             </div>
@@ -148,4 +154,4 @@ function ChangeBed() {
         </body>
     )
 }
-export default ChangeBed;
+export default PatientRelativeDetails;

@@ -1,0 +1,26 @@
+.container{
+    margin-left: 165px;/*have to be removed to make the page responsive*/
+    margin-right: 165px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* grid-auto-rows: minmax(100px, auto); */
+    color:black;
+    grid-column-gap: 60px;
+    grid-row-gap: 20px;
+}
+
+
+.top{
+    display: flex;
+    color:'#253143';
+    margin-top:'40px';
+    justify-content: center;
+    }
+    
+    .align{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    
+    }

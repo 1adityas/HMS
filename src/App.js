@@ -12,18 +12,19 @@ import Login from './components/Login'
 import NewAdmission from './components/NewAdmission';
 import HGT from './components/HGT';
 import ChangeBed from './components/ChangeBed';
+import PatientRelativeDetails from './components/PatientRelativeDetails';
 
 function App() {
   return (
     <div>
        {/* <NavBar /> */}
       {/* <MsDashboard /> */}
-      < NewAdmission/>
+      {/* < NewAdmission/> */}
       {/* <Login/> */}
-      {/* <NewAdmission/> */}
      {/* <PatientDetails /> */}
      {/* <HGT/>      */}
      {/* <ChangeBed /> */}
+     <PatientRelativeDetails/>
     </div>
 
   )

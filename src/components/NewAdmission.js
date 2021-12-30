@@ -326,7 +326,7 @@ function NewAdmission() {
             </Button>
             <Button variant="contained" style={{
               borderRadius: '12px',
-              color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+              color: '#506F90', backgroundColor: '#EEEEEE', boxShadow: '#00000029'
             }}
               sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
             </Button>
