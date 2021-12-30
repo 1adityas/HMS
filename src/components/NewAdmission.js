@@ -1,7 +1,7 @@
 // import React from 'react'
 import './NewAdmission.css'
 // maybe make a new footer css file.
- import Header from './Header.js'
+import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
 import React, { useState } from 'react';
@@ -55,6 +55,7 @@ function NewAdmission() {
     ward: "",
     bed: "",
     admissionDateTime: "",
+
   });
 
 
@@ -77,20 +78,20 @@ function NewAdmission() {
     //using body tag to get bg color
     <body>
 
-       <nav>
-            <Header/> 
-            </nav> 
+      <nav>
+        <Header />
+      </nav>
 
-      <div style={{paddingBottom:'200px'}}>
+      <div style={{ paddingBottom: '200px' }}>
         <p style={{ border: '2px dashed', textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143', marginBottom: '40px' }}>New Admission</p>
 
         <div className='top-flex'>
 
-          <p style={{ marginRight: '10px', fontSize: '22px','align-items': 'center',opacity:'0.7' }}>Already a registered patient?</p>
+          <p style={{ marginRight: '10px', fontSize: '22px', 'align-items': 'center', opacity: '0.7' }}>Already a registered patient?</p>
 
-          <div style={{display:'flex','align-items': 'center'} } >
+          <div style={{ display: 'flex', 'align-items': 'center' }} >
             <input className='top_tField' placeholder='Search using mobile no. or name'></input>
-            <button type='submit' className='top-btn'><img src={magnify} style={{ 'align-items': 'center',backgroundColor: '#6F88A2', height: '27px' ,}}></img>
+            <button type='submit' className='top-btn'><img src={magnify} style={{ 'align-items': 'center', backgroundColor: '#6F88A2', height: '27px', }}></img>
             </button>
           </div>
         </div>
@@ -125,14 +126,14 @@ function NewAdmission() {
               <par >
                 Mobile No.
               </par>
-              <input onChange={handleChange} name="mobileNumber" value={inputData.mobileNumber}className='top_tField' id='plain-field' ></input>
+              <input onChange={handleChange} name="mobileNumber" value={inputData.mobileNumber} className='top_tField' id='plain-field' ></input>
             </div>
             <div class="sub1">
               <par >
                 Date of Birth
               </par>
               <input onChange={handleChange} name="dateOfBirth" value={inputData.dateOfBirth} className='top_tField' id='plain-field2' ></input>
-              <button type='submit' className='btnUi'><DateRangeIcon sx={{color:'#EEEEEE',width:'auto',height:'30px'}}/></button>
+              <button type='submit' className='btnUi'><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
             </div>
             <div class="sub">
               <par >
@@ -144,7 +145,7 @@ function NewAdmission() {
               <par >
                 Email Id
               </par>
-              <input onChange={handleChange} name="emailId" value={inputData.emailId}className='top_tField' id='plain-field' ></input>
+              <input onChange={handleChange} name="emailId" value={inputData.emailId} className='top_tField' id='plain-field' ></input>
             </div>
             <div class="sub"></div>
             <div class="sub"></div>
@@ -152,7 +153,7 @@ function NewAdmission() {
               <par >
                 Address
               </par>
-              <input onChange={handleChange} name="address" value={inputData.address}className='top_tField' id='plain-field' ></input>
+              <input onChange={handleChange} name="address" value={inputData.address} className='top_tField' id='plain-field' ></input>
             </div>
             <div class="sub1">
               <par >
@@ -184,28 +185,28 @@ function NewAdmission() {
               <par >
                 Blood Group
               </par>
-              <input onChange={handleChange} name="bloodGroup" value={inputData.bloodGroup}className='top_tField' id='plain-field2' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
-            
+              <input onChange={handleChange} name="bloodGroup" value={inputData.bloodGroup} className='top_tField' id='plain-field2' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+
             </div>
             <div class="sub3box">
               <par >
                 Sex
               </par>
-              
-              <div id='btns3' style={{gridColumn:'1/1',gridColumn:'1',gridRow:'2/3','text-align': 'center',fontSize:'30px',border:'2px solid #506F90CC',borderRadius:'15px 0px 0px 15px' }}><Button variant="text" sx={{color:'#253143',fontSize:'20px','margin-top':'5px',textTransform:'none',fontFamily:'poppins'}}>Male</Button></div>
-              <div id='btns3' style={{gridColumn:'1/1',margin:'0px',gridColumn:'2',gridRow:'2/3','text-align': 'center',height:'60px',borderTop:'2px solid #506F90CC',borderBottom:'2px solid #506F90CC',boxShadow: '5px 5px 15px #00000029;'}}><Button variant="text" sx={{color:'#253143',fontSize:'20px','margin-top':'5px',textTransform:'none',fontFamily:'poppins'}}>Female</Button></div>
-              <div id='btns3' style={{gridColumn:'1/1',margin:'0px',gridColumn:'3',gridRow:'2/3','border': '2px solid #506F90','text-align': 'center',fontSize:'30px',border:'2px solid #506F90CC',borderRadius:'0px 15px 15px 0px'}}><Button variant="text" sx={{color:'#253143',fontSize:'20px','margin-top':'5px',textTransform:'none',fontFamily:'poppins'}}>Transgender</Button></div>
-              
+
+              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px' }}><Button onClick={handleChange} name="sex" value="Male" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Male</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;' }}><Button onClick={handleChange} name="sex" value="Female" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Female</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'border': '2px solid #506F90', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px' }}><Button onClick={handleChange} name="sex" value="Transgender" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Transgender</Button></div>
+
               {/* <input onChange={handleChange} name="sex" value={inputData.sex}className='top_tField' id='plain-field' ></input> */}
             </div>
             <div class="sub3box">
               <par >
                 Marital Status
               </par>
-              <div id='btns3' style={{gridColumn:'1/1',gridColumn:'1',gridRow:'2/3','text-align': 'center',fontSize:'30px',border:'2px solid #506F90CC',borderRadius:'15px 0px 0px 15px' }}><Button variant="text" sx={{color:'#253143',fontSize:'20px','margin-top':'5px',textTransform:'none',fontFamily:'poppins'}}>Single</Button></div>
-              <div id='btns3' style={{gridColumn:'1/1',margin:'0px',gridColumn:'2',gridRow:'2/3','text-align': 'center',height:'60px',borderTop:'2px solid #506F90CC',borderBottom:'2px solid #506F90CC',boxShadow: '5px 5px 15px #00000029;'}}><Button variant="text" sx={{color:'#253143',fontSize:'20px','margin-top':'5px',textTransform:'none',fontFamily:'poppins'}}>Married</Button></div>
-              <div id='btns3' style={{gridColumn:'1/1',margin:'0px',gridColumn:'3',gridRow:'2/3','text-align': 'center',fontSize:'30px',border:'2px solid #506F90CC',borderRadius:'0px 15px 15px 0px'}}><Button variant="text" sx={{color:'#253143',fontSize:'20px','margin-top':'5px',textTransform:'none',fontFamily:'poppins'}}>Divorced</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px' }}><Button onClick={handleChange} name="maritalStatus" value="Single" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Single</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;' }}><Button onClick={handleChange} name="maritalStatus" value="Married" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Married</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px' }}><Button onClick={handleChange} name="maritalStatus" value="Divorced" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Divorced</Button></div>
               {/* <input onChange={handleChange} name="maritalStatus" value={inputData.maritalStatus}className='top_tField' id='plain-field' ></input> */}
             </div>
 
@@ -214,8 +215,8 @@ function NewAdmission() {
                 Religion
               </par>
               <input onChange={handleChange} name="religion" value={inputData.religion} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
-              
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+
             </div>
             <div class="sub1" >
               <par>
@@ -223,8 +224,8 @@ function NewAdmission() {
                 Choose Document
               </par>
               <input onChange={handleChange} name="chooseDocument" value={inputData.chooseDocument} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ display:'relative','align-items': 'center', height: 'auto',width:'22px',top:'0px'}}></img></button>
-              
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ display: 'relative', 'align-items': 'center', height: 'auto', width: '22px', top: '0px' }}></img></button>
+
             </div>
             <div class="sub"></div>
             <div class="sub">
@@ -260,15 +261,15 @@ function NewAdmission() {
                 Patient Type
               </par>
               <input onChange={handleChange} name="patiebtType" value={inputData.patientType} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
-            
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+
             </div>
             <div class="sub1">
               <par >
                 Referred From
               </par>
               <input onChange={handleChange} name="referredFrom" value={inputData.referredFrom} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
 
             </div>
             <div class="sub1">
@@ -276,7 +277,7 @@ function NewAdmission() {
                 Consultant Preferred
               </par>
               <input onChange={handleChange} name="consultantPreferred" value={inputData.consultantPreferred} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
 
             </div>
             <div class="sub1">
@@ -284,15 +285,15 @@ function NewAdmission() {
                 Ward
               </par>
               <input onChange={handleChange} name="ward" value={inputData.firstName} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
 
             </div>
             <div class="sub1">
               <par >
                 Bed
               </par>
-              <input onChange={handleChange} name="bed" value={inputData.bed}className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto',width:'22px'}}></img></button>
+              <input onChange={handleChange} name="bed" value={inputData.bed} className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
 
             </div>
             <div class="sub"></div>
@@ -300,14 +301,14 @@ function NewAdmission() {
               <par >
                 Admission Date & Time
               </par>
-              <div style={{display:'flex'}}>
-              <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2'  ></input>
-              <button type='submit' className='btnUi' style={{'border-top-right-radius':'0px','border-bottom-right-radius':'0px'}}><DateRangeIcon sx={{color:'#EEEEEE',width:'auto',height:'30px'}}/></button>
+              <div style={{ display: 'flex' }}>
+                <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2'  ></input>
+                <button type='submit' className='btnUi' style={{ 'border-top-right-radius': '0px', 'border-bottom-right-radius': '0px' }}><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
 
               </div>
-              <div style={{display:'flex'}}>
-              <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2' style={{'border-top-left-radius':'0px','border-bottom-left-radius':'0px'}} ></input>
-              <button type='submit' className='btnUi'><QueryBuilderIcon sx={{color:'#EEEEEE',width:'auto',height:'30px'}}/></button>
+              <div style={{ display: 'flex' }}>
+                <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2' style={{ 'border-top-left-radius': '0px', 'border-bottom-left-radius': '0px' }} ></input>
+                <button type='submit' className='btnUi'><QueryBuilderIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
 
               </div>
             </div>
@@ -316,24 +317,26 @@ function NewAdmission() {
             <div class="sub"></div>
           </div>
           <div className='flex2'>
-          <Button variant="contained" style={{borderRadius: '12px',
-                        color:'#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
-                    ,marginRight:'60px'
-                      }}
-                    sx={{ boxShadow: '5px 5px 15px #00000029;','text-transform': 'none',width:'192px',height:'60px',fontSize:'20px',fontWeight:'500' }} >Submit
-                    </Button>
-          <Button variant="contained" style={{borderRadius: '12px',
-              color:'#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
-          }}
-          sx={{ boxShadow: '5px 5px 15px #00000029;','text-transform': 'none',width:'192px',height:'60px',fontSize:'20px',fontWeight:'500' }} >Cancel
-          </Button>
+            <Button variant="contained" style={{
+              borderRadius: '12px',
+              color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+              , marginRight: '60px'
+            }}
+              sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Submit
+            </Button>
+            <Button variant="contained" style={{
+              borderRadius: '12px',
+              color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+            }}
+              sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
+            </Button>
           </div>
         </form>
-        
+
       </div>
 
-      <div style={{position:'relative'}}>
-      <MainFooter />  
+      <div style={{ position: 'relative' }}>
+        <MainFooter />
       </div>
 
 
