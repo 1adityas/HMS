@@ -13,6 +13,7 @@ import NewAdmission from './components/NewAdmission';
 import HGT from './components/HGT';
 import ChangeBed from './components/ChangeBed';
 import PatientRelativeDetails from './components/PatientRelativeDetails';
+import Reports from './components/Reports';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
      {/* <PatientDetails /> */}
      {/* <HGT/>      */}
      {/* <ChangeBed /> */}
-     <PatientRelativeDetails/>
+     {/* <PatientRelativeDetails/> */}
+     <Reports/>
     </div>
 
   )
