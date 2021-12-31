@@ -34,14 +34,21 @@ function PatientRelativeDetails() {
         setvar1({[event.target.name]:event.target.value})
 
     }
+    function handleSubmit(event) {
+      //link your API here
+      // event.preventDefault()
+      // /index.html?firstName=asdasd&lastName=asdasd&email=&comments=&isFriendly=on&favColor=red
+      // submitToApi(formData)
+      console.log(patientName)
+    }
     console.log(patientName)
     return (
-        <body style={{ 'fontFamily': 'poppins' }}>
+        <body className="page-container" style={{ 'fontFamily': 'poppins' }}>
 
             <div>
                 <Header />
             </div>
-
+           <div className="content-wrap">
             <div >
                 <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Patient Relative Details</p>
             </div>
@@ -51,7 +58,7 @@ function PatientRelativeDetails() {
                 }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90','textDecorationLine':'underline','marginLeft':'10px'}}>Mr. Shubham Kumar{var1}</span></button>
             </div>
 
-
+            <form onSubmit={handleSubmit}>
             <div class="container">
 
             <div class="sub">
@@ -146,8 +153,10 @@ function PatientRelativeDetails() {
                     sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
                 </Button>
             </div>
+            </form>
+            </div>
 
-            <div>
+            <div className="footer">
                 <MainFooter />
             </div>
 
