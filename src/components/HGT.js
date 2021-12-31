@@ -17,8 +17,8 @@ function HGT() {
   const [patientName, setPatientName] = useState({
     HGT: "",
     Ketone: "",
-    InsulinRequirement:"",
-    Time:"",
+    InsulinRequirement: "",
+    Time: "",
   });
 
   function handleChange(event) {
@@ -26,7 +26,7 @@ function HGT() {
     setPatientName(prevInputData => ({ ...prevInputData, [name]: value }))
 
   }
-  
+
   function handleSubmit(event) {
     //link your API here
     // event.preventDefault()
@@ -36,27 +36,28 @@ function HGT() {
   }
 
   const [var1, setvar1] = useState(null);
-    function handleEvent(event){
-        setvar1({[event.target.name]:event.target.value})
+  function handleEvent(event) {
+    setvar1({ [event.target.name]: event.target.value })
 
-    }
-    console.log(patientName)
+  }
+  console.log(patientName)
   return (
-    <body style={{ 'fontFamily': 'poppins' }}>
+    <body className="page-container" style={{ 'fontFamily': 'poppins' }}>
 
       <div>
         <Header />
       </div>
-
-      <div >
-        <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>HGT Sheet</p>
-      </div>
-      <div style={{ textAlign: 'center', }}>
-                <button onClick={handleEvent} value={var1} style={{'border-radius': '15px','height':'60px',
-                    'borderRadius': "15px,15px,15px,15px", 'textAlign':'center', 'fontWeight': '400', 'fontSize':'20px', 'background-color': '#DEE1E5', 'marginBottom': '40px', 'width': "542px",'height':'60px',
-                }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90','textDecorationLine':'underline','marginLeft':'10px'}}>Mr. Shubham Kumar{var1}</span></button>
-            </div>
-      {/* 
+      <div className="content-wrap">
+        <div >
+          <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>HGT Sheet</p>
+        </div>
+        <div style={{ textAlign: 'center', }}>
+          <button onClick={handleEvent} value={var1} style={{
+            'border-radius': '15px', 'height': '60px',
+            'borderRadius': "15px,15px,15px,15px", 'textAlign': 'center', 'fontWeight': '400', 'fontSize': '20px', 'background-color': '#DEE1E5', 'marginBottom': '40px', 'width': "542px", 'height': '60px',
+          }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90', 'textDecorationLine': 'underline', 'marginLeft': '10px' }}>Mr. Shubham Kumar{var1}</span></button>
+        </div>
+        {/* 
             <div className='top'>
 
           <p style={{ marginRight: '10px', fontSize: '22px' }}>Already a registered patient?</p>
@@ -68,44 +69,44 @@ function HGT() {
           </div>
         </div> */}
 
-     <form onSubmit={handleSubmit}>
-      <div class="container">
-        <div class="sub">
-          <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-            HGT
-          </par>
-          <input onChange={handleChange} name='HGT' value={patientName.HGT} className='top_tField' id='plain-field' ></input>
-        </div>
+        <form onSubmit={handleSubmit}>
+          <div class="container">
+            <div class="sub">
+              <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
+                HGT
+              </par>
+              <input onChange={handleChange} name='HGT' value={patientName.HGT} className='top_tField' id='plain-field' ></input>
+            </div>
 
-        <div class="sub">
-          <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-            Ketone
-          </par>
-          <input onChange={handleChange} name='Ketone' value={patientName.Ketone} className='top_tField' id='plain-field' ></input>
-        </div>
+            <div class="sub">
+              <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
+                Ketone
+              </par>
+              <input onChange={handleChange} name='Ketone' value={patientName.Ketone} className='top_tField' id='plain-field' ></input>
+            </div>
 
-        <div class="sub">
-          <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
-            Insulin Requirement
-          </par>
-          <input onChange={handleChange} name='InsulinRequirement' value={patientName.InsulinRequirement} className='top_tField' id='plain-field' ></input>
-        </div>
-        <div class="sub">
+            <div class="sub">
+              <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
+                Insulin Requirement
+              </par>
+              <input onChange={handleChange} name='InsulinRequirement' value={patientName.InsulinRequirement} className='top_tField' id='plain-field' ></input>
+            </div>
+            <div class="sub">
               <par >
                 Time
               </par>
-              
-              <div style={{display:'flex'}}>
-              <input onChange={handleChange} name="Time" value={patientName.Time} className='top_tField' id='plain-field2' style={{width:'245px'}}></input>
-              <button type='submit' className='btnUi'><QueryBuilderIcon sx={{color:'#EEEEEE',width:'auto',height:'30px'}}/></button>
+
+              <div style={{ display: 'flex' }}>
+                <input onChange={handleChange} name="Time" value={patientName.Time} className='top_tField' id='plain-field2' style={{ width: '245px' }}></input>
+                <button type='submit' className='btnUi'><QueryBuilderIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
 
               </div>
-      </div>
-      </div>
+            </div>
+          </div>
 
 
 
-      {/* <div style={{ 'marginTop': '80px' }}>
+          {/* <div style={{ 'marginTop': '80px' }}>
         <Button style={{
           'font-size': '20px', 'fontWeight': '500px', 'textTransform': 'none', 'height': '60px', 'width': '192px', 'color': '#EEEEEE', 'marginLeft': '738px',
           'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029',
@@ -116,23 +117,24 @@ function HGT() {
           'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029', 'backgroundColor': '#EEEEEE'
         }}>Cancel</Button>
       </div> */}
-      <div className='align'>
-        <Button variant="contained" style={{
-          borderRadius: '12px',
-          color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
-          , marginRight: '60px'
-        }}
-          sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Submit
-        </Button>
-        <Button variant="contained" style={{
-          borderRadius: '12px',
-          color: '#506F90', backgroundColor: '#EEEEEE', boxShadow: '#00000029'
-        }}
-          sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
-        </Button>
+          <div className='align'>
+            <Button variant="contained" style={{
+              borderRadius: '12px',
+              color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+              , marginRight: '60px'
+            }}
+              sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Submit
+            </Button>
+            <Button variant="contained" style={{
+              borderRadius: '12px',
+              color: '#506F90', backgroundColor: '#EEEEEE', boxShadow: '#00000029'
+            }}
+              sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
+            </Button>
+          </div>
+        </form>
       </div>
-    </form>
-      <div>
+      <div className="footer">
         <MainFooter />
       </div>
 

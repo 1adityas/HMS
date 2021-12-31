@@ -30,7 +30,7 @@ export default function Footer() {
       <BottomNavigation
         style={{
 
-          // 'position': 'absolute',//if i do absolute it worn work
+          // 'position': 'absolute',
           // 'margin-top':"15px",
           'bottom': '0px',
           'height': "18vh"
@@ -59,9 +59,9 @@ export default function Footer() {
           'opacity': "1"
 
         }}>
-          <Button onClick={handleChange} name="Dashboard" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Dashboard</Button>
+          <a href='./MsDashboard'><Button onClick={handleChange} name="Dashboard" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Dashboard</Button></a>
           <Button onClick={handleChange} name="Ward Details" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Ward Details</Button>
-          <Button onClick={handleChange} name="Patient Details" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Patient Details</Button>
+          <a href='PatientDetails'><Button onClick={handleChange} name="Patient Details" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Patient Details</Button></a>
           <Button onClick={handleChange} name="Discharged Patient" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Discharged Patients</Button>
           <Button onClick={handleChange} name="Laboratory & Imaging" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Laboratory & Imaging</Button>
 
