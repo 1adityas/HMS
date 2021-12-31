@@ -35,6 +35,7 @@ function App() {
         <Route path="/HGT" element= {<HGT/>}/>
         <Route path="/ChangeBed" element= {<ChangeBed />}/>
         <Route path="/PatientRelativeDetails" element= {<PatientRelativeDetails/>}/>
+        <Route path="/Reports" element={<Reports/>}/>
 </Routes>
 </Router>
   );
