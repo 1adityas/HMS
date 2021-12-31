@@ -30,7 +30,7 @@ export default function Footer() {
       <BottomNavigation
         style={{
 
-          'position': 'absolute',
+          // 'position': 'absolute',//if i do absolute it worn work
           // 'margin-top':"15px",
           'bottom': '0px',
           'height': "18vh"

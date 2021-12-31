@@ -23,8 +23,6 @@ import Reports from './components/Reports';
 function App() {
   return (
     <Router>
-      
-
       <Routes>
         {/* <Route path="/NavBar" element= {<NavBar />}/> */}
         <Route path="/" element={<Login/>}/>

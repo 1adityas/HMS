@@ -113,20 +113,6 @@ function ChangeBed() {
               </div>
             </div>
             </div>
-
-
-
-            {/* <div style={{ 'marginTop': '80px' }}>
-        <Button style={{
-          'font-size': '20px', 'fontWeight': '500px', 'textTransform': 'none', 'height': '60px', 'width': '192px', 'color': '#EEEEEE', 'marginLeft': '738px',
-          'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029',
-          'backgroundColor': '#506F90'
-        }}>Submit</Button>
-        <Button style={{
-          'font-size': '20px', 'fontWeight': '500px', 'textTransform': 'none', 'height': '60px', 'width': '192px', 'color': '#506f90', 'marginLeft': '60px',
-          'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029', 'backgroundColor': '#EEEEEE'
-        }}>Cancel</Button>
-      </div> */}
             <div className='align'>
                 <Button variant="contained" style={{
                     borderRadius: '12px',
@@ -146,11 +132,10 @@ function ChangeBed() {
             <div style={{ borderTop: "2px solid #999B9D ", marginLeft: 20, marginRight: 20 ,marginTop: 50}}></div>
 
             <div>
-                <p style={{color:'#999B9D', marginTop:'40px', marginLeft: "872px"}}>No Results Found</p>
+                <p style={{color:'#999B9D', marginTop:'40px', textAlign:'center',marginBottom: "130px"}}>No Results Found</p>
             </div>
             </form>
-
-            <div>
+            <div style={{position:'relative',marginBottom:'0px'}}>
                 <MainFooter />
             </div>
 
