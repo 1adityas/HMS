@@ -69,19 +69,6 @@ function ChangeBedData() {
                 }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90', 'textDecorationLine': 'underline', 'marginLeft': '10px' }}>Mr. Shubham Kumar{var1}</span></button>
             </div>
 
-
-            {/* 
-            <div className='top'>
-
-          <p style={{ marginRight: '10px', fontSize: '22px' }}>Already a registered patient?</p>
-
-          <div >
-            <input className='field' placeholder='Search using mobile no. or name'></input>
-            <button type='submit' className='btn'><img src={magnifying} style={{ backgroundColor: '#6F88A2', height: '20px' }}></img>
-            </button>
-          </div>
-        </div> */}
-
             <form onSubmit={handleSubmit}>
                 <div class="container">
                     <div class="sub1">
@@ -118,19 +105,6 @@ function ChangeBedData() {
                     </div>
                 </div>
 
-
-
-                {/* <div style={{ 'marginTop': '80px' }}>
-        <Button style={{
-          'font-size': '20px', 'fontWeight': '500px', 'textTransform': 'none', 'height': '60px', 'width': '192px', 'color': '#EEEEEE', 'marginLeft': '738px',
-          'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029',
-          'backgroundColor': '#506F90'
-        }}>Submit</Button>
-        <Button style={{
-          'font-size': '20px', 'fontWeight': '500px', 'textTransform': 'none', 'height': '60px', 'width': '192px', 'color': '#506f90', 'marginLeft': '60px',
-          'borderRadius': '15px', 'opacity': '1', 'boxShadow': '5px 5px 15px #00000029', 'backgroundColor': '#EEEEEE'
-        }}>Cancel</Button>
-      </div> */}
                 <div className='align'>
                     <Button variant="contained" style={{
                         borderRadius: '12px',

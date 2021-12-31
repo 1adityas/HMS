@@ -19,6 +19,7 @@ import HGT from './components/HGT';
 import ChangeBed from './components/ChangeBed';
 import PatientRelativeDetails from './components/PatientRelativeDetails';
 import Reports from './components/Reports';
+import ChangeBedData from './components/ChangeBedData';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/ChangeBed" element= {<ChangeBed />}/>
         <Route path="/PatientRelativeDetails" element= {<PatientRelativeDetails/>}/>
         <Route path="/Reports" element={<Reports/>}/>
+        <Route path="/ChangeBedData" element={<ChangeBedData/>}/>
 </Routes>
 </Router>
   );
