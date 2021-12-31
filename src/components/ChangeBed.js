@@ -34,6 +34,14 @@ function ChangeBed() {
         // setPatientName({ [event.target.name]: event.target.value })
 
     }
+    
+  function handleSubmit(event) {
+    //link your API here
+    // event.preventDefault()
+    // /index.html?firstName=asdasd&lastName=asdasd&email=&comments=&isFriendly=on&favColor=red
+    // submitToApi(formData)
+    console.log(patientName)
+  }
 
     const [var1, setvar1] = useState(null);
     function handleEvent(event){
@@ -70,7 +78,7 @@ function ChangeBed() {
           </div>
         </div> */}
 
-
+         <form onSubmit={handleSubmit}>
             <div class="container">
             <div class="sub1">
               <par >
@@ -140,6 +148,7 @@ function ChangeBed() {
             <div>
                 <p style={{color:'#999B9D', marginTop:'40px', marginLeft: "872px"}}>No Results Found</p>
             </div>
+            </form>
 
             <div>
                 <MainFooter />

@@ -26,6 +26,14 @@ function HGT() {
     setPatientName(prevInputData => ({ ...prevInputData, [name]: value }))
 
   }
+  
+  function handleSubmit(event) {
+    //link your API here
+    // event.preventDefault()
+    // /index.html?firstName=asdasd&lastName=asdasd&email=&comments=&isFriendly=on&favColor=red
+    // submitToApi(formData)
+    console.log(patientName)
+  }
 
   const [var1, setvar1] = useState(null);
     function handleEvent(event){
@@ -60,7 +68,7 @@ function HGT() {
           </div>
         </div> */}
 
-
+     <form onSubmit={handleSubmit}>
       <div class="container">
         <div class="sub">
           <par style={{ 'font-size': '20px', 'fontWeight': '500px' }}>
@@ -123,7 +131,7 @@ function HGT() {
           sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
         </Button>
       </div>
-
+    </form>
       <div>
         <MainFooter />
       </div>

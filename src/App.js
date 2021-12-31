@@ -19,12 +19,12 @@ function App() {
     <div>
        {/* <NavBar /> */}
       {/* <MsDashboard /> */}
-      {/* < NewAdmission/> */}
+      < NewAdmission/>
       {/* <Login/> */}
      {/* <PatientDetails /> */}
      {/* <HGT/>      */}
      {/* <ChangeBed /> */}
-     <PatientRelativeDetails/>
+     {/* <PatientRelativeDetails/> */}
     </div>
 
   )
