@@ -119,10 +119,7 @@ opacity: .2;
     grid-column-gap: 60px;
     grid-row-gap: 20px;
   }
-  .sub {
-    /* grid-column: 1 / 1; */
-      /* border: 1px solid; */
-  }
+ 
   .flex2{
     margin-top: 80px;
     display: flex;
