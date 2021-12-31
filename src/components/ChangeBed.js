@@ -51,12 +51,12 @@ function ChangeBed() {
     }
     console.log(patientName)
     return (
-        <body style={{ 'fontFamily': 'poppins' }}>
+        <body  className="page-container" style={{ 'fontFamily': 'poppins' }}>
 
             <div>
                 <Header />
             </div>
-
+            <div className="content-wrap">
             <div >
                 <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Change Bed</p>
             </div>
@@ -151,8 +151,9 @@ function ChangeBed() {
                     <p style={{ color: '#999B9D', marginTop: '40px', marginLeft: "872px" }}>No Results Found</p>
                 </div>
             </form>
+            </div>
            
-            <div>
+            <div className="footer">
                 <MainFooter />
             </div>
 

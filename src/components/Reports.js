@@ -34,12 +34,12 @@ function Reports() {
     }
     console.log(patientName)
     return (
-        <body style={{ 'fontFamily': 'poppins' }}>
+        <body  style={{ 'fontFamily': 'poppins' }}>
 
             <div>
                 <Header />
             </div>
-
+        
             <div >
                 <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Reports</p>
             </div>
