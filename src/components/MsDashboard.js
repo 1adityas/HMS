@@ -13,7 +13,6 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import  "./NewAdmission"
 
-import {BrowserRoute as Router , Switch, Route,Link} from "react-router-dom";
 
 // import {ReactComponent as Back} from '../background.svg';
 
