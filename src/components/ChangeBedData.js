@@ -2,14 +2,16 @@ import { Button } from '@mui/material';
 import React, { useState } from 'react'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
+import DataGridDemo from './DataGrid';
 
 
 
-import './ChangeBed.css'
+
+
+import './ChangeBedData.css'
 import dropDown from '../awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
-import ChangeBedData from './ChangeBedData.js';
 
 
 
@@ -17,7 +19,7 @@ import ChangeBedData from './ChangeBedData.js';
 // import './PatientDetails.css'
 // import './NewAdmission.css'
 
-function ChangeBed() {
+function ChangeBedData() {
 
     const [patientName, setPatientName] = useState({
         selectWard: "",
@@ -51,12 +53,12 @@ function ChangeBed() {
     }
     console.log(patientName)
     return (
-        <body style={{ 'fontFamily': 'poppins' }}>
+        <body className="page-container" style={{ 'fontFamily': 'poppins' }}>
 
             <div>
                 <Header />
             </div>
-
+            <div className="content-wrap">
             <div >
                 <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Change Bed</p>
             </div>
@@ -147,16 +149,21 @@ function ChangeBed() {
 
                 <div style={{ borderTop: "2px solid #999B9D ", marginLeft: 20, marginRight: 20, marginTop: 50 }}></div>
 
-                <div>
-                    <p style={{ color: '#999B9D', marginTop: '40px', marginLeft: "872px" }}>No Results Found</p>
-                </div>
+                {/* <div>
+                <p style={{color:'#999B9D', marginTop:'40px', marginLeft: "872px"}}>No Results Found</p>
+            </div> */}
+
+                <DataGridDemo />
+
             </form>
-           
-            <div>
+            </div>
+
+
+            <div className="footer">
                 <MainFooter />
             </div>
 
         </body>
     )
 }
-export default ChangeBed;
+export default ChangeBedData;

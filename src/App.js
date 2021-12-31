@@ -13,18 +13,20 @@ import NewAdmission from './components/NewAdmission';
 import HGT from './components/HGT';
 import ChangeBed from './components/ChangeBed';
 import PatientRelativeDetails from './components/PatientRelativeDetails';
+import ChangeBedData from './components/ChangeBedData';
 
 function App() {
   return (
     <div>
-       {/* <NavBar /> */}
+      {/* <NavBar /> */}
       {/* <MsDashboard /> */}
       < NewAdmission/>
       {/* <Login/> */}
-     {/* <PatientDetails /> */}
-     {/* <HGT/>      */}
-     {/* <ChangeBed /> */}
-     {/* <PatientRelativeDetails/> */}
+      {/* <PatientDetails /> */}
+      {/* <HGT/>      */}
+      {/* <ChangeBed /> */}
+      {/* <PatientRelativeDetails/> */}
+      {/* <ChangeBedData /> */}
     </div>
 
   )
