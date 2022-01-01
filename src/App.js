@@ -26,18 +26,18 @@ function App() {
     <Router>
       <Routes>
         {/* <Route path="/NavBar" element= {<NavBar />}/> */}
-        <Route path="/" element={<Login/>}/>
-        <Route path="/MsDashboard" element= {<MsDashboard />}/>
-        <Route path="/NewAdmission" element= {<NewAdmission/>}/>
-        
-        <Route path="/PatientDetails" element= {<PatientDetails />}/>
-        <Route path="/HGT" element= {<HGT/>}/>
-        <Route path="/ChangeBed" element= {<ChangeBed />}/>
-        <Route path="/PatientRelativeDetails" element= {<PatientRelativeDetails/>}/>
-        <Route path="/Reports" element={<Reports/>}/>
-        <Route path="/ChangeBedData" element={<ChangeBedData/>}/>
-</Routes>
-</Router>
+        <Route path="/" element={<ChangeBedData />} />
+        <Route path="/MsDashboard" element={<MsDashboard />} />
+        <Route path="/NewAdmission" element={<NewAdmission />} />
+
+        <Route path="/PatientDetails" element={<PatientDetails />} />
+        <Route path="/HGT" element={<HGT />} />
+        <Route path="/ChangeBed" element={<ChangeBed />} />
+        <Route path="/PatientRelativeDetails" element={<PatientRelativeDetails />} />
+        <Route path="/Reports" element={<Reports />} />
+        <Route path="/ChangeBedData" element={<ChangeBedData />} />
+      </Routes>
+    </Router>
   );
 }
 
