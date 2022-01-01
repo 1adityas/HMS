@@ -42,14 +42,15 @@ const handleRowClick = (param, event) => {
 
 const columns = [
   {
-    field: "id",
-    headerName: "ID",
-    width: 70
+    field: "Previous Ward/Bed",
+    headerName: "Previous Ward/Bed",
+    width: 200
+    
   },
   {
-    field: "firstName",
-    headerName: "First Name",
-    width: 130,
+    field: "Time",
+    headerName: "Time",
+    width: 160,
     renderCell: (cellValues) => {
       return (
         <div
@@ -57,7 +58,7 @@ const columns = [
             color: "blue",
             fontSize: 18,
             width: "100%",
-            textAlign: "right"
+            textAlign: "center"
           }}
         >
           {cellValues.value}
@@ -65,17 +66,17 @@ const columns = [
       );
     }
   },
-  { field: "lastName", headerName: "Last Name", width: 130 },
+  { field: "Time", headerName: "Time", width: 160 },
   {
-    field: "age",
-    headerName: "Age",
+    field: "Date",
+    headerName: "Date",
     type: "number",
-    width: 90,
-    align: "left"
+    width: 160,
+    align: "center"
   },
   {
-    field: "fullName",
-    headerName: "Full name",
+    field: "Doctor",
+    headerName: "Doctor",
     description: "This column has a value getter and is not sortable.",
     sortable: false,
     width: 160,
