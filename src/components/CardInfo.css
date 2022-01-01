@@ -1,14 +1,15 @@
 .containerr{
     /* had to rename bec was picking up css of someother file */
+    padding: 40px;
     background-color:#DEE1E5;
     border:1px dashed;
     border-radius: 15px;
 }
+
 .timeTop{
     width: -moz-fit-content;
     width: fit-content;
     border:1px solid;
-    margin-top: 40px;
     border-radius: 10px;
     padding: 1px 15px 1px 15px;
     background-color: #EEEEEE;
@@ -20,5 +21,70 @@
     font-size: 20px;
 }
 .Grid{
-    
+margin-top: 20px;
+display: grid;
+grid-template-columns: auto auto auto auto ;
+/* use minmax(170px,auto) */
+/* use minmax(248px,auto) */
+
+}
+#lefttext{
+    margin:0px;
+    padding: 0px;
+    font-size: 22px;
+    font-family: 'poppins';
+    color: #4B5463;
+    padding-bottom: 15px;
+    padding-right: 7px;
+    font-weight:400;
+}
+#lefttext2{
+    margin:0px;
+    padding: 0px;
+    font-size: 22px;
+    font-family: 'poppins';
+    color: #4B5463;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    font-weight:400;
+}
+
+
+#righttext{
+    margin:0px;
+    padding: 0px;
+    font-size: 22px;
+    font-family: 'poppins';
+    color: #253143;
+    padding-bottom: 15px;
+    font-weight:400;
+    padding-right: 10px;
+}
+.left{
+    /* border:1px solid; */
+    grid-column: 1;
+    /* font-size: 30px; */
+}
+.left2{
+    /* border:1px solid; */
+    grid-column: 4;
+}
+.right{
+    /* border:1px solid; */
+    grid-column: 2;
+    grid-row: 1;
+    /* font-size: 30px; */
+}
+.right2{
+    /* border:1px solid; */
+    grid-column: 5;
+    grid-row: 1;
+    /* font-size: 30px; */
+}
+.space{
+    /* border:1px solid; */
+    grid-column: 3;
+    grid-row: 1;
+    width: 70px;
+
 }
