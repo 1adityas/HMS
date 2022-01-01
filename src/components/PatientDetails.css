@@ -46,12 +46,14 @@ body{
     /* grid-auto-rows: minmax(100px, auto); */
     color:black;
     grid-column-gap: 60px;
-    grid-row-gap: px60;
+    grid-row-gap: 60px;
 
   }
 .searchBar{
  
     justify-content: center;
+}
+par{
 }
 
 

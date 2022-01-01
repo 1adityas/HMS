@@ -60,11 +60,11 @@ function PatientDetails() {
             </div> */}
 
             <div class="wrapper">
-            {/* <div class="sub">
+            <div class="sub">
                 <CardInfo/>
-              </div> */}
+              </div>
               
-              <div class="sub">
+              <div class="sub" style={{border:'2px solid'}}>
                 <par >
                     2
                   </par>
@@ -82,7 +82,7 @@ function PatientDetails() {
               </div>
             </div>
 
-            <div>
+            <div style={{marginTop:'80px'}}>
                 <MainFooter />
             </div>
 
