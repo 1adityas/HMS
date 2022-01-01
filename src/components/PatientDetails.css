@@ -42,16 +42,18 @@ body{
     margin-left: 90px;/*have to be removed to make the page responsive*/
     margin-right: 90px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* grid-auto-rows: minmax(100px, auto); */
     color:black;
     grid-column-gap: 60px;
-    grid-row-gap: px60;
+    grid-row-gap: 60px;
 
   }
 .searchBar{
  
     justify-content: center;
+}
+par{
 }
 
 

@@ -1,0 +1,24 @@
+.containerr{
+    /* had to rename bec was picking up css of someother file */
+    background-color:#DEE1E5;
+    border:1px dashed;
+    border-radius: 15px;
+}
+.timeTop{
+    width: -moz-fit-content;
+    width: fit-content;
+    border:1px solid;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 1px 15px 1px 15px;
+    background-color: #EEEEEE;
+}
+#time{
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content */
+    margin: 0px;
+    /* font-family: ; */
+    font-size: 20px;
+}
+.Grid{
+    
+}
