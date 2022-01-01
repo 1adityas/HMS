@@ -6,6 +6,7 @@ import { Button } from '@mui/material'
 import './PatientDetails.css'
 import magnifying from '../feather-search.svg';
 import PatientCard from './PatientCard'
+import CardInfo from './CardInfo'
 
 // import Button from '@mui/material/Button';
 
@@ -54,22 +55,20 @@ function PatientDetails() {
                 
             </div>
 
-            <div>
+            {/* <div>
                 <PatientCard/>
-            </div>
+            </div> */}
 
             <div class="wrapper">
-            <div class="sub">
-                <par >
-                  1
-                </par>
-              </div>
+            {/* <div class="sub">
+                <CardInfo/>
+              </div> */}
               
               <div class="sub">
                 <par >
                     2
                   </par>
-              </div>
+              </div>    
 
               <div class="sub">
                 <par >
