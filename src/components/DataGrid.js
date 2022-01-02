@@ -62,7 +62,7 @@ const columns = [
   },
   {
     field: "Date",
-    headerName: "Date",
+    headerName: "D ate",
     type: "number",
     fontSize: "20px",
     width: 300,
