@@ -18,105 +18,6 @@
     font-family: 'poppins';
   }
   
-  #plain-field {
-    border-radius: 15px;
-    width: 100%;
-    margin-top: 12px;
-    /*had to use it to give it a margin*/
-  }
-  
-  #plain-field1 {
-    border-radius: 15px;
-    width: 100%;
-    grid-column: 1/2;
-    grid-row: 2;
-  }
-  
-  #plain-field3 {
-    border-radius: 15px;
-    width: 100%;
-    grid-column: 1/3;
-    grid-row: 2;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  
-  #plain-field2 {
-    /*this removes corner border too*/
-    border-radius: 15px;
-    width: 100%;
-    grid-column: 1/2;
-    grid-row: 2;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  
-  .top-flex {
-    display: flex;
-    color: '#253143';
-    margin-top: '40px';
-    justify-content: center;
-  }
-  
-  
-  .top-btn {
-    top: 0px;
-    background-color: #6F88A2;
-    margin: 0px;
-    height: 60px;
-    /* padding-bottom: 7px; */
-    border: 2px solid #6F88A2;
-    /*this is to remove the button shadow*/
-    width: 60px;
-    border-radius: 0px 15px 15px 0px;
-  }
-  
-  .btnUi {
-    position: relative;
-    right: 0px;
-    /* this right works only with relative*/
-    top: 0px;
-    background-color: #6F88A2;
-    margin: 0px;
-    height: 60px;
-    /* padding-bottom: 7px; */
-    border: 2px solid #6F88A2;
-    /*this is to remove the button shadow*/
-    width: 60px;
-    border-radius: 0px 15px 15px 0px;
-    grid-row: 2;
-  
-  }
-  
-  /* margin-bottom: 5px; */
-  .top_tField {
-    top: 0px;
-  
-    height: 56px;
-    /* did this to match icon and textF */
-    padding: 0px;
-    margin: 0px;
-    border: 2px solid #6F88A2;
-    background-color: #EEEEEE;
-    border-radius: 0%;
-    width: 420px;
-    border-radius: 15px 0px 0px 15px;
-  
-    /* border-radius: 50px; */
-  
-  }
-  
-  hr {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 1px;
-    background-color: #6F88A2;
-    opacity: .2;
-  }
-  
-  
   .wrapperr {
       margin-left: 165px;/*have to be removed to make the page responsive*/
       margin-right: 165px;
@@ -126,40 +27,49 @@
       grid-column-gap: 60px;
       grid-row-gap: 20px;
     }
-   
-    .flex2{
-      margin-top: 80px;
-      display: flex;
-      justify-content: center;
-  }
+    .container {
+        margin-left: 165px;
+        /*have to be removed to make the page responsive*/
+        /* margin-right: 165px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /* grid-auto-rows: minmax(100px, auto); */
+        color: black;
+        grid-column-gap: 60px;
+        grid-row-gap: 20px;
+    }
+    
+    
+    .top-flex {
+        display: flex;
+        color: '#253143';
+        margin-top: '40px';
+        justify-content: center;
+      }
+    .align {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+    
+    .content-wrap {
+        padding-bottom: 2.5rem;
+        /* Footer height */
+    }
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        /* Footer height */
+    }
   
-  .sub1 {
-    display: grid;
-  
-    grid-template-columns: repeat(2, 1fr);
-    /* border: 1px solid; */
-  }
-  
-  .sub3box {
-    display: grid;
-  
-    grid-template-columns: repeat(3, 1fr);
-    /* border: 1px solid; */
-    justify-content: center;
-  
-  
-  }
-  
-  .gridd {
-    color: blue;
-    /* border: 2px dashed #506F90; */
-    grid-row: 2;
-    justify-content: 'center';
-    align-content: 'center';
-    /* grid-column: 1/1; */
-  }
-  
-  /* #btns3
-  {
-  
-  } */
+ 

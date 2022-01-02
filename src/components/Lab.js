@@ -6,7 +6,10 @@ import MainFooter from './MainFooter.js'
 import React, { useState } from 'react';
 import magnify from '../feather-search.svg';
 import dropDown from '../awesome-caret-down.png';
-import './Lab'
+import './Lab.css'
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 
 
 
@@ -46,11 +49,21 @@ function NewAdmission() {
               <input className='top_tField' placeholder='Search using mobile no. or name'></input>
               <button type='submit' className='top-btn'><img src={magnify} style={{ 'align-items': 'center', backgroundColor: '#6F88A2', height: '27px', }}></img>
               </button>
+
+              {/* <div className='container'> */}
+                  <div>
+              <Card sx={{ width:160, height:160, }} style={{borderRadius:"50%", backgroundColor:"#E0CD4B"}}>
+                  <p style={{marginTop:"47px", marginLeft:"26px",marginRight:"25px",textAlign:"center",color:"#1A1A1A",fontSize:"23px"}}>Attention needed</p> 
+              </Card>
+              </div>
+              
             </div>
           </div>
-          
 
-          {/* created new tag par ..  */}
+          <div>
+
+          </div>
+          
 
         </div>
 

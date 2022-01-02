@@ -22,6 +22,7 @@ import Reports from './components/Reports';
 import ChangeBedData from './components/ChangeBedData';
 import HGTData from './components/HGTData';
 import Lab from './components/Lab'
+import ReportData from './components/ReportData'
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
         <Route path="/ChangeBedData" element={<ChangeBedData />} />
         <Route path="/HGTData" element={<HGTData/>}/>
         <Route path="/Lab" element={<Lab/>}/>
+        <Route path="/ReportData" element={<ReportData/>}/>
       </Routes>
     </Router>
   );
