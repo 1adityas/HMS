@@ -41,11 +41,11 @@ function Reports() {
                     }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90', 'textDecorationLine': 'underline', 'marginLeft': '10px' }}>Mr. Shubham Kumar{var1}</span></button>
                 </div>
 
-                <div className='mainflex'>
+                <div className='container'>
 
                     <Button onSubmit={handleChange} name="selectAll" value={patientName.selectAll} variant="contained" style={{
                         borderRadius: '15px',
-                        color: '#506F90', backgroundColor: '#E4E4E5', boxShadow: '#00000029', marginLeft: '70px', marginRight: '435px'
+                        color: '#506F90', backgroundColor: '#E4E4E5', boxShadow: '#00000029',
                     }}
                         sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '210px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Select All
                     </Button>
