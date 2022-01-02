@@ -307,28 +307,79 @@ function InitialAssessment() {
             </div>
 
             <div>
-                <Card style={{marginLeft:"125px",marginRight:"125px", marginTop:"40px"}}>
+                <Card style={{marginLeft:"125px",marginRight:"125px", marginTop:"40px",backgroundColor:"#E4E4E5",borderRadius:"15px"}}>
                 <div class="wrapperr">
+                <div class="sub1">
+                <par >
+                Template
+                </par>
+                <input onChange={handleChange} name="religion" value={inputData.religion} style={{backgroundColor:"#E4E4E5"}} className='top_tField' id='plain-field3' ></input>
+                <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+
+              </div>
+
+              <div class="sub1">
+                <par >
+                Discharge Reason
+                </par>
+                <input onChange={handleChange} name="religion" value={inputData.religion} style={{backgroundColor:"#E4E4E5"}}  className='top_tField' id='plain-field3' ></input>
+                <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+
+              </div>
+
+              <div class="sub1">
+                <par >
+                Discharge Date & Time
+                </par>
+                <div style={{ display: 'flex' }}>
+                  <input onChange={handleChange} name="admissionDateTime" style={{backgroundColor:"#E4E4E5"}} value={inputData.admissionDateTime} className='top_tField' id='plain-field3'  ></input>
+                  <button type='submit' className='btnUi' style={{ 'border-top-right-radius': '0px', 'border-bottom-right-radius': '0px' }}><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
+
+                </div>
+                <div style={{ display: 'flex' }}>
+                  <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2' style={{ 'border-top-left-radius': '0px', 'border-bottom-left-radius': '0px',"backgroundColor":"#E4E4E5" }} ></input>
+                  <button type='submit' className='btnUi'><QueryBuilderIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
+
+                </div>
+              </div>
+              <div class="sub"></div>
 
 
             <div class="sub" style={{width:"400px"}}>
                 <par >
-                Plan Of Care
+                Condition On Discharge
                 </par>
-                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px"}} className='top_tField' id='plain-field' ></input>
+                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px",backgroundColor:"#E4E4E5"}} className='top_tField' id='plain-field' ></input>
             </div>
             <div class="sub" style={{width:"400px"}}>
                 <par >
-                Plan Of Care
+                Course In Ward
                 </par>
-                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px"}} className='top_tField' id='plain-field' ></input>
+                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px",backgroundColor:"#E4E4E5"}} className='top_tField' id='plain-field' ></input>
             </div>
             <div class="sub" style={{width:"400px"}}>
                 <par >
-                Plan Of Care
+                Remark
                 </par>
-                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px"}} className='top_tField' id='plain-field' ></input>
+                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px",backgroundColor:"#E4E4E5"}} className='top_tField' id='plain-field' ></input>
             </div>
+            <div class="sub"></div>
+
+            <div class="sub1">
+                <par >
+                Follow Up Date
+                </par>
+                <input onChange={handleChange} style={{marginBottom:"40px",backgroundColor:"#E4E4E5"}} name="dateOfBirth" value={inputData.dateOfBirth} className='top_tField' id='plain-field2' ></input>
+                <button type='submit' className='btnUi'><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
+              </div>
+
+              <div class="sub1">
+                <par >
+                Follow Up Date
+                </par>
+                <input onChange={handleChange} style={{marginBottom:"40px",backgroundColor:"#E4E4E5"}} name="dateOfBirth" value={inputData.dateOfBirth} className='top_tField' id='plain-field2' ></input>
+                <button type='submit' className='btnUi'><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
+              </div>
 
                 </div>
                 </Card>
