@@ -21,6 +21,7 @@ import PatientRelativeDetails from './components/PatientRelativeDetails';
 import Reports from './components/Reports';
 import ChangeBedData from './components/ChangeBedData';
 import HGTData from './components/HGTData';
+import Lab from './components/Lab'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/Reports" element={<Reports />} />
         <Route path="/ChangeBedData" element={<ChangeBedData />} />
         <Route path="/HGTData" element={<HGTData/>}/>
+        <Route path="/Lab" element={<Lab/>}/>
       </Routes>
     </Router>
   );

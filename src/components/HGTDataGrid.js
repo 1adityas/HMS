@@ -1,7 +1,7 @@
 import * as React from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
-import './DataGrid.css'
+import './HGTDataGrid.css'
 
 const useStyles = makeStyles((theme) =>
   createStyles({

@@ -4,7 +4,7 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 import HGTDataGrid from './HGTDataGrid'
 
-import './HGT.css'
+import './HGTData.css'
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
 
