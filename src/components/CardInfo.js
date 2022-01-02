@@ -98,16 +98,16 @@ function CardInfo(){
 
         </div>
         <Button variant="contained" style={{
-            gridColumn:'3/5',
+            gridColumn:'2/5',
             gridRow:'7',
+            marginRight:'100px',
               borderRadius: '12px',
               color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029',
                 // marginLeft:'200px'
             }}
               sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '160px', height: '50px', fontSize: '20px', fontWeight: '500' }} >Daily Rounds
             </Button>
-        <CustomizedMenus />
-
+        {/* <CustomizedMenus /> */}
         </div>
         </div>
         

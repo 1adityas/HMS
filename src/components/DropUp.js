@@ -14,6 +14,7 @@ const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
     anchorOrigin={{
+        
       vertical: 'top',
       horizontal: 'center',
     }}
@@ -67,7 +68,6 @@ export default function CustomizedMenus() {
   return (
     <div>
       <Button
-        style={{ marginTop: '300px' }}
         id="demo-customized-button"
         aria-controls={open ? 'demo-customized-menu' : undefined}
         aria-haspopup="true"
