@@ -81,7 +81,7 @@ function NewAdmission() {
       <nav>
         <Header />
       </nav>
-      <div className="content-wrap">
+      {/* <div className="content-wrap"> */}
         <div style={{ paddingBottom: '200px' }}>
           <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143', marginBottom: '40px' }}>New Admission</p>
 
@@ -100,7 +100,7 @@ function NewAdmission() {
           {/* created new tag par ..  */}
 
           <form onSubmit={handleSubmit}>
-            <div class="wrapper">
+            <div class="wrapperr">
 
               <div class="sub">
                 <par >
@@ -333,7 +333,6 @@ function NewAdmission() {
             </div>
           </form>
         </div>
-      </div>
 
       <div className="footer">
         <MainFooter />
