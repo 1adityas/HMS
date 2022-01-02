@@ -10,6 +10,7 @@ import dropDown from '../awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 // import ChangeBedData from './ChangeBedData.js';
+import HistoryHabitsDataGrid from './HistoryHabitsDataGrid.js'
 
 
 
@@ -85,13 +86,29 @@ function InitialAssessment() {
                             <par >
                                 Travel History
                             </par>
-                            <input onChange={handleChange} name="selectBed" value={patientName.selectBed} className='top_tField' id='plain-field3' ></input>
+                            <input style={{ 'border-radius': "15px" }} onChange={handleChange} name="selectBed" value={patientName.selectBed} className='top_tField' id='plain-field3' ></input>
 
 
                         </div>
 
                     </div>
                 </form>
+                <div >
+                    <p style={{ 'background-color': "#6F88A2", 'text-align': "centre", 'border-radius': "15px 15px 0px 0px" }}> History & Habits</p>
+                    <HistoryHabitsDataGrid />
+                </div>
+                <div>
+                    <HistoryHabitsDataGrid />
+                </div>
+                <div>
+                    <HistoryHabitsDataGrid />
+                </div>
+                <div>
+                    <HistoryHabitsDataGrid />
+                </div>
+                <div>
+                    <HistoryHabitsDataGrid />
+                </div>
             </div>
 
 
