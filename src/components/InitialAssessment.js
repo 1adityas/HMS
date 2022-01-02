@@ -93,8 +93,10 @@ function InitialAssessment() {
 
                     </div>
                 </form>
-                <div >
-                    <p style={{ 'background-color': "#6F88A2", 'text-align': "centre", 'border-radius': "15px 15px 0px 0px" }}> History & Habits</p>
+                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
+                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> History & Habits <Button style={{
+                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
+                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
                     <HistoryHabitsDataGrid />
                 </div>
                 <div>
