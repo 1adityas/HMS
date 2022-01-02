@@ -302,7 +302,7 @@ function NewAdmission() {
                   Admission Date & Time
                 </par>
                 <div style={{ display: 'flex' }}>
-                  <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field2'  ></input>
+                  <input onChange={handleChange} name="admissionDateTime" value={inputData.admissionDateTime} className='top_tField' id='plain-field3'  ></input>
                   <button type='submit' className='btnUi' style={{ 'border-top-right-radius': '0px', 'border-bottom-right-radius': '0px' }}><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
 
                 </div>

@@ -6,8 +6,9 @@ import './DataGrid.css'
 const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
-      '& div[data-rowIndex][role="row"]:nth-of-type(5n-4)': {
-
+      '& div[data-rowIndex][role="row"]:nth-of-type(n)': {
+        fontSize: "22px",
+        color: "#253143",
 
         //risky
         minHeight: "60px !important",
@@ -54,6 +55,7 @@ const columns = [
   {
     field: "Previous Ward/Bed",
     textAlign: "centre",
+    fontSize: "30px",
     headerName: "Previous Ward/Bed",
     width: 300
 
@@ -62,6 +64,7 @@ const columns = [
     field: "Date",
     headerName: "Date",
     type: "number",
+    fontSize: "20px",
     width: 300,
     align: "center"
   },
@@ -69,12 +72,13 @@ const columns = [
     field: "Time",
     headerName: "Time",
     width: 300,
+    fontSize: "20px",
     renderCell: (cellValues) => {
       return (
         <div
           style={{
             color: "blue",
-            fontSize: 18,
+            fontSize: "22px",
             width: "100%",
             textAlign: "center"
           }}
@@ -91,6 +95,7 @@ const columns = [
     headerName: "Doctor",
     description: "This column has a value getter and is not sortable.",
     color: "#253143",
+
     opacity: 1,
     sortable: false,
     width: 300,
