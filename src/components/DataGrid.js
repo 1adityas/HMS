@@ -79,11 +79,7 @@ const columns = [
     headerName: "Time",
     align: "center",
     width: 300,
-<<<<<<< HEAD
-    fontSize: "20px",
-=======
     headerClassName: 'super-app-theme--header',
->>>>>>> 6f5bf03f7f5c3a032f4689409676661b355e3718
     renderCell: (cellValues) => {
       return (
         <div

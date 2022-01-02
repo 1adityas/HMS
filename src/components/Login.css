@@ -11,7 +11,6 @@ body{
     display: flex;
     flex-wrap: wrap;
 
-<<<<<<< Updated upstream
 
     /* grid-template-columns: repeat(2,1fr); */
     /* grid-template-rows: repeat(1,1fr); */
@@ -27,17 +26,8 @@ body{
     margin-top: 30px;
     /* margin-bottom: 123px; */
 }
-=======
-.flex-item2 {
-/* for bg pic */
-position: relative;
-    flex: 100%;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 123px;
->>>>>>> Stashed changes
 
-}
+
 .flex-item1 {
     /* for logo icon  */
     flex: 100%;
