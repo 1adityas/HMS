@@ -51,11 +51,11 @@ function NewAdmission() {
               </button>
 
               {/* <div className='container'> */}
-                  <div>
+                  {/* <div>
               <Card sx={{ width:160, height:160, }} style={{borderRadius:"50%", backgroundColor:"#E0CD4B"}}>
                   <p style={{marginTop:"47px", marginLeft:"26px",marginRight:"25px",textAlign:"center",color:"#1A1A1A",fontSize:"23px"}}>Attention needed</p> 
               </Card>
-              </div>
+              </div> */}
               
             </div>
           </div>
