@@ -3,14 +3,18 @@ import React, { useState } from 'react'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
-
-
 import './InitialAssessment.css'
 import dropDown from '../awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 // import ChangeBedData from './ChangeBedData.js';
 import HistoryHabitsDataGrid from './HistoryHabitsDataGrid.js'
+import Vitals from './Vitals.js'
+import CoMorbidities from './CoMorbidities'
+import Allergy from './Allergy'
+import Surgery from './Surgery'
+import Symptoms from './Symptoms'
+import CovidStatus from './CovidStatus'
 
 
 
@@ -93,21 +97,28 @@ function InitialAssessment() {
 
                     </div>
                 </form>
+                <div>
+                    <p style={{'background-color': "#6F88A2",textAlign:"center",'border-radius': "15px 15px 0px 0px"}}>Vitals</p>
+                    <Vitals/>
+                </div>
                 <div >
-                    <p style={{ 'background-color': "#6F88A2", 'text-align': "centre", 'border-radius': "15px 15px 0px 0px" }}> History & Habits</p>
+                    <p style={{ 'background-color': "#6F88A2", 'text-align': "center", 'border-radius': "15px 15px 0px 0px" }}> History & Habits</p>
                     <HistoryHabitsDataGrid />
                 </div>
                 <div>
-                    <HistoryHabitsDataGrid />
+                    <CoMorbidities />
                 </div>
                 <div>
-                    <HistoryHabitsDataGrid />
+                    <Allergy />
                 </div>
                 <div>
-                    <HistoryHabitsDataGrid />
+                    <Surgery/>
                 </div>
                 <div>
-                    <HistoryHabitsDataGrid />
+                    <Symptoms />
+                </div>
+                <div>
+                    <CovidStatus />
                 </div>
             </div>
 

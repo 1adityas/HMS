@@ -1,7 +1,7 @@
 import * as React from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
-import './HistoryHabitsDataGrid.css'
+import './Symptoms.css'
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -55,18 +55,18 @@ const columns = [
 
   },
   {
-    field: "Social History",
-    headerName: "Social History",
+    field: "Symptoms",
     textAlign: "centre",
     fontSize: "30px",
+    headerName: "Symptoms",
     width: 300,
     headerClassName: 'super-app-theme--header',
     
 
   },
   {
-    field: "Work",
-    headerName: "Work",
+    field: "Count Type",
+    headerName: "Count Type",
     type: "number",
     fontSize: "20px",
     width: 300,
@@ -75,8 +75,8 @@ const columns = [
     headerClassName: 'super-app-theme--header',
   },
   {
-    field: "Food Habits",
-    headerName: "Food Habits",
+    field: "From",
+    headerName: "From",
     align: "center",
     width: 300,
     headerClassName: 'super-app-theme--header',
@@ -95,56 +95,12 @@ const columns = [
       );
     }
   },
-  { field: "Smoking",
-    headerName: "Smoking",
+  { field: "To",
+    headerName: "To",
     headerClassName: 'super-app-theme--header',
     width: 300 },
 
-  {
-    field: "Alcohol",
-    headerName: "Alcohol",
-    headerClassName: 'super-app-theme--header',
-    description: "This column has a value getter and is not sortable.",
-    color: "#253143",
-
-    opacity: 1,
-    sortable: false,
-    width: 300,
-    valueGetter: (params) => {
-      return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
-        } `;
-    }
-  },
-  {
-    field: "Tobacco",
-    headerName: "Tobacco",
-    headerClassName: 'super-app-theme--header',
-    description: "This column has a value getter and is not sortable.",
-    color: "#253143",
-
-    opacity: 1,
-    sortable: false,
-    width: 300,
-    valueGetter: (params) => {
-      return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
-        } `;
-    }
-  },
-  {
-    field: "Family History",
-    headerName: "Family History",
-    headerClassName: 'super-app-theme--header',
-    description: "This column has a value getter and is not sortable.",
-    color: "#253143",
-
-    opacity: 1,
-    sortable: false,
-    width: 300,
-    valueGetter: (params) => {
-      return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
-        } `;
-    }
-  }
+  
 ];
 
 const rows = [
