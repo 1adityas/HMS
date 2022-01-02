@@ -1,3 +1,15 @@
 body{
     font-family: 'poppins';
 }
+.super-app-theme--header
+{
+
+    color: #506F90;
+    text-align: center;
+    border-radius: 15px;
+}
+.headeralign
+{
+    text-align: center;
+    border-radius: 15px;
+}
