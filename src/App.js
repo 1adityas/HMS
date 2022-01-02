@@ -21,19 +21,16 @@ import PatientRelativeDetails from './components/PatientRelativeDetails';
 import Reports from './components/Reports';
 import ChangeBedData from './components/ChangeBedData';
 import HGTData from './components/HGTData';
-import Lab from './components/LabImg'
-import ReportData from './components/ReportData';
-import InitialAssessment from './components/InitialAssessment';
-import LabImg from './components/LabImg';
-
-
+import Lab from './components/Lab'
+import ReportData from './components/ReportData'
+import InitialAssessment from './components/InitialAssessment'
 function App() {
   return (
     <Router>
       <Routes>
         {/* <Route path="/NavBar" element= {<NavBar />}/> */}
         <Route path="/" element={<ChangeBedData />} />
-        <Route path="/Login" element={<Login/>}/>
+        <Route path="/Login" element={<Login />} />
         <Route path="/MsDashboard" element={<MsDashboard />} />
         <Route path="/NewAdmission" element={<NewAdmission />} />
         <Route path="/InitialAssessment" element={<InitialAssessment />} />
@@ -45,9 +42,10 @@ function App() {
         <Route path="/PatientRelativeDetails" element={<PatientRelativeDetails />} />
         <Route path="/Reports" element={<Reports />} />
         <Route path="/ChangeBedData" element={<ChangeBedData />} />
-        <Route path="/HGTData" element={<HGTData/>}/>
-        <Route path="/Lab" element={<Lab/>}/>
-        <Route path="/ReportData" element={<ReportData/>}/>
+        <Route path="/HGTData" element={<HGTData />} />
+        <Route path="/Lab" element={<Lab />} />
+        <Route path="/ReportData" element={<ReportData />} />
+        <Route path="/InitialAssessment" element={<InitialAssessment />} />
       </Routes>
     </Router>
   );
