@@ -33,7 +33,7 @@ body{
     /* border: 2px solid; */
     display: flex;
     margin-left: 90px;
-    margin-right: 90px;
+    /* margin-right: 90px; */
     flex-direction: row;
 }
 
@@ -53,7 +53,16 @@ body{
  
     justify-content: center;
 }
-par{
+@media (max-width:1840px) {
+    .wrapper{
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
+    }
+    
+
 }
 
 
