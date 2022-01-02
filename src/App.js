@@ -24,6 +24,7 @@ import HGTData from './components/HGTData';
 import LabImg from './components/LabImg'
 import ReportData from './components/ReportData'
 import InitialAssessment from './components/InitialAssessment'
+import Discharge from './components/Discharge'
 function App() {
   return (
     <Router>
@@ -46,7 +47,8 @@ function App() {
         {/* <Route path="/Lab" element={<Lab />} /> */}
         <Route path="/ReportData" element={<ReportData />} />
         <Route path="/InitialAssessment" element={<InitialAssessment />} />
-      </Routes>
+        <Route path="/Discharge" element={<Discharge/>}/>
+      </Routes> 
     </Router>
   );
 }
