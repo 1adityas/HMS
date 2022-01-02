@@ -117,22 +117,20 @@ hr {
 }
 
 
-.wrapper {
-  margin-left: 165px;
-  /*have to be removed to make the page responsive*/
-  margin-right: 165px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: minmax(300px, auto); */
-  color: black;
-  grid-column-gap: 60px;
-  grid-row-gap: 20px;
-}
-
-.flex2 {
-  margin-top: 80px;
-  display: flex;
-  justify-content: center;
+.wrapperr {
+    margin-left: 165px;/*have to be removed to make the page responsive*/
+    margin-right: 165px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-auto-rows: minmax(300px, auto); */
+    grid-column-gap: 60px;
+    grid-row-gap: 20px;
+  }
+ 
+  .flex2{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
 }
 
 .sub1 {
