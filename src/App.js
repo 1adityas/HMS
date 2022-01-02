@@ -20,6 +20,7 @@ import ChangeBed from './components/ChangeBed';
 import PatientRelativeDetails from './components/PatientRelativeDetails';
 import Reports from './components/Reports';
 import ChangeBedData from './components/ChangeBedData';
+import HGTData from './components/HGTData';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Routes>
         {/* <Route path="/NavBar" element= {<NavBar />}/> */}
         <Route path="/" element={<ChangeBedData />} />
+        <Route path="/Login" element={<Login/>}/>
         <Route path="/MsDashboard" element={<MsDashboard />} />
         <Route path="/NewAdmission" element={<NewAdmission />} />
 
@@ -36,6 +38,7 @@ function App() {
         <Route path="/PatientRelativeDetails" element={<PatientRelativeDetails />} />
         <Route path="/Reports" element={<Reports />} />
         <Route path="/ChangeBedData" element={<ChangeBedData />} />
+        <Route path="/HGTData" element={<HGTData/>}/>
       </Routes>
     </Router>
   );
