@@ -46,6 +46,8 @@ const columns = [
     field: "#",
     headerName: "#",
     width: 100,
+    headerAlign: 'center',
+    headerClassName: 'super-app-theme--header',
     valueGetter: (params) => {
       return `${params.getValue(params.id, "number") || ""} `;
     }
@@ -55,7 +57,9 @@ const columns = [
     field: "Previous Ward/Bed",
     textAlign: "centre",
     headerName: "Previous Ward/Bed",
-    width: 300
+    width: 300,
+    headerClassName: 'super-app-theme--header',
+    
 
   },
   {
@@ -63,12 +67,16 @@ const columns = [
     headerName: "Date",
     type: "number",
     width: 300,
-    align: "center"
+    align: "center",
+    textAlign:"center",
+    headerClassName: 'super-app-theme--header',
   },
   {
     field: "Time",
     headerName: "Time",
+    align: "center",
     width: 300,
+    headerClassName: 'super-app-theme--header',
     renderCell: (cellValues) => {
       return (
         <div
@@ -76,7 +84,7 @@ const columns = [
             color: "blue",
             fontSize: 18,
             width: "100%",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           {cellValues.value}
@@ -84,11 +92,15 @@ const columns = [
       );
     }
   },
-  { field: "Time", headerName: "Time", width: 300 },
+  { field: "Time",
+    headerName: "Time",
+    headerClassName: 'super-app-theme--header',
+    width: 300 },
 
   {
     field: "Doctor",
     headerName: "Doctor",
+    headerClassName: 'super-app-theme--header',
     description: "This column has a value getter and is not sortable.",
     color: "#253143",
     opacity: 1,
@@ -117,8 +129,8 @@ export default function DataGridDemo() {
   const classes = useStyles();
 
   return (
-    <div style={{
-      height: 300, width: "80%", textAlign: "center", marginLeft: "165px", marginRight: "165px", marginBottom: "80px"
+    <div className="headeralign" style={{
+      height: 300, width: "80%", textAlign: "center", marginLeft: "165px", marginRight: "165px", marginBottom: "20px"
     }}>
       < DataGrid
         rowHeight={60}
