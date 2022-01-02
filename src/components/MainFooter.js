@@ -62,8 +62,8 @@ export default function Footer() {
           <a style={{textDecoration:"none"}} href='./MsDashboard'><Button onClick={handleChange} name="Dashboard" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Dashboard</Button></a>
           <Button onClick={handleChange} name="Ward Details" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Ward Details</Button>
           <a style={{textDecoration:"none"}} href='PatientDetails'><Button onClick={handleChange} name="Patient Details" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Patient Details</Button></a>
-          <Button onClick={handleChange} name="Discharged Patient" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Discharged Patients</Button>
-          <a style={{textDecoration:"none"}} href='./Lab'><Button onClick={handleChange} name="Laboratory & Imaging" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Laboratory & Imaging</Button></a>
+          <a style={{textDecoration: "none"}} href='Discharge'><Button onClick={handleChange} name="Discharged Patient" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Discharged Patients</Button></a>
+          <a style={{textDecoration:"none"}} href='./LabImg'><Button onClick={handleChange} name="Laboratory & Imaging" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Laboratory & Imaging</Button></a>
 
           <br />
           <br />
