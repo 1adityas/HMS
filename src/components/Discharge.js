@@ -3,6 +3,10 @@ import React, { useState } from 'react'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+
 import './InitialAssessment.css'
 import dropDown from '../awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
@@ -64,7 +68,7 @@ function InitialAssessment() {
             </div>
             <div className="content-wrap">
                 <div >
-                    <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Initial Assessment</p>
+                    <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Discharge</p>
                 </div>
                 <div style={{ textAlign: 'center', }}>
                     <button onClick={handleEvent} value={var1} style={{
@@ -302,6 +306,33 @@ function InitialAssessment() {
               {/* <div class="sub"></div> */}
             </div>
 
+            <div>
+                <Card style={{marginLeft:"125px",marginRight:"125px", marginTop:"40px"}}>
+                <div class="wrapperr">
+
+
+            <div class="sub" style={{width:"400px"}}>
+                <par >
+                Plan Of Care
+                </par>
+                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px"}} className='top_tField' id='plain-field' ></input>
+            </div>
+            <div class="sub" style={{width:"400px"}}>
+                <par >
+                Plan Of Care
+                </par>
+                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px"}} className='top_tField' id='plain-field' ></input>
+            </div>
+            <div class="sub" style={{width:"400px"}}>
+                <par >
+                Plan Of Care
+                </par>
+                <input onChange={handleChange} name="city" value={inputData.city} style={{height:"120px"}} className='top_tField' id='plain-field' ></input>
+            </div>
+
+                </div>
+                </Card>
+            </div>
             
 
             

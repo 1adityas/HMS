@@ -59,7 +59,7 @@ const columns = [
     headerName: "Date & time",
     textAlign: "centre",
     fontSize: "30px",
-    width: 300,
+    width: 150,
     headerClassName: 'super-app-theme--header',
     
 
@@ -69,7 +69,7 @@ const columns = [
     headerName: "BP",
     type: "number",
     fontSize: "20px",
-    width: 300,
+    width: 150,
     align: "center",
     textAlign:"center",
     headerClassName: 'super-app-theme--header',
@@ -78,7 +78,7 @@ const columns = [
     field: "SPO2(W/O O2)",
     headerName: "SPO2(W/O O2)",
     align: "center",
-    width: 300,
+    width: 150,
     headerClassName: 'super-app-theme--header',
     renderCell: (cellValues) => {
       return (
@@ -98,7 +98,7 @@ const columns = [
   { field: "SPO2(With O2)",
     headerName: "SPO2(With O2)",
     headerClassName: 'super-app-theme--header',
-    width: 300 },
+    width: 150 },
 
   {
     field: "Oxygen(Lt.)",
@@ -109,7 +109,7 @@ const columns = [
 
     opacity: 1,
     sortable: false,
-    width: 300,
+    width: 150,
     valueGetter: (params) => {
       return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
         } `;
@@ -124,7 +124,7 @@ const columns = [
 
     opacity: 1,
     sortable: false,
-    width: 300,
+    width: 150,
     valueGetter: (params) => {
       return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
         } `;
@@ -139,7 +139,7 @@ const columns = [
 
     opacity: 1,
     sortable: false,
-    width: 300,
+    width: 150,
     valueGetter: (params) => {
       return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
         } `;
@@ -154,7 +154,7 @@ const columns = [
 
     opacity: 1,
     sortable: false,
-    width: 300,
+    width: 150,
     valueGetter: (params) => {
       return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
         } `;
@@ -169,7 +169,7 @@ const columns = [
 
     opacity: 1,
     sortable: false,
-    width: 300,
+    width: 150,
     valueGetter: (params) => {
       return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
         } `;
@@ -184,7 +184,7 @@ const columns = [
 
     opacity: 1,
     sortable: false,
-    width: 300,
+    width: 150,
     valueGetter: (params) => {
       return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
         } `;
