@@ -15,7 +15,7 @@ import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 
 
 
-function NewAdmission() {
+function LabImg() {
   const [inputData, setInputData] = useState({
     firstName: "",
     
@@ -105,4 +105,4 @@ function NewAdmission() {
     </body>
   )
 }
-export default NewAdmission;
+export default LabImg;

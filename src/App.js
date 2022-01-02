@@ -21,7 +21,7 @@ import PatientRelativeDetails from './components/PatientRelativeDetails';
 import Reports from './components/Reports';
 import ChangeBedData from './components/ChangeBedData';
 import HGTData from './components/HGTData';
-import Lab from './components/Lab'
+import LabImg from './components/LabImg'
 import ReportData from './components/ReportData'
 import InitialAssessment from './components/InitialAssessment'
 function App() {
@@ -43,7 +43,7 @@ function App() {
         <Route path="/Reports" element={<Reports />} />
         <Route path="/ChangeBedData" element={<ChangeBedData />} />
         <Route path="/HGTData" element={<HGTData />} />
-        <Route path="/Lab" element={<Lab />} />
+        {/* <Route path="/Lab" element={<Lab />} /> */}
         <Route path="/ReportData" element={<ReportData />} />
         <Route path="/InitialAssessment" element={<InitialAssessment />} />
       </Routes>
