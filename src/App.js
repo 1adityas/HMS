@@ -25,6 +25,7 @@ import LabImg from './components/LabImg'
 import ReportData from './components/ReportData'
 import InitialAssessment from './components/InitialAssessment'
 import Discharge from './components/Discharge'
+import DailyRounds from './components/DailyRounds';
 function App() {
   return (
     <Router>
@@ -39,6 +40,7 @@ function App() {
 
         <Route path="/PatientDetails" element={<PatientDetails />} />
         <Route path="/HGT" element={<HGT />} />
+        <Route path="/DailyRounds" element={<DailyRounds />} />
         <Route path="/ChangeBed" element={<ChangeBed />} />
         <Route path="/PatientRelativeDetails" element={<PatientRelativeDetails />} />
         <Route path="/Reports" element={<Reports />} />
@@ -47,8 +49,8 @@ function App() {
         {/* <Route path="/Lab" element={<Lab />} /> */}
         <Route path="/ReportData" element={<ReportData />} />
         <Route path="/InitialAssessment" element={<InitialAssessment />} />
-        <Route path="/Discharge" element={<Discharge/>}/>
-      </Routes> 
+        <Route path="/Discharge" element={<Discharge />} />
+      </Routes>
     </Router>
   );
 }
