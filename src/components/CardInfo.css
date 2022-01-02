@@ -2,14 +2,14 @@
     /* had to rename bec was picking up css of someother file */
     padding: 40px;
     background-color:#DEE1E5;
-    border:1px dashed;
+    /* border:1px dashed; */
     border-radius: 15px;
 }
 
 .timeTop{
     width: -moz-fit-content;
     width: fit-content;
-    border:1px solid;
+    /* border:1px solid; */
     border-radius: 10px;
     padding: 1px 15px 1px 15px;
     background-color: #EEEEEE;
