@@ -67,7 +67,7 @@ function DailyRounds() {
             </div>
             <div className="content-wrap">
                 <div >
-                    <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Initial Assessment</p>
+                    <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '32px', color: '#253143', marginBottom: '40px' }}>Daily Rounds</p>
                 </div>
                 <div style={{ textAlign: 'center', }}>
                     <button onClick={handleEvent} value={var1} style={{
@@ -75,29 +75,14 @@ function DailyRounds() {
                         'borderRadius': "15px,15px,15px,15px", 'textAlign': 'center', 'fontWeight': '400', 'fontSize': '20px', 'background-color': '#DEE1E5', 'marginBottom': '40px', 'width': "542px", 'height': '60px',
                     }}><span style={{ color: '#253143' }}>Click here to see more about</span><span style={{ color: '#506F90', 'textDecorationLine': 'underline', 'marginLeft': '10px' }}>Mr. Shubham Kumar{var1}</span></button>
                 </div>
+                <div style={{ textAlign: 'center', }}>
+                    <input onClick={handleEvent} value={var1} placeholder='Enter note here' style={{
+                        'border-radius': '15px', 'height': '60px',
+                        'borderRadius': "15px,15px,15px,15px", 'fontWeight': '400', 'fontSize': '20px', 'backgroundColor':"#EEEEEE",'border-color': '#6F88A2', 'marginBottom': '40px', 'width': "490px", 'height': '60px',
+                    }}></input>
+                </div>
 
 
-                <form onSubmit={handleSubmit}>
-                    <div class="container">
-                        <div class="sub1">
-                            <par >
-                                History Given By
-                            </par>
-                            <input onChange={handleChange} name="selectWard" value={inputData.selectWard} className='top_tField' id='plain-field3' ></input>
-                            <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
-
-                        </div>
-                        <div class="sub1">
-                            <par >
-                                Travel History
-                            </par>
-                            <input style={{ 'border-radius': "15px" }} onChange={handleChange} name="selectBed" value={inputData.selectBed} className='top_tField' id='plain-field3' ></input>
-
-
-                        </div>
-
-                    </div>
-                </form>
                 <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
                     <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> Vitals <Button style={{
                         'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
@@ -105,55 +90,7 @@ function DailyRounds() {
                     <Vitals />
                 </div>
 
-                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
-                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> History & Habits <Button style={{
-                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
-                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
-                    <HistoryHabitsDataGrid />
-                </div>
-                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
-                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> Co-Morbidities <Button style={{
-                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
-                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
-                    <CoMorbidities />
-                </div>
-                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
-                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> Allergy <Button style={{
-                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
-                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
-                    <Allergy />
-                </div>
-                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
-                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}>Surgery <Button style={{
-                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
-                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
-                    <Surgery />
-                </div>
-                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
-                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> Symptoms <Button style={{
-                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
-                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
-                    <Symptoms />
-                </div>
-                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
-                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> Covid Status <Button style={{
-                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
-                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
-                    <CovidStatus />
-                </div>
-
-
-
-            </div>
-
-            <div class="sub" style={{ marginBottom: "40px", width: "400px", marginLeft: "70px" }}>
-                <par >
-                    On Examination
-                </par>
-                <input onChange={handleChange} name="firstName" value={inputData.firstName} style={{ "height": "120px" }} className='top_tField' id='plain-field' ></input>
-            </div>
-
-            <div style={{ paddingBottom: '40px' }}>
+                <div style={{ paddingBottom: '40px' }}>
                 <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '22px', color: '#253143', marginBottom: '40px' }}>Clinical Status</p>
 
 
@@ -241,7 +178,8 @@ function DailyRounds() {
                 </form>
             </div>
 
-            <div style={{ paddingBottom: '200px' }}>
+
+            <div style={{ paddingBottom: '40px' }}>
                 <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '22px', color: '#253143', marginBottom: '40px' }}>Systematic Examination</p>
 
 
@@ -289,26 +227,76 @@ function DailyRounds() {
                             </par>
                             <input onChange={handleChange} name="emailId" value={inputData.emailId} className='top_tField' id='plain-field' ></input>
                         </div>
-                        {/* <div class="sub"></div> */}
-                        {/* <div class="sub"></div> */}
-                        <div class="sub"></div>
-                        <div class="sub"></div>
+                
 
-                        <div class="sub" style={{ width: "400px" }}>
+                        {/* <div class="sub" style={{ width: "400px" }}>
                             <par >
                                 Plan Of Care
                             </par>
                             <input onChange={handleChange} name="city" value={inputData.city} style={{ height: "120px" }} className='top_tField' id='plain-field' ></input>
-                        </div>
+                        </div> */}
 
-
-                        {/* <div class="sub"></div> */}
                     </div>
 
 
 
 
-                    <div className='flex2'>
+                    {/* <div className='flex2'>
+                        <Button variant="contained" style={{
+                            borderRadius: '12px',
+                            color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+                            , marginRight: '60px'
+                        }}
+                            sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Submit
+                        </Button>
+                        <Button variant="contained" style={{
+                            borderRadius: '12px',
+                            color: '#506F90', backgroundColor: '#EEEEEE', boxShadow: '#00000029'
+                        }}
+                            sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
+                        </Button>
+                    </div> */}
+                </form>
+            </div>
+
+
+                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
+                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> ICD10 Diagnosis <Button style={{
+                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
+                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
+                    <ICD10Diagnosis />
+                </div>
+                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
+                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> Investigations <Button style={{
+                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
+                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
+                    <Investigations />
+                </div>
+                <div style={{ 'margin': "40px 70px 40px 70px", 'width': "1780px" }}>
+                    <p style={{ 'padding-top': "15px", 'font-size': '22px', 'background-color': "#6F88A2", 'text-align': "center", 'height': "60px", 'color': "#EEEEEE", 'border-radius': "15px 15px 0px 0px" }}> Medicines <Button style={{
+                        'background-color': "#EEEEEE", 'color': "#6F88A2", 'float': "right", 'border-radius': "10px", 'margin': "11px 60px 11px 0px"
+                    }}><span style={{ 'font -size': '20px' }}>+ Add</span></Button></p>
+                    <Medicines />
+                </div>
+            
+
+            <div class="wrapperr">
+            <div class="sub" style={{ width: "400px" }}>
+                            <par >
+                                Plan Of Care
+                            </par>
+                            <input onChange={handleChange} name="city" value={inputData.city} style={{ height: "120px" }} className='top_tField' id='plain-field' ></input>
+                        </div>
+                        <div class="sub" style={{ width: "400px" }}>
+                            <par >
+                            Special Instructions (Do's & Don't)
+                            </par>
+                            <input onChange={handleChange} name="city" value={inputData.city} style={{ height: "120px" }} className='top_tField' id='plain-field' ></input>
+                        </div>
+
+            </div>
+
+            <div className='flex2' style={{marginBottom:"80px"}}>
                         <Button variant="contained" style={{
                             borderRadius: '12px',
                             color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
@@ -323,9 +311,9 @@ function DailyRounds() {
                             sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Cancel
                         </Button>
                     </div>
-                </form>
-            </div>
+                    </div>
 
+            
 
             <div className="footer">
                 <MainFooter />

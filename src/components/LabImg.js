@@ -12,6 +12,7 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
+import LabData from './LabData'
 
 
 
@@ -67,21 +68,21 @@ function LabImg() {
 
         <div className='gri'>
         <div class="sub1">
-                <input onChange={handleChange} name="religion" value={inputData.religion} className='top_tField' id='plain-field3' ></input>
+                <input placeholder='Select Test Type' style={{backgroundColor:"#E4E4E5"}} onChange={handleChange} name="religion" value={inputData.religion} className='top_tField' id='plain-field3' ></input>
                 <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
 
               </div>
 
         <div class="sub1">
-                <input onChange={handleChange} name="bloodGroup" value={inputData.bloodGroup} className='top_tField' id='plain-field2' ></input>
+                <input placeholder='Select Ward' style={{backgroundColor:"#E4E4E5"}} onChange={handleChange} name="bloodGroup" value={inputData.bloodGroup} className='top_tField' id='plain-field2' ></input>
                 <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
               </div>
         <div class="sub1">
-                <input onChange={handleChange} name="bloodGroup" value={inputData.bloodGroup} className='top_tField' id='plain-field2' ></input>
+                <input onChange={handleChange} placeholder='Date From' style={{backgroundColor:"#E4E4E5"}} name="bloodGroup" value={inputData.bloodGroup} className='top_tField' id='plain-field2' ></input>
                 <button type='submit' className='btnUi' style={{ 'border-top-right-radius': '15px', 'border-bottom-right-radius': '15px' }}><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
               </div>
         <div class="sub1">
-          <input onChange={handleChange} name="bloodGroup" value={inputData.bloodGroup} className='top_tField' id='plain-field2' ></input>
+          <input onChange={handleChange} placeholder='To' style={{backgroundColor:"#E4E4E5"}} name="bloodGroup" value={inputData.bloodGroup} className='top_tField' id='plain-field2' ></input>
           <button type='submit' className='btnUi' style={{ 'border-top-right-radius': '15px', 'border-bottom-right-radius': '15px' }}><DateRangeIcon sx={{ color: '#EEEEEE', width: 'auto', height: '30px' }} /></button>
         </div>
         <Button variant="contained" style={{
@@ -93,7 +94,12 @@ function LabImg() {
               </Button>
         </div>  
         </div>
+        <div>
+          <LabData/>
         </div>
+        </div>
+
+        
 
       <div className="footer">
         <MainFooter />

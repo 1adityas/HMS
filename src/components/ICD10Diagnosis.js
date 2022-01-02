@@ -55,18 +55,18 @@ const columns = [
 
   },
   {
-    field: "Previous Ward/Bed",
+    field: "ICD Code",
+    headerName: "ICD Code",
     textAlign: "centre",
     fontSize: "30px",
-    headerName: "Previous Ward/Bed",
     width: 300,
     headerClassName: 'super-app-theme--header',
     
 
   },
   {
-    field: "Date",
-    headerName: "Date",
+    field: "Disease",
+    headerName: "Disease",
     type: "number",
     fontSize: "20px",
     width: 300,
@@ -75,8 +75,8 @@ const columns = [
     headerClassName: 'super-app-theme--header',
   },
   {
-    field: "Time",
-    headerName: "Time",
+    field: "Status",
+    headerName: "Status",
     align: "center",
     width: 300,
     headerClassName: 'super-app-theme--header',
@@ -95,26 +95,7 @@ const columns = [
       );
     }
   },
-  { field: "Time",
-    headerName: "Time",
-    headerClassName: 'super-app-theme--header',
-    width: 300 },
-
-  {
-    field: "Doctor",
-    headerName: "Doctor",
-    headerClassName: 'super-app-theme--header',
-    description: "This column has a value getter and is not sortable.",
-    color: "#253143",
-
-    opacity: 1,
-    sortable: false,
-    width: 300,
-    valueGetter: (params) => {
-      return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
-        } `;
-    }
-  }
+  
 ];
 
 const rows = [
