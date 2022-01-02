@@ -55,30 +55,45 @@ const columns = [
 
   },
   {
-    field: "Previous Ward/Bed",
+    field: "Test Name",
+    headerName: "Test Name",
     textAlign: "centre",
     fontSize: "30px",
-    headerName: "Previous Ward/Bed",
-    width: 300,
+    width: 280,
     headerClassName: 'super-app-theme--header',
     
 
+  },
+  {
+    field: "Doctor",
+    headerName: "Doctor",
+    headerClassName: 'super-app-theme--header',
+    description: "This column has a value getter and is not sortable.",
+    color: "#253143",
+
+    opacity: 1,
+    sortable: false,
+    width: 280,
+    valueGetter: (params) => {
+      return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
+        } `;
+    }
   },
   {
     field: "Date",
     headerName: "Date",
     type: "number",
     fontSize: "20px",
-    width: 300,
+    width: 280,
     align: "center",
     textAlign:"center",
     headerClassName: 'super-app-theme--header',
   },
   {
-    field: "Time",
-    headerName: "Time",
+    field: "Test Type",
+    headerName: "Test Type",
     align: "center",
-    width: 300,
+    width: 280,
     headerClassName: 'super-app-theme--header',
     renderCell: (cellValues) => {
       return (
@@ -95,26 +110,7 @@ const columns = [
       );
     }
   },
-  { field: "Time",
-    headerName: "Time",
-    headerClassName: 'super-app-theme--header',
-    width: 300 },
-
-  {
-    field: "Doctor",
-    headerName: "Doctor",
-    headerClassName: 'super-app-theme--header',
-    description: "This column has a value getter and is not sortable.",
-    color: "#253143",
-
-    opacity: 1,
-    sortable: false,
-    width: 300,
-    valueGetter: (params) => {
-      return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
-        } `;
-    }
-  }
+  
 ];
 
 const rows = [

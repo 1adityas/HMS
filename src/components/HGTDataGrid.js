@@ -1,7 +1,7 @@
 import * as React from "react";
 import { DataGrid } from "@material-ui/data-grid";
 import { createStyles, makeStyles } from "@material-ui/core/styles";
-import './DataGrid.css'
+import './HGTDataGrid.css'
 
 const useStyles = makeStyles((theme) =>
   createStyles({
@@ -55,52 +55,6 @@ const columns = [
 
   },
   {
-    field: "Previous Ward/Bed",
-    textAlign: "centre",
-    fontSize: "30px",
-    headerName: "Previous Ward/Bed",
-    width: 300,
-    headerClassName: 'super-app-theme--header',
-    
-
-  },
-  {
-    field: "Date",
-    headerName: "Date",
-    type: "number",
-    fontSize: "20px",
-    width: 300,
-    align: "center",
-    textAlign:"center",
-    headerClassName: 'super-app-theme--header',
-  },
-  {
-    field: "Time",
-    headerName: "Time",
-    align: "center",
-    width: 300,
-    headerClassName: 'super-app-theme--header',
-    renderCell: (cellValues) => {
-      return (
-        <div
-          style={{
-            color: "blue",
-            fontSize: "22px",
-            width: "100%",
-            textAlign: "center",
-          }}
-        >
-          {cellValues.value}
-        </div>
-      );
-    }
-  },
-  { field: "Time",
-    headerName: "Time",
-    headerClassName: 'super-app-theme--header',
-    width: 300 },
-
-  {
     field: "Doctor",
     headerName: "Doctor",
     headerClassName: 'super-app-theme--header',
@@ -109,12 +63,54 @@ const columns = [
 
     opacity: 1,
     sortable: false,
-    width: 300,
+    width: 280,
     valueGetter: (params) => {
       return `${params.getValue(params.id, "firstName") || ""} ${params.getValue(params.id, "lastName") || ""
         } `;
     }
-  }
+  },
+  {
+    field: "HGT",
+    headerName: "HGT",
+    textAlign: "centre",
+    fontSize: "30px",
+    width: 280,
+    headerClassName: 'super-app-theme--header',
+    
+
+  },
+  {
+    field: "Ketone",
+    headerName: "Ketone",
+    type: "number",
+    fontSize: "20px",
+    width: 280,
+    align: "center",
+    textAlign:"center",
+    headerClassName: 'super-app-theme--header',
+  },
+  {
+    field: "Insulin Requirement",
+    headerName: "Insulin Requirement",
+    align: "center",
+    width: 280,
+    headerClassName: 'super-app-theme--header',
+    // renderCell: (cellValues) => {
+    //   return (
+    //     <div
+    //       style={{
+    //         color: "blue",
+    //         fontSize: "22px",
+    //         width: "100%",
+    //         textAlign: "center",
+    //       }}
+    //     >
+    //       {cellValues.value}
+    //     </div>
+    //   );
+    // }
+  },
+  
 ];
 
 const rows = [

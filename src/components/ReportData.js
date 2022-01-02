@@ -4,7 +4,8 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 import './Reports.css'
 import dropDown from '../awesome-caret-down.png';
-import './Reports.css'
+import './ReportData.css'
+import ReportDataGrid from './ReportDataGrid'
 
 function Reports() {
 
@@ -59,6 +60,9 @@ function Reports() {
 
 
                 </div>
+            </div>
+            <div>
+                <ReportDataGrid/>
             </div>
 
 

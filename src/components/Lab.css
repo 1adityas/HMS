@@ -1,0 +1,75 @@
+* {
+    text-transform: none;
+  }
+  par
+  {
+    color: #506F90;
+    font-size: 20px;
+    margin: 0px;
+    /* display: block; */
+    padding-bottom: 10px;
+    font-weight: 500;
+    /* border: 2px solid; */
+    grid-column: 1/3;
+  
+  }
+  
+  body {
+    font-family: 'poppins';
+  }
+  
+  .wrapperr {
+      margin-left: 165px;/*have to be removed to make the page responsive*/
+      margin-right: 165px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* grid-auto-rows: minmax(300px, auto); */
+      grid-column-gap: 60px;
+      grid-row-gap: 20px;
+    }
+    .container {
+        margin-left: 165px;
+        /*have to be removed to make the page responsive*/
+        /* margin-right: 165px; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        /* grid-auto-rows: minmax(100px, auto); */
+        color: black;
+        grid-column-gap: 60px;
+        grid-row-gap: 20px;
+    }
+    
+    
+    .top-flex {
+        display: flex;
+        color: '#253143';
+        margin-top: '40px';
+        justify-content: center;
+      }
+    .align {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+    
+    .content-wrap {
+        padding-bottom: 2.5rem;
+        /* Footer height */
+    }
+    
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        /* Footer height */
+    }
+  
+ 
