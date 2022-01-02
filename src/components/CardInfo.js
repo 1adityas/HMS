@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CardInfo.css';
 import { Button } from '@mui/material';
+import CustomizedMenus from './DropUp'
 import { StyledEngineProvider } from '@mui/material/styles';
 
 function CardInfo(){
@@ -105,6 +106,7 @@ function CardInfo(){
             }}
               sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '160px', height: '50px', fontSize: '20px', fontWeight: '500' }} >Daily Rounds
             </Button>
+        <CustomizedMenus />
 
         </div>
         </div>
