@@ -33,6 +33,8 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/MsDashboard" element={<MsDashboard />} />
         <Route path="/NewAdmission" element={<NewAdmission />} />
+        <Route path="/InitialAssessment" element={<InitialAssessment />} />
+        <Route path="/LabImg" element={<LabImg />} />
 
         <Route path="/PatientDetails" element={<PatientDetails />} />
         <Route path="/HGT" element={<HGT />} />
