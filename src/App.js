@@ -21,8 +21,11 @@ import PatientRelativeDetails from './components/PatientRelativeDetails';
 import Reports from './components/Reports';
 import ChangeBedData from './components/ChangeBedData';
 import HGTData from './components/HGTData';
-import Lab from './components/Lab'
-import ReportData from './components/ReportData'
+import Lab from './components/LabImg'
+import ReportData from './components/ReportData';
+import InitialAssessment from './components/InitialAssessment';
+import LabImg from './components/LabImg';
+
 
 function App() {
   return (
@@ -33,6 +36,8 @@ function App() {
         <Route path="/Login" element={<Login/>}/>
         <Route path="/MsDashboard" element={<MsDashboard />} />
         <Route path="/NewAdmission" element={<NewAdmission />} />
+        <Route path="/InitialAssessment" element={<InitialAssessment />} />
+        <Route path="/LabImg" element={<LabImg />} />
 
         <Route path="/PatientDetails" element={<PatientDetails />} />
         <Route path="/HGT" element={<HGT />} />
