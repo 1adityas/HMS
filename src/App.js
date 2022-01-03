@@ -32,7 +32,7 @@ function App() {
       <Routes>
         {/* <Route path="/NavBar" element= {<NavBar />}/> */}
         <Route path="/ChangeBedData" element={<ChangeBedData />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/MsDashboard" element={<MsDashboard />} />
         <Route path="/NewAdmission" element={<NewAdmission />} />
         <Route path="/InitialAssessment" element={<InitialAssessment />} />

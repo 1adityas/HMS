@@ -61,13 +61,18 @@ export default function CustomizedMenus() {
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
-    setAnchorEl(null);
+  const handleClose = (e) => {
+    
+    var link=`./${e.currentTarget.id}`;
+    window.open(link, "_blank");
+    // setAnchorEl(null);
   };
 
   return (
     <div>
       <Button
+      style={{color:'#506F90',backgroundColor:'#EEEEEE',fontSize:'20px',borderRadius:'10px',height:'50px',width:'120px'}}
+      sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} 
         id="demo-customized-button"
         aria-controls={open ? 'demo-customized-menu' : undefined}
         aria-haspopup="true"
@@ -77,7 +82,7 @@ export default function CustomizedMenus() {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
       >
-        Options
+        Actions
       </Button>
       <StyledMenu
         id="demo-customized-menu"
@@ -87,23 +92,32 @@ export default function CustomizedMenus() {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        style={{}}
       >
-        <MenuItem onClick={handleClose} disableRipple>
-          <EditIcon />
-          Edit
+        <MenuItem id='InitialAssessment'  onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          
+          Initial Assessment
         </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <FileCopyIcon />
-          Duplicate
+        <MenuItem id='HGT' onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          HGT Sheet
         </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
-        <MenuItem onClick={handleClose} disableRipple>
-          <ArchiveIcon />
-          Archive
+        <MenuItem id='' onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          Dialysis
         </MenuItem>
-        <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          More
+        <MenuItem id='' onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          Admission Card
+        </MenuItem>
+        <MenuItem id='Discharge' onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          Discharge
+        </MenuItem>
+        <MenuItem id='Reports' onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          Reports
+        </MenuItem>
+        <MenuItem id='ChangeBed' onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          Change Bed
+        </MenuItem>
+        <MenuItem id='PatientRelativeDetails' onClick={handleClose} disableRipple style={{backgroundColor:'#E4E4E5',margin:'0px',fontSize:'20px',fontFamily:'poppins'}}>
+          Edit Details
         </MenuItem>
       </StyledMenu>
     </div>
