@@ -49,7 +49,7 @@ export default function Router(props) {
                     <Route path="/Reports" element={<Reports />} />
                     <Route path="/ChangeBedData" element={<ChangeBedData />} />
                     <Route path="/HGTData" element={<HGTData />} />
-                    <Route path="/Lab" element={<Lab />} />
+                    {/* <Route path="/Lab" element={<Lab />} /> */}
                     <Route path="/ReportData" element={<ReportData />} />
                     <Route path="/InitialAssessment" element={<InitialAssessment />} />
                     <Route path="/Discharge" element={<Discharge />} />
