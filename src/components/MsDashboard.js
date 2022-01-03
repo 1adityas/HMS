@@ -22,6 +22,19 @@ function MsDashboard() {
 
     var [b1Color, setb1Color] = useState('#EEEEEE');
     var [b2Color, setb2Color] = useState('#506F90');
+    const [data,setData]= useState({
+        newAdmission:"",
+        admitted:"",
+        discharged:"",
+        icu:"",
+        deaths:""
+})
+
+function handleChange(event){
+    const { name, value } = event.target
+    setData(prevInputData => ({ ...prevInputData, [name]: value }))
+}
+
     return (
         //using body tag to get bg color
         <body className="page-container">
