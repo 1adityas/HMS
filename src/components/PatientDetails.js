@@ -18,7 +18,7 @@ import CardInfo from './CardInfo'
 function PatientDetails() {
     return (
         //using body tag to get bg color
-        <body >
+        <body className='bodyy' >
 
             <div className='flex1'>
                 <Header />
