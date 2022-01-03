@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './Login.css'
-import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
-import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
-import { Radio, Checkbox, TextField, FormGroup, FormControlLabel } from '@material-ui/core';
+import { Checkbox, FormGroup, FormControlLabel } from '@material-ui/core';
 import uImg from '../Assets/Images/Icon awesome-user-alt.svg';
 import pImg from '../Assets/Images/Icon\ metro-lock.svg';
 
@@ -44,15 +41,14 @@ export default function CardItem() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
   console.log(username)
+  console.log(password)
   return (
     // console.log(username)
     <div className="grid-container">
       <div className="flex-item3">
         <Card className={classes.root} >
           <CardContent>
-
             <Typography variant="h4" component="h1" align='center' style={{
               color: "#253143", fontWeight: '700', paddingBottom: "35px",
               paddingTop: "10px", fontFamily: 'poppins'
