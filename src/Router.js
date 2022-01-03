@@ -23,8 +23,8 @@ import ReportData from './components/ReportData'
 import InitialAssessment from './components/InitialAssessment'
 import Discharge from './components/Discharge'
 import DailyRounds from './components/DailyRounds';
-import { PrivateOutlet } from './PrivateRouteComponents/PrivateRoutes';
-import AuthContext from './Store/Auth'
+import { PrivateOutlet } from './RouteComponents/PrivateRoutes';
+import { PublicOutlet } from './RouteComponents/PublicRoutes';
 
 
 export default function Router(props) {
@@ -33,7 +33,9 @@ export default function Router(props) {
         <BrowserRouter>
             <Routes>
                 {/* <Route path="/NavBar" element= {<NavBar />}/> */}
-                <Route path="/" element={<Login />} />
+                <Route path="" element={<PublicOutlet />}>
+                    <Route path="/" element={<Login />} />
+                </Route>
                 <Route path="" element={<PrivateOutlet />}>
                     <Route path="/ChangeBedData" element={<ChangeBedData />} />
                     <Route path="/MsDashboard" element={<MsDashboard />} />
@@ -54,8 +56,6 @@ export default function Router(props) {
                     <Route path="/InitialAssessment" element={<InitialAssessment />} />
                     <Route path="/Discharge" element={<Discharge />} />
                 </Route>
-
-
             </Routes>
         </BrowserRouter>
     )
