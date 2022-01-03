@@ -5,8 +5,8 @@ import MainFooter from './MainFooter.js'
 import Button from '@mui/material/Button';
 
 import React, { useState } from 'react';
-import magnify from '../feather-search.svg';
-import dropDown from '../awesome-caret-down.png';
+import magnify from '../Assets/Images/feather-search.svg';
+import dropDown from '../Assets/Images/awesome-caret-down.png';
 import './LabImg.css'
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';

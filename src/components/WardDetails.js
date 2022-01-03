@@ -4,7 +4,7 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
 
-// import {ReactComponent as Back} from '../background.svg';
+// import {ReactComponent as Back} from '../Assets/Images/background.svg';
 
 //main-scren Dashboard
 

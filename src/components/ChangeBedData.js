@@ -9,7 +9,7 @@ import DataGridDemo from './DataGrid';
 
 
 import './ChangeBedData.css'
-import dropDown from '../awesome-caret-down.png';
+import dropDown from '../Assets/Images/awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 

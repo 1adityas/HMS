@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 import './Reports.css'
-import dropDown from '../awesome-caret-down.png';
+import dropDown from '../Assets/Images/awesome-caret-down.png';
 import './ReportData.css'
 import ReportDataGrid from './ReportDataGrid'
 

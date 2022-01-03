@@ -13,8 +13,8 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { BrowserRoute as Router, Switch, Route, Link } from "react-router-dom";
 // import { display, padding, width } from '@mui/system';
-import magnify from '../feather-search.svg';
-import dropDown from '../awesome-caret-down.png';
+import magnify from '../Assets/Images/feather-search.svg';
+import dropDown from '../Assets/Images/awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -22,7 +22,7 @@ import Box from '@mui/material/Box';
 
 
 
-// import {ReactComponent as Back} from '../background.svg';
+// import {ReactComponent as Back} from '../Assets/Images/background.svg';
 
 //main-scren Dashboard
 

@@ -1,11 +1,11 @@
 import React from 'react'
-import bg from '../background.svg';
-import nurse from '../Nurse.svg';
+import bg from '../Assets/Images/background.svg';
+import nurse from '../Assets/Images/Nurse.svg';
 import './Login.css'
-import logo from '../logo main.png';
+import logo from '../Assets/Images/logo main.png';
 import CardItem from './CardItem';
 import Footer from './Footer';
-// import {ReactComponent as Back} from '../background.svg';
+// import {ReactComponent as Back} from '../Assets/Images/background.svg';
 
 function Login() {
     return (

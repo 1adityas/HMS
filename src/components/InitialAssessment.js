@@ -4,7 +4,7 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 
 import './InitialAssessment.css'
-import dropDown from '../awesome-caret-down.png';
+import dropDown from '../Assets/Images/awesome-caret-down.png';
 import DateRangeIcon from '@mui/icons-material/DateRange';//for calendar
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 // import ChangeBedData from './ChangeBedData.js';
@@ -15,7 +15,7 @@ import Allergy from './Allergy'
 import Surgery from './Surgery'
 import Symptoms from './Symptoms'
 import CovidStatus from './CovidStatus'
-import magnify from '../feather-search.svg';
+import magnify from '../Assets/Images/feather-search.svg';
 
 
 

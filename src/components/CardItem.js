@@ -9,8 +9,8 @@ import './Login.css'
 import CircleCheckedFilled from '@material-ui/icons/CheckCircle';
 import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked';
 import { Radio, Checkbox, TextField, FormGroup, FormControlLabel } from '@material-ui/core';
-import uImg from '../Icon awesome-user-alt.svg';
-import pImg from '../Icon\ metro-lock.svg';
+import uImg from '../Assets/Images/Icon awesome-user-alt.svg';
+import pImg from '../Assets/Images/Icon\ metro-lock.svg';
 
 
 

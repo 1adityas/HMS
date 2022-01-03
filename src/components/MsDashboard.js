@@ -2,11 +2,11 @@
 // import './MsDashboard.css'
 import Header from './Header.js'
 import MainFooter from './MainFooter.js'
-import card1 from '../card1.svg'
-import card2 from '../card2.svg'
-import card3 from '../card3.svg'
-import card4 from '../card4.png'
-import card5 from '../card5.png'
+import card1 from '../Assets/Images/card1.svg'
+import card2 from '../Assets/Images/card2.svg'
+import card3 from '../Assets/Images/card3.svg'
+import card4 from '../Assets/Images/card4.png'
+import card5 from '../Assets/Images/card5.png'
 
 import React, { useState } from 'react';
 import Stack from '@mui/material/Stack';
@@ -14,7 +14,7 @@ import Button from '@mui/material/Button';
 import  "./NewAdmission"
 
 
-// import {ReactComponent as Back} from '../background.svg';
+// import {ReactComponent as Back} from '../Assets/Images/background.svg';
 
 //main-scren Dashboard
 

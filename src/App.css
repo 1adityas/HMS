@@ -5,7 +5,7 @@
    background-color: #EEEEEE;
  }
  .back {
-   background-image: url("./background.svg");
+   background-image: url("./Assets/Images/background.svg");
    background-repeat: no-repeat;
    position: absolute;
    top: 29px;
@@ -77,13 +77,13 @@
  }
 
  input#user {
-   background-image: url("./Icon\ awesome-user-alt.svg");
+   background-image: url("./Assets/Images/Icon\ awesome-user-alt.svg");
    background-repeat: no-repeat;
    text-indent: 70px;
  }
 
  input#pass {
-   background-image: url("./Icon\ metro-lock.svg");
+   background-image: url("./Assets/Images/Icon\ metro-lock.svg");
    background-repeat: no-repeat;
    text-indent: 70px;
  }
@@ -138,7 +138,7 @@
  }
 
  .input1 {
-   background-image: url("./Icon\ awesome-user-alt.svg");
+   background-image: url("./Assets/Images/Icon\ awesome-user-alt.svg");
    background-size: 25px;
    color: #253143;
    background-position: 10px;
@@ -152,7 +152,7 @@
  }
 
  .input2 {
-   background-image: url("./Icon\ metro-lock.svg");
+   background-image: url("./Assets/Images/Icon\ metro-lock.svg");
    background-size: 25px;
    padding-left: 10px;
    color: #253143;

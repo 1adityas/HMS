@@ -4,14 +4,14 @@ import Header from './Header.js'
 import MainFooter from './MainFooter.js'
 import { Button } from '@mui/material'
 import './PatientDetails.css'
-import magnifying from '../feather-search.svg';
+import magnifying from '../Assets/Images/feather-search.svg';
 import PatientCard from './PatientCard'
 import CardInfo from './CardInfo'
 
 // import Button from '@mui/material/Button';
 
 
-// import {ReactComponent as Back} from '../background.svg';
+// import {ReactComponent as Back} from '../Assets/Images/background.svg';
 
 //main-scren Dashboard
 
