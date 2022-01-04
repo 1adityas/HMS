@@ -17,7 +17,7 @@ class ContentStoreController extends Component {
         const token = cookies.get("token");
         if (token === undefined) {
             this.setState({
-                isAuthenticated: true,
+                isAuthenticated: false,
             });
         } else {
 
