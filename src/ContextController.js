@@ -31,9 +31,9 @@ class ContentStoreController extends Component {
         }
     };
 
-    loginUser = async ({username,password}) => {
+    loginUser = async ({ username, password }) => {
         try {
-            let response = await login({username,password})
+            let response = await login({ username, password })
             let { token } = response.data.data
             cookies.set(COOKIES_CONSTANTS.TOKEN, token)
             token && this.updateLoginStatus()
