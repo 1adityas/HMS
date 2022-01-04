@@ -23,6 +23,7 @@ import ReportData from './components/ReportData'
 import InitialAssessment from './components/InitialAssessment'
 import Discharge from './components/Discharge'
 import DailyRounds from './components/DailyRounds';
+import WardDetails from './components/WardDetails';
 import { PrivateOutlet } from './RouteComponents/PrivateRoutes';
 import { PublicOutlet } from './RouteComponents/PublicRoutes';
 
@@ -42,11 +43,11 @@ export default function Router(props) {
                     <Route path="/NewAdmission" element={<NewAdmission />} />
                     <Route path="/InitialAssessment" element={<InitialAssessment />} />
                     <Route path="/LabImg" element={<LabImg />} />
-
                     <Route path="/PatientDetails" element={<PatientDetails />} />
                     <Route path="/HGT" element={<HGT />} />
                     <Route path="/DailyRounds" element={<DailyRounds />} />
                     <Route path="/ChangeBed" element={<ChangeBed />} />
+                    <Route path="/ward-details" element={<WardDetails />} />
                     <Route path="/PatientRelativeDetails" element={<PatientRelativeDetails />} />
                     <Route path="/Reports" element={<Reports />} />
                     <Route path="/ChangeBedData" element={<ChangeBedData />} />

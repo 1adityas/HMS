@@ -9,22 +9,24 @@ import MainFooter from './MainFooter.js'
 //main-scren Dashboard
 
 function MsDashboard() {
+
+
     return (
         //using body tag to get bg color
         <body>
-            
+
             <div>
-            <Header/> 
-            </div>
-            
-            <div>
-                
+                <Header />
             </div>
 
             <div>
-            <MainFooter />
+
+            </div>
+
+            <div>
+                <MainFooter />
             </div>
         </body>
-        )
+    )
 }
 export default MsDashboard;
