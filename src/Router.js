@@ -24,40 +24,44 @@ import InitialAssessment from './components/InitialAssessment'
 import Discharge from './components/Discharge'
 import DailyRounds from './components/DailyRounds';
 import WardDetails from './components/WardDetails';
+import AuthContext from './Store/Auth';
 import { PrivateOutlet } from './RouteComponents/PrivateRoutes';
 import { PublicOutlet } from './RouteComponents/PublicRoutes';
 
 
 export default function Router(props) {
     return (
-
-        <BrowserRouter>
-            <Routes>
-                {/* <Route path="/NavBar" element= {<NavBar />}/> */}
-                <Route path="" element={<PublicOutlet />}>
-                    <Route path="/" element={<Login />} />
-                </Route>
-                <Route path="" element={<PrivateOutlet />}>
-                    <Route path="/ChangeBedData" element={<ChangeBedData />} />
-                    <Route path="/MsDashboard" element={<MsDashboard />} />
-                    <Route path="/NewAdmission" element={<NewAdmission />} />
-                    <Route path="/InitialAssessment" element={<InitialAssessment />} />
-                    <Route path="/LabImg" element={<LabImg />} />
-                    <Route path="/PatientDetails" element={<PatientDetails />} />
-                    <Route path="/HGT" element={<HGT />} />
-                    <Route path="/DailyRounds" element={<DailyRounds />} />
-                    <Route path="/ChangeBed" element={<ChangeBed />} />
-                    <Route path="/ward-details" element={<WardDetails />} />
-                    <Route path="/PatientRelativeDetails" element={<PatientRelativeDetails />} />
-                    <Route path="/Reports" element={<Reports />} />
-                    <Route path="/ChangeBedData" element={<ChangeBedData />} />
-                    <Route path="/HGTData" element={<HGTData />} />
-                    {/* <Route path="/Lab" element={<Lab />} /> */}
-                    <Route path="/ReportData" element={<ReportData />} />
-                    <Route path="/InitialAssessment" element={<InitialAssessment />} />
-                    <Route path="/Discharge" element={<Discharge />} />
-                </Route>
-            </Routes>
-        </BrowserRouter>
+        <AuthContext.Consumer>
+            {(context) => (
+                <BrowserRouter>
+                    <Routes>
+                        {/* <Route path="/NavBar" element= {<NavBar />}/> */}
+                        <Route path="" element={<PublicOutlet context={context} />}>
+                            <Route path="/" element={<Login context={context} />} />
+                        </Route>
+                        <Route path="" element={<PrivateOutlet />}>
+                            <Route path="/ChangeBedData" element={<ChangeBedData context={context} />} />
+                            <Route path="/MsDashboard" element={<MsDashboard context={context} />} />
+                            <Route path="/NewAdmission" element={<NewAdmission context={context} />} />
+                            <Route path="/InitialAssessment" element={<InitialAssessment context={context} />} />
+                            <Route path="/LabImg" element={<LabImg context={context} />} />
+                            <Route path="/PatientDetails" element={<PatientDetails context={context} />} />
+                            <Route path="/HGT" element={<HGT context={context} />} />
+                            <Route path="/DailyRounds" element={<DailyRounds context={context} />} />
+                            <Route path="/ChangeBed" element={<ChangeBed context={context} />} />
+                            <Route path="/ward-details" element={<WardDetails context={context} />} />
+                            <Route path="/PatientRelativeDetails" element={<PatientRelativeDetails context={context} />} />
+                            <Route path="/Reports" element={<Reports context={context} />} />
+                            <Route path="/ChangeBedData" element={<ChangeBedData context={context} />} />
+                            <Route path="/HGTData" element={<HGTData context={context} />} />
+                            {/* <Route path="/Lab" element={<Lab />} /> */}
+                            <Route path="/ReportData" element={<ReportData context={context} />} />
+                            <Route path="/InitialAssessment" element={<InitialAssessment context={context} />} />
+                            <Route path="/Discharge" element={<Discharge context={context} />} />
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
+            )}
+        </AuthContext.Consumer>
     )
 }
