@@ -9,10 +9,17 @@ export default class Routes {
         endPoint: "/master/gender",
         method: "POST",
     };
-    
+
 
 }
 
 export const COOKIES_CONSTANTS = Object.freeze({
-    TOKEN:"token"
+    TOKEN: "token"
 });
+export const VALIDATION_TEXTS = Object.freeze({
+    E001: "Invalid Username or Password",
+    E002: "Empty username field",
+    E003: "Empty password field",
+});
+
+export const SETTINGS = ['Profile', 'Account', 'Dashboard', 'Logout'];

@@ -10,6 +10,8 @@ import uImg from '../Assets/Images/Icon awesome-user-alt.svg';
 import pImg from '../Assets/Images/Icon\ metro-lock.svg';
 import AuthContext from '../Store/Auth';
 import { login } from '../requestHooks';
+import { VALIDATION_TEXTS } from '../constants';
+import { log } from '../helperFunctions';
 
 
 
@@ -43,11 +45,23 @@ const useStyles = makeStyles({
 export default function CardItem() {
   const context = useContext(AuthContext)
 
-  const [username, setUsername] = useState('system');
-  const [password, setPassword] = useState('test');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [validationText, setValidationText] = useState('');
   const classes = useStyles();
-  console.log(username)
-  console.log(password)
+
+  const loginUser = async () => {
+    try {
+      !password && setValidationText(VALIDATION_TEXTS.E003)
+      !username && setValidationText(VALIDATION_TEXTS.E002)
+      let response = await context.loginUser({ username, password });
+      log("Response", response)
+    } catch (error) {
+      log("error", error)
+      setValidationText(VALIDATION_TEXTS.E001)
+    }
+  }
+
   return (
     // console.log(username)
     <div className="grid-container">
@@ -86,9 +100,10 @@ export default function CardItem() {
                   />}
                   label="Remember Me" />
               </FormGroup>
+              <div style={{ "color": "red" }}>{validationText}</div>
 
               <Button variant="contained" style={{ 'fontSize': '20px', 'fontFamily': 'poppins', 'fontWeight': '500', 'backgroundColor': '#506F90', 'width': "20%", 'margin-top': "10%", 'margin-bottom': "3%", 'border-radius': "15px", 'color': "white", 'textTransform': 'none' }} onClick={() => {
-                context.loginUser({ username, password });
+                loginUser()
               }}>Login</Button>
               <br />
               <Button style={{ 'fontSize': '20px', 'fontFamily': 'poppins', 'fontWeight': '400', 'color': '#6F88A2', 'margin-top': "7%", 'textTransform': 'none' }}>Not Registered Yet?</Button>

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useContext} from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -13,14 +13,16 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../Assets/Images/logo main.png';
 import  './Header.css'
+import { SETTINGS } from '../constants';
+import AuthContext from '../Store/Auth'
 
 
 const pages = ['Dashboard', 'Ward Details', 'Patient Details', 'Discharged Patients', 'Laboratory & Imaging'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const context = useContext(AuthContext)
 
   const handleOpenNavMenu = (event) => {
     // console.log(anchorElNav)
@@ -37,7 +39,6 @@ const Header = () => {
     console.log(anchorElNav)
 
 
-    
   };
 
   function func(pagee){
@@ -142,9 +143,9 @@ const Header = () => {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
+              {SETTINGS.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography onClick={()=>context.logOutUser()}>{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>
