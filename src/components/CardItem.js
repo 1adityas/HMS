@@ -50,10 +50,20 @@ export default function CardItem() {
   const [validationText, setValidationText] = useState('');
   const classes = useStyles();
 
+  const eraseValidation = () => {
+
+
+  }
+
   const loginUser = async () => {
     try {
       !password && setValidationText(VALIDATION_TEXTS.E003)
       !username && setValidationText(VALIDATION_TEXTS.E002)
+
+      setTimeout(() => {
+        setValidationText("")
+      }, 2000);
+
       let response = await context.loginUser({ username, password });
       log("Response", response)
     } catch (error) {
