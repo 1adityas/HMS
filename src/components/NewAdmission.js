@@ -85,7 +85,7 @@ function NewAdmission() {
         <div style={{ paddingBottom: '200px' }}>
           <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143', marginBottom: '40px' }}>New Admission</p>
 
-          <div className='top-flex'>
+          {/* <div className='top-flex'>
 
             <p style={{ marginRight: '10px', fontSize: '22px', 'align-items': 'center', opacity: '0.7' }}>Already a registered patient?</p>
 
@@ -94,7 +94,7 @@ function NewAdmission() {
               <button type='submit' className='top-btn'><img src={magnify} style={{ 'align-items': 'center', backgroundColor: '#6F88A2', height: '27px', }}></img>
               </button>
             </div>
-          </div>
+          </div> */}
           <hr></hr>
 
           {/* created new tag par ..  */}

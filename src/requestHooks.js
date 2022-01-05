@@ -28,3 +28,14 @@ export const login = async (item, headers) => {
         return error
     }
 }
+export const newAdmission = async (item, headers) => {
+    try {
+        let url = urlGenerator(Routes.LOGIN.endPoint)
+        log("url", url)
+        let response = await axios.post(url, item)
+        return response
+    } catch (error) {
+        log("error", error)
+        return error
+    }
+}

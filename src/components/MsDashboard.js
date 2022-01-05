@@ -11,7 +11,7 @@ import card5 from '../Assets/Images/card5.png'
 import React, { useState } from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import  "./NewAdmission"
+import "./NewAdmission"
 
 
 // import {ReactComponent as Back} from '../Assets/Images/background.svg';
@@ -22,54 +22,54 @@ function MsDashboard() {
 
     var [b1Color, setb1Color] = useState('#EEEEEE');
     var [b2Color, setb2Color] = useState('#506F90');
-    const [data,setData]= useState({
-        newAdmission:"",
-        admitted:"",
-        discharged:"",
-        icu:"",
-        deaths:""
-})
+    const [data, setData] = useState({
+        newAdmission: "",
+        admitted: "",
+        discharged: "",
+        icu: "",
+        deaths: ""
+    })
 
-function handleChange(event){
-    const { name, value } = event.target
-    setData(prevInputData => ({ ...prevInputData, [name]: value }))
-}
+    function handleChange(event) {
+        const { name, value } = event.target
+        setData(prevInputData => ({ ...prevInputData, [name]: value }))
+    }
 
     return (
         //using body tag to get bg color
         <body className="page-container">
 
-             <nav>
+            <nav>
                 <Header />
-            </nav> 
+            </nav>
 
             <div className="content-wrap">
                 <div>
-                    <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143' }}>Welcome To Malad Jumbo COVID Hospital</p>
+                    <p style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '28px', color: '#253143' }}>Welcome to the Dashboard</p>
 
                     <Button variant="contained" style={{
                         marginRight: '60px', marginLeft: '38vw', borderRadius: '12px',
                         color: `${b1Color}`, backgroundColor: `${b2Color}`, boxShadow: '#00000029'
                     }}
-                        sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b1Color === '#EEEEEE') { setb2Color('#EEEEEE'); setb1Color('#506F90') };window.location.href='./NewAdmission.js';  }} >New Admission
-                        </Button>
+                        sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b1Color === '#EEEEEE') { setb2Color('#EEEEEE'); setb1Color('#506F90') }; window.location.href = './NewAdmission'; }} >New Admission
+                    </Button>
 
                     <Button variant="contained" style={{ color: `${b2Color}`, backgroundColor: `${b1Color}`, borderRadius: '12px', }} sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b2Color === '#EEEEEE') { setb1Color('#EEEEEE'); setb2Color('#506F90') } }}>Ward Details</Button>
                     {/* hooks to be used for buttons */}
                 </div>
 
                 <div className="cards">
-                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card1} style={{ 'width': "5vw" }} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px",'fontWeight':'500','color':'#253143' }}>Hello</p> </div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card2} style={{ 'width': "5vw" }} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px",'fontWeight':'500','color':'#253143' }}>Hello</p></div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card3} style={{ 'width': "3vw", 'padding-top': "15%" }} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px",'fontWeight':'500','color':'#253143' }}>Hello</p></div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '88%', 'marginBottom': '25%' }}><img src={card4} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px" ,'fontWeight':'500','color':'#253143'}}>Hello</p></div>
-                    <div className="card cardAlignment" style={{ 'margin-left': '90%', 'marginBottom': '25%' }}><img src={card5} /> <p style={{'margin-top':'8px','fontWeight':'700','color':'#253143'}}>Hello</p><p style={{ 'margin': "0px" ,'fontWeight':'500','color':'#253143'}}>Hello</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card1} style={{ 'width': "5vw" }} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>New Admissions</p> </div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card2} style={{ 'width': "5vw" }} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>Admitted</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '25%', 'marginTop': '25%' }}><img src={card3} style={{ 'width': "3vw", 'padding-top': "15%" }} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>Discharged</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '88%', 'marginBottom': '25%' }}><img src={card4} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>ICU</p></div>
+                    <div className="card cardAlignment" style={{ 'margin-left': '90%', 'marginBottom': '25%' }}><img src={card5} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>Deaths</p></div>
                 </div>
-            <div className="footer">
-                <MainFooter />
-            </div>
+                <div className="footer">
+                    <MainFooter />
+                </div>
 
-</div>
+            </div>
         </body>
     )
 }

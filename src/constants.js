@@ -5,11 +5,16 @@ export default class Routes {
         endPoint: "/hospital/user/login",
         method: "POST",
     };
+    
     static GENDER = {
         endPoint: "/master/gender",
         method: "POST",
     };
-
+    static PATIENTS_LIST = {
+        endPoint: "hospital/user/patients/get",
+        method: "POST",
+    };
+    
 
 }
 
