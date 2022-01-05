@@ -117,7 +117,9 @@ hr {
 }
 
 
-.wrapperr {
+/* WARNING: if copying then dont copy with came class name in other css */
+.wrapperrr { 
+
     margin-left: 165px;/*have to be removed to make the page responsive*/
     margin-right: 165px;
     display: grid;

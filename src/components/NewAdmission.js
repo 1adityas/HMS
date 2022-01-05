@@ -100,7 +100,7 @@ function NewAdmission() {
           {/* created new tag par ..  */}
 
           <form onSubmit={handleSubmit}>
-            <div class="wrapperr">
+            <div class="wrapperrr">
 
               <div class="sub">
                 <par >
