@@ -73,9 +73,16 @@ function NewAdmission() {
   }, [])
 
 
+  function handleChangeMarritalStatus(event) {
+    const { name, value } = event.target
+    setInputData({ maritalStatus: value })
+    setInputData(prevInputData => ({ ...prevInputData, [name]: value }))
+
+  }
   function handleChange(event) {
     const { name, value } = event.target
-    log("value", value)
+    setInputData({ sex: value })
+    log("value", inputData.sex)
     setInputData(prevInputData => ({ ...prevInputData, [name]: value }))
 
   }
@@ -209,9 +216,9 @@ function NewAdmission() {
                 Sex
               </par>
 
-              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px' }}><Button onClick={handleChange} name="sex" value="1" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Male</Button></div>
-              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;' }}><Button onClick={handleChange} name="sex" value="2" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Female</Button></div>
-              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'border': '2px solid #506F90', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px' }}><Button onClick={handleChange} name="sex" value="3" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Transgender</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px', background: inputData.sex == 1 && '#506F90' }}><Button onClick={handleChange} name="sex" value="1" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Male</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;', background: inputData.sex == 2 && '#506F90' }}><Button onClick={handleChange} name="sex" value="2" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Female</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'border': '2px solid #506F90', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px', background: inputData.sex == 3 && '#506F90' }}><Button onClick={handleChange} name="sex" value="3" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Transgender</Button></div>
 
               {/* <input onChange={handleChange} name="sex" value={inputData.sex}className='top_tField' id='plain-field' ></input> */}
             </div>
@@ -219,9 +226,9 @@ function NewAdmission() {
               <par >
                 Marital Status
               </par>
-              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px' }}><Button onClick={handleChange} name="maritalStatus" value="Single" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Single</Button></div>
-              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;' }}><Button onClick={handleChange} name="maritalStatus" value="Married" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Married</Button></div>
-              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px' }}><Button onClick={handleChange} name="maritalStatus" value="Divorced" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Divorced</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px',background: inputData.maritalStatus == 1 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="1" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Single</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;',background: inputData.maritalStatus == 2 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="2" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Married</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px',background: inputData.maritalStatus == 3 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="3" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Divorced</Button></div>
               {/* <input onChange={handleChange} name="maritalStatus" value={inputData.maritalStatus}className='top_tField' id='plain-field' ></input> */}
             </div>
 
