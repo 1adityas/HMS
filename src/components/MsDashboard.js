@@ -72,8 +72,8 @@ function MsDashboard() {
                                 <Col className='d-flex justify-content-center'><div className="card cardAlignment" ><img src={card3} style={{ 'width': "3vw", 'padding-top': "15%" }} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>Discharged</p></div></Col>
                             </Row>
                             <Row>
-                                <Col className='d-flex justify-content-center'><div className="card cardAlignment" ><img src={card4} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>ICU</p></div></Col>
-                                <Col className='d-flex justify-content-center'><div className="card cardAlignment" ><img src={card5} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>Deaths</p></div></Col>
+                                <Col className='d-flex justify-content-end' style={{ marginRight: '15px' }}><div className="card cardAlignment" ><img src={card4} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>ICU</p></div></Col>
+                                <Col className='d-flex justify-content-start' style={{ marginLeft: '15px' }}><div className="card cardAlignment" ><img src={card5} /> <p style={{ 'margin-top': '8px', 'fontWeight': '700', 'color': '#253143' }}>0</p><p style={{ 'margin': "0px", 'fontWeight': '500', 'color': '#253143' }}>Deaths</p></div></Col>
                             </Row>
                         </Col>
 
