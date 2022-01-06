@@ -8,19 +8,31 @@ import card3 from '../Assets/Images/card3.svg'
 import card4 from '../Assets/Images/card4.png'
 import card5 from '../Assets/Images/card5.png'
 
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import "./NewAdmission"
 import { Col, Row } from 'react-bootstrap'
 import { Container } from '@mui/material'
-
+import AuthContext from '../Store/Auth'
+import { log } from '../helperFunctions.js'
+import cookies from 'js-cookie'
+import { COOKIES_CONSTANTS } from '../constants.js'
 
 // import {ReactComponent as Back} from '../Assets/Images/background.svg';
 
 //main-scren Dashboard
 
 function MsDashboard() {
+    const context = useContext(AuthContext)
+    const token = cookies.get(COOKIES_CONSTANTS.TOKEN)
+
+    useEffect(async () => {
+
+        let response = await context.getMasterData(token)
+        log("response", response)
+
+    }, [])
 
     var [b1Color, setb1Color] = useState('#EEEEEE');
     var [b2Color, setb2Color] = useState('#506F90');
@@ -54,7 +66,7 @@ function MsDashboard() {
                             <Button variant="contained" style={{
                                 color: `${b1Color}`, backgroundColor: `${b2Color}`, boxShadow: '#00000029', borderRadius: '12px'
                             }}
-                                sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b1Color === '#EEEEEE') { setb2Color('#EEEEEE'); setb1Color('#506F90') }; window.location.href = './NewAdmission'; }} >New Admission
+                                sx={{ boxShadow: '5px 5px 15px #00000029;' }} onClick={() => { if (b1Color === '#EEEEEE') { setb2Color('#EEEEEE'); setb1Color('#506F90') }; window.location.href = '/new-admission'; }} >New Admission
                             </Button>
                         </Col>
                         <Col className='d-flex justify-content-start'>

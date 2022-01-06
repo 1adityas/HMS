@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Router from './Router'
 import cookies from "js-cookie";
 import AuthContext from "./Store/Auth";
-import { login, requestHook } from './requestHooks'
+import { getGender, getPincode, login, requestHook } from './requestHooks'
 import { log } from "./helperFunctions";
 import { COOKIES_CONSTANTS } from "./constants";
 
@@ -31,6 +31,18 @@ class ContentStoreController extends Component {
         }
     };
 
+    getMasterData = async (token) => {
+        try {
+            let headers = { Authorization: token }
+            let genderResponse = await getGender({}, headers)
+            let pincodeResponse = await getPincode({}, headers)
+            let response = { genderResponse: genderResponse.data, pincodeResponse: pincodeResponse.data }
+            return response
+        } catch (error) {
+            return error
+        }
+    }
+
     loginUser = async ({ username, password }) => {
         try {
             let response = await login({ username, password })
@@ -42,6 +54,7 @@ class ContentStoreController extends Component {
             return error
         }
     }
+
     logOutUser = () => {
         try {
             cookies.remove(COOKIES_CONSTANTS.TOKEN)
@@ -61,6 +74,7 @@ class ContentStoreController extends Component {
                 updateLoginStatus={this.updateLoginStatus}
                 loginUser={this.loginUser}
                 logOutUser={this.logOutUser}
+                getMasterData={this.getMasterData}
             />
         );
     }

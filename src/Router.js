@@ -41,7 +41,7 @@ export default function Router(props) {
                         </Route>
                         <Route path="" element={<PrivateOutlet />}>
                             <Route path="/ms-dashboard" element={<MsDashboard context={context} />} />
-                            <Route path="/NewAdmission" element={<NewAdmission context={context} />} />
+                            <Route path="/new-admission" element={<NewAdmission context={context} />} />
                             <Route path="/InitialAssessment" element={<InitialAssessment context={context} />} />
                             <Route path="/LabImg" element={<LabImg context={context} />} />
                             <Route path="/PatientDetails" element={<PatientDetails context={context} />} />

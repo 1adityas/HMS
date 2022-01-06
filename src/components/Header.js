@@ -106,24 +106,22 @@ const Header = () => {
           </Box> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', paddingLeft: "6vw" } }}>
-            {HEADER_PAGES.map((page) => {
-              log("page", page.name)
-              return (
-                //
-                <Button
-                  key={HEADER_PAGES.indexOf(page)}
-                  //talk to senior for futher 
-                  name={page.name}
-                  onClick={handleCloseNavMenu}
-                  style={{ 'color': '#506F90' }}
-                  href={page.action}
-                  sx={{ my: 2, color: '#506F90', display: 'block', padding: '1vw' }}
-                >
+            {HEADER_PAGES.map((page) => (
+              //
+              <Button
+                key={HEADER_PAGES.indexOf(page)}
+                //talk to senior for futher 
+                name={page.name}
+                onClick={handleCloseNavMenu}
+                style={{ 'color': '#506F90' }}
+                href={page.action}
+                sx={{ my: 2, color: '#506F90', display: 'block', padding: '1vw' }}
+              >
 
-                  {page.name}
-                </Button>
-              )
-            })}
+                {page.name}
+              </Button>
+            )
+            )}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

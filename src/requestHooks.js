@@ -17,6 +17,17 @@ export const getGender = async (item, headers) => {
     }
 }
 
+export const getPincode = async (item, headers) => {
+    try {
+        let url = urlGenerator(Routes.PINCODE.endPoint)
+        let response = await axios.post(url, item, { headers: { ...headers } })
+        return response
+    } catch (error) {
+        log("error", error)
+        return error
+    }
+}
+
 export const login = async (item, headers) => {
     try {
         let url = urlGenerator(Routes.LOGIN.endPoint)

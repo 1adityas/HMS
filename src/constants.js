@@ -10,10 +10,15 @@ export default class Routes {
         endPoint: "/master/gender",
         method: "POST",
     };
+    static PINCODE = {
+        endPoint: "/master/pincode",
+        method: "POST",
+    };
     static PATIENTS_LIST = {
         endPoint: "hospital/user/patients/get",
         method: "POST",
     };
+    
 
 
 }
