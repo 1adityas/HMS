@@ -1,7 +1,7 @@
 import cookies from "js-cookie";
 import { COOKIES_CONSTANTS } from "./constants";
 
-let BASE_URL = process.env.REACT_APP_API_URL
+let BASE_URL = "https://kenkotech.in/api/v1"
 
 export default class Helper {
     static log(...data) {
