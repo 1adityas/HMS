@@ -59,7 +59,7 @@ export default function Footer() {
           'opacity': "1"
 
         }}>
-          <a style={{textDecoration:"none"}} href='./MsDashboard'><Button onClick={handleChange} name="Dashboard" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Dashboard</Button></a>
+          <a style={{textDecoration:"none"}} href='./ms-dashboard'><Button onClick={handleChange} name="Dashboard" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Dashboard</Button></a>
           <Button onClick={handleChange} name="Ward Details" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Ward Details</Button>
           <a style={{textDecoration:"none"}} href='PatientDetails'><Button onClick={handleChange} name="Patient Details" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Patient Details</Button></a>
           <a style={{textDecoration: "none"}} href='Discharge'><Button onClick={handleChange} name="Discharged Patient" value={value} style={{ color: 'white', fontSize: '13px', opacity: '.9', paddingRight: '22px' }}>Discharged Patients</Button></a>
