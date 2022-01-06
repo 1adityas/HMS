@@ -70,7 +70,8 @@ function NewAdmission() {
   useEffect(async () => {
     log("useEffect token", token)
     let response = await context.getMasterData({}, token)
-    log("response", response)
+    let wardDropdownDetails = await context.getWards({}, token)
+    log("wardDropdownDetails", wardDropdownDetails)
   }, [])
 
 

@@ -7,6 +7,8 @@ export default React.createContext({
   logOutUser: () => {},
   addNewAdmission: () => {},
   getMasterData: () => {},
+  getWards: () => {},
+  getWardBedsById: () => {},
 });
 
 

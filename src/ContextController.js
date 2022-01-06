@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Router from './Router'
 import cookies from "js-cookie";
 import AuthContext from "./Store/Auth";
-import { getGender, getPincode, login, newAdmission, requestHook } from './requestHooks'
+import { getGender, getPincode, getWardBedIds, getWards, login, newAdmission, requestHook } from './requestHooks'
 import { log } from "./helperFunctions";
 import { COOKIES_CONSTANTS } from "./constants";
 
@@ -43,12 +43,22 @@ class ContentStoreController extends Component {
         }
     }
 
-    getWardsAndWardBedIds = async (payload, token) => {
+    getWards = async (payload, token) => {
         try {
             let headers = { Authorization: token }
-            let genderResponse = await getGender({}, headers)
-            let pincodeResponse = await getPincode({}, headers)
-            let response = { genderResponse: genderResponse.data, pincodeResponse: pincodeResponse.data }
+            let wards = await getWards({}, headers)
+            let bedIds = await getWardBedIds({}, headers)
+            let response = { Wards: wards.data, WardsBeds: bedIds.data }
+            return response
+        } catch (error) {
+            return error
+        }
+    }
+    getWardBedsById = async (payload, token) => {
+        try {
+            let headers = { Authorization: token }
+            let bedIds = await getWardBedIds({id:2}, headers)
+            let response = {WardsBeds: bedIds.data }
             return response
         } catch (error) {
             return error
@@ -147,6 +157,8 @@ class ContentStoreController extends Component {
                 logOutUser={this.logOutUser}
                 getMasterData={this.getMasterData}
                 addNewAdmission={this.addNewAdmission}
+                getWards={this.getWards}
+                getWardBedsById={this.getWardBedsById}
             />
         );
     }
