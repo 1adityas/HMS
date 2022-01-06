@@ -3,9 +3,6 @@ import axios from "axios"
 import { log, urlGenerator } from "./helperFunctions"
 
 
-
-
-
 export const getGender = async (payload, headers) => {
     try {
         let url = urlGenerator(Routes.GENDER.endPoint)
