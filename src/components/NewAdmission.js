@@ -275,23 +275,8 @@ function NewAdmission() {
               </par>
               <input onChange={handleChange} name="contactNo" value={inputData.contactNo} className='top_tField' id='plain-field' ></input>
             </div>
-            <div class="sub1">
-              <par >
-                Wards
-              </par>
-              <input onChange={handleChange} name="religion" value={inputData.religion} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
-
-            </div>
-
-            <div class="sub1">
-              <par >
-                Ward beds
-              </par>
-              <input onChange={handleChange} name="religion" value={inputData.religion} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
-
-            </div>
+            <div class="sub1"></div>
+            <div class="sub1"></div>
 
             <div class="sub1">
               <par >
