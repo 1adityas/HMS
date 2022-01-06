@@ -22,6 +22,7 @@ import Box from '@mui/material/Box';
 import Cookies from 'js-cookie';
 import { COOKIES_CONSTANTS } from '../constants';
 import { log } from '../helperFunctions';
+import Select from 'react-select';
 import AuthContext from '../Store/Auth';
 
 
@@ -64,8 +65,15 @@ function NewAdmission() {
     ward: "",
     bed: "",
     admissionDateTime: "",
+    wards :[]
 
   });
+
+  const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+  ]
 
   useEffect(async () => {
     log("useEffect token", token)
@@ -307,8 +315,7 @@ function NewAdmission() {
               <par >
                 Ward
               </par>
-              <input onChange={handleChange} name="ward" value={inputData.firstName} className='top_tField' id='plain-field3' ></input>
-              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+              <Select options={options} className='' id='plain-field3' onChange={handleChange} name="ward" value={inputData.firstName}/>
 
             </div>
             <div class="sub1">

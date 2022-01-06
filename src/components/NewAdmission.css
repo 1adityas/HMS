@@ -14,6 +14,24 @@ par
 
 }
 
+.css-1hb7zxy-IndicatorsContainer{
+  background-color: #6F88A2;
+}
+
+.css-319lph-ValueContainer{
+  padding: 10px !important; 
+  background-color: #0000001A;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+}
+
+.css-1s2u09g-control{
+  border-style:solid;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  border-color:#0000001A !important;
+}
+
 body {
   font-family: 'poppins';
 }
