@@ -1,4 +1,4 @@
-import React,{useContext} from 'react';
+import React, { useContext } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -12,12 +12,14 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import logo from '../Assets/Images/logo main.png';
-import  './Header.css'
-import { SETTINGS } from '../constants';
+import './Header.css'
+import { HEADER_PAGES, SETTINGS } from '../constants';
+import { Row, Col } from 'react-bootstrap';
 import AuthContext from '../Store/Auth'
+import { log } from '../helperFunctions';
 
 
-const pages = ['Dashboard', 'Ward Details', 'Patient Details', 'Discharged Patients', 'Laboratory & Imaging'];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -35,14 +37,14 @@ const Header = () => {
   const handleCloseNavMenu = async (event) => {
 
     await setAnchorElNav(event.target.name);
-    
+
     console.log(anchorElNav)
 
 
   };
 
-  function func(pagee){
-    console.log("123",pagee)
+  function func(pagee) {
+    console.log("123", pagee)
   };
 
   const handleCloseUserMenu = () => {
@@ -50,23 +52,23 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="static" style={{'boxShadow':"none",'backgroundColor':'#EEEEEE'}}>
+    <AppBar position="static" style={{ 'boxShadow': "none", 'backgroundColor': 'white' }}>
       <Container maxWidth="xll">
         <Toolbar disableGutters >
           <Typography
-          //this is for logo
+            //this is for logo
             variant="h6"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            
-            
-            <img src={logo} style={{height:'3vw', paddingTop:'20px', paddingRight:'14.5vw'}}></img>
+
+
+            <img src={logo} style={{ height: '4vw', paddingTop: '20px', paddingRight: '14.5vw' }}></img>
             {/* here i used padding 20px , it may cause unresponsive */}
           </Typography>
-''
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+
+          {/* <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -101,24 +103,27 @@ const Header = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
-          
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-//
-              <Button
-                key={page}
-                //talk to senior for futher 
-                name={page}
-                onClick={handleCloseNavMenu}
-                style={{'color':'#506F90'}}
-                
-                sx={{ my: 2, color: '#506F90', display: 'block', paddingLeft:'2vw'}}
-              >
+          </Box> */}
 
-                {page}
-              </Button>
-            ))}
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', paddingLeft: "6vw" } }}>
+            {HEADER_PAGES.map((page) => {
+              log("page", page.name)
+              return (
+                //
+                <Button
+                  key={HEADER_PAGES.indexOf(page)}
+                  //talk to senior for futher 
+                  name={page.name}
+                  onClick={handleCloseNavMenu}
+                  style={{ 'color': '#506F90' }}
+                  href={page.action}
+                  sx={{ my: 2, color: '#506F90', display: 'block', padding: '1vw' }}
+                >
+
+                  {page.name}
+                </Button>
+              )
+            })}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -144,8 +149,8 @@ const Header = () => {
               onClose={handleCloseUserMenu}
             >
               {SETTINGS.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseNavMenu}>
-                  <Typography onClick={()=>context.logOutUser()}>{setting}</Typography>
+                <MenuItem key={SETTINGS.indexOf(setting)} onClick={handleCloseNavMenu}>
+                  <Typography onClick={() => context.logOutUser()}>{setting.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>

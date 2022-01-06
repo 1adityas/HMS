@@ -23,20 +23,20 @@ body {
 }
 
 .cards {
-    display: grid;
-    margin-top: 5%;
+    display: flex;
+    /* margin-top: 5%;
     margin-bottom: 10%;
     margin-left: 23%;
     margin-right: 23%;
-    border-radius: 15px;
+    border-radius: 15px; */
     /* width: 50%; */
     /* align-items: center; */
     /* justify-content: center; */
-    grid-template-columns: repeat(3, 200px);
-    width: 53%;
+    /* grid-template-columns: repeat(3, 200px);
+    width: 53%; */
     background-color: #506F9026;
     /* max-height: 100vh; */
-    grid-gap: 3rem;
+    /* grid-gap: 3rem; */
 }
 
 

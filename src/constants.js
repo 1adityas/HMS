@@ -5,7 +5,7 @@ export default class Routes {
         endPoint: "/hospital/user/login",
         method: "POST",
     };
-    
+
     static GENDER = {
         endPoint: "/master/gender",
         method: "POST",
@@ -14,7 +14,7 @@ export default class Routes {
         endPoint: "hospital/user/patients/get",
         method: "POST",
     };
-    
+
 
 }
 
@@ -27,4 +27,7 @@ export const VALIDATION_TEXTS = Object.freeze({
     E003: "Invalid password",
 });
 
-export const SETTINGS = ['Profile', 'Account', 'Dashboard', 'Logout'];
+export const SETTINGS = [{ name: "Profile" }, { name: 'Account' }, { name: "Dashboard" }, { name: "Log Out" }];
+
+export const HEADER_PAGES = [{ name: "Dashboard", action: '/ms-dashboard' }, { name: 'Ward Details', }, { name: 'Patient Details', action: '/PatientDetails' }, { name: 'Discharged Patients', action: '/Discharge' }, { name: 'Laboratory & Imaging', action: '/LabImg' }];
+
