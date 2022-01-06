@@ -18,7 +18,19 @@ export default class Routes {
         endPoint: "hospital/user/patients/get",
         method: "POST",
     };
-    
+    static NEW_ADMISSION = {
+        endPoint: "/hospital/user/patient/admission",
+        method: "POST",
+    };
+    static WARDS = {
+        endPoint: "/hospital/user/patient/ward/get",
+        method: "POST",
+    };
+    static WARD_BEDS = {
+        endPoint: "/hospital/user/patient/ward/bed/available/get",
+        method: "POST",
+    };
+
 
 
 }

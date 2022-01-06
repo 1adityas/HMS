@@ -29,7 +29,7 @@ function MsDashboard() {
 
     useEffect(async () => {
 
-        let response = await context.getMasterData(token)
+        let response = await context.getMasterData({}, token)
         log("response", response)
 
     }, [])

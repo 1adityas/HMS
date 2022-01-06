@@ -6,10 +6,20 @@ import { log, urlGenerator } from "./helperFunctions"
 
 
 
-export const getGender = async (item, headers) => {
+export const getGender = async (payload, headers) => {
     try {
         let url = urlGenerator(Routes.GENDER.endPoint)
-        let response = await axios.post(url, item, { headers: { ...headers } })
+        let response = await axios.post(url, payload, { headers: { ...headers } })
+        return response
+    } catch (error) {
+        log("error", error)
+        return error
+    }
+}
+export const newAdmission = async (payload, headers) => {
+    try {
+        let url = urlGenerator(Routes.NEW_ADMISSION.endPoint)
+        let response = await axios.post(url, payload, { headers: { ...headers } })
         return response
     } catch (error) {
         log("error", error)
@@ -17,10 +27,10 @@ export const getGender = async (item, headers) => {
     }
 }
 
-export const getPincode = async (item, headers) => {
+export const getPincode = async (payload, headers) => {
     try {
         let url = urlGenerator(Routes.PINCODE.endPoint)
-        let response = await axios.post(url, item, { headers: { ...headers } })
+        let response = await axios.post(url, payload, { headers: { ...headers } })
         return response
     } catch (error) {
         log("error", error)
@@ -28,22 +38,31 @@ export const getPincode = async (item, headers) => {
     }
 }
 
-export const login = async (item, headers) => {
+export const getWards = async (payload, headers) => {
     try {
-        let url = urlGenerator(Routes.LOGIN.endPoint)
-        log("url", url)
-        let response = await axios.post(url, item)
+        let url = urlGenerator(Routes.WARDS.endPoint)
+        let response = await axios.post(url, payload, { headers: { ...headers } })
         return response
     } catch (error) {
         log("error", error)
         return error
     }
 }
-export const newAdmission = async (item, headers) => {
+export const getWardBedIds = async (payload, headers) => {
+    try {
+        let url = urlGenerator(Routes.WARD_BEDS.endPoint)
+        let response = await axios.post(url, payload, { headers: { ...headers } })
+        return response
+    } catch (error) {
+        log("error", error)
+        return error
+    }
+}
+
+export const login = async (payload, headers) => {
     try {
         let url = urlGenerator(Routes.LOGIN.endPoint)
-        log("url", url)
-        let response = await axios.post(url, item)
+        let response = await axios.post(url, payload, { headers: { ...headers } })
         return response
     } catch (error) {
         log("error", error)

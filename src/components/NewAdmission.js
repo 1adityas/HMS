@@ -68,7 +68,8 @@ function NewAdmission() {
   });
 
   useEffect(async () => {
-    let response = await context.getMasterData(token)
+    log("useEffect token", token)
+    let response = await context.getMasterData({}, token)
     log("response", response)
   }, [])
 
@@ -82,7 +83,6 @@ function NewAdmission() {
   function handleChange(event) {
     const { name, value } = event.target
     setInputData({ sex: value })
-    log("value", inputData.sex)
     setInputData(prevInputData => ({ ...prevInputData, [name]: value }))
 
   }
@@ -226,9 +226,9 @@ function NewAdmission() {
               <par >
                 Marital Status
               </par>
-              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px',background: inputData.maritalStatus == 1 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="1" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Single</Button></div>
-              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;',background: inputData.maritalStatus == 2 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="2" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Married</Button></div>
-              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px',background: inputData.maritalStatus == 3 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="3" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Divorced</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', gridColumn: '1', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '15px 0px 0px 15px', background: inputData.maritalStatus == 1 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="1" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Single</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '2', gridRow: '2/3', 'text-align': 'center', height: '60px', borderTop: '2px solid #506F90CC', borderBottom: '2px solid #506F90CC', boxShadow: '5px 5px 15px #00000029;', background: inputData.maritalStatus == 2 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="2" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Married</Button></div>
+              <div id='btns3' style={{ gridColumn: '1/1', margin: '0px', gridColumn: '3', gridRow: '2/3', 'text-align': 'center', fontSize: '30px', border: '2px solid #506F90CC', borderRadius: '0px 15px 15px 0px', background: inputData.maritalStatus == 3 && '#506F90' }}><Button onClick={handleChangeMarritalStatus} name="maritalStatus" value="3" variant="text" sx={{ color: '#253143', fontSize: '20px', 'margin-top': '5px', textTransform: 'none', fontFamily: 'poppins' }}>Divorced</Button></div>
               {/* <input onChange={handleChange} name="maritalStatus" value={inputData.maritalStatus}className='top_tField' id='plain-field' ></input> */}
             </div>
 
@@ -267,7 +267,7 @@ function NewAdmission() {
               <par >
                 Relation To Patient
               </par>
-              <input onChange={handleChange} name="relationToPatient" value={inputData.firstName} className='top_tField' id='plain-field' ></input>
+              <input onChange={handleChange} name="relationToPatient" value={inputData.relationToPatient} className='top_tField' id='plain-field' ></input>
             </div>
             <div class="sub">
               <par >
@@ -275,8 +275,23 @@ function NewAdmission() {
               </par>
               <input onChange={handleChange} name="contactNo" value={inputData.contactNo} className='top_tField' id='plain-field' ></input>
             </div>
-            <div class="sub"></div>
-            <div class="sub"></div>
+            <div class="sub1">
+              <par >
+                Wards
+              </par>
+              <input onChange={handleChange} name="religion" value={inputData.religion} className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+
+            </div>
+
+            <div class="sub1">
+              <par >
+                Ward beds
+              </par>
+              <input onChange={handleChange} name="religion" value={inputData.religion} className='top_tField' id='plain-field3' ></input>
+              <button type='submit' className='btnUi'><img src={dropDown} style={{ 'align-items': 'center', height: 'auto', width: '22px' }}></img></button>
+
+            </div>
 
             <div class="sub1">
               <par >
@@ -339,11 +354,13 @@ function NewAdmission() {
             <div class="sub"></div>
           </div>
           <div className='flex2'>
-            <Button variant="contained" style={{
-              borderRadius: '12px',
-              color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
-              , marginRight: '60px'
-            }}
+            <Button variant="contained"
+              onClick={() => context.addNewAdmission(inputData, token)}
+              style={{
+                borderRadius: '12px',
+                color: '#EEEEEE', backgroundColor: '#506F90', boxShadow: '#00000029'
+                , marginRight: '60px'
+              }}
               sx={{ boxShadow: '5px 5px 15px #00000029;', 'text-transform': 'none', width: '192px', height: '60px', fontSize: '20px', fontWeight: '500' }} >Submit
             </Button>
             <Button variant="contained" style={{
